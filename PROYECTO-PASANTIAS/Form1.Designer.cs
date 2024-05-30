@@ -33,7 +33,7 @@
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
-            button12 = new Button();
+            btn_stock = new Button();
             treeView2 = new TreeView();
             label1 = new Label();
             label2 = new Label();
@@ -57,7 +57,7 @@
             button2.FlatAppearance.BorderColor = Color.White;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(16, 244);
+            button2.Location = new Point(12, 253);
             button2.Name = "button2";
             button2.Size = new Size(104, 34);
             button2.TabIndex = 12;
@@ -70,7 +70,7 @@
             button3.FlatAppearance.BorderColor = Color.White;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(14, 204);
+            button3.Location = new Point(12, 213);
             button3.Name = "button3";
             button3.Size = new Size(104, 34);
             button3.TabIndex = 13;
@@ -83,7 +83,7 @@
             button4.FlatAppearance.BorderColor = Color.White;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(12, 164);
+            button4.Location = new Point(12, 173);
             button4.Name = "button4";
             button4.Size = new Size(104, 34);
             button4.TabIndex = 14;
@@ -103,32 +103,33 @@
             button5.Text = "button10";
             button5.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // btn_stock
             // 
-            button12.BackColor = SystemColors.WindowFrame;
-            button12.FlatAppearance.BorderColor = Color.White;
-            button12.FlatAppearance.BorderSize = 0;
-            button12.FlatStyle = FlatStyle.Flat;
-            button12.Location = new Point(14, 93);
-            button12.Name = "button12";
-            button12.Size = new Size(104, 34);
-            button12.TabIndex = 16;
-            button12.Text = "button11";
-            button12.UseVisualStyleBackColor = false;
+            btn_stock.BackColor = SystemColors.WindowFrame;
+            btn_stock.FlatAppearance.BorderColor = Color.White;
+            btn_stock.FlatAppearance.BorderSize = 0;
+            btn_stock.FlatStyle = FlatStyle.Flat;
+            btn_stock.Location = new Point(1, 93);
+            btn_stock.Name = "btn_stock";
+            btn_stock.Size = new Size(124, 34);
+            btn_stock.TabIndex = 16;
+            btn_stock.Text = "Stock";
+            btn_stock.UseVisualStyleBackColor = false;
+            btn_stock.Click += btn_stock_Click;
             // 
             // treeView2
             // 
             treeView2.BackColor = Color.WhiteSmoke;
             treeView2.Location = new Point(1, -1);
             treeView2.Name = "treeView2";
-            treeView2.Size = new Size(1129, 51);
+            treeView2.Size = new Size(1123, 51);
             treeView2.TabIndex = 17;
             // 
             // label1
             // 
             label1.BackColor = Color.WhiteSmoke;
             label1.Font = new Font("Sitka Text", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(56, 12);
+            label1.Location = new Point(56, 9);
             label1.Name = "label1";
             label1.Size = new Size(203, 31);
             label1.TabIndex = 18;
@@ -201,7 +202,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(treeView2);
-            Controls.Add(button12);
+            Controls.Add(btn_stock);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -209,7 +210,7 @@
             Controls.Add(treeView1);
             Font = new Font("Constantia", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Name = "Form1";
-            Text = "Form1";
+            Text = "DataStocker";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -222,7 +223,7 @@
         private Button button3;
         private Button button4;
         private Button button5;
-        private Button button12;
+        private Button btn_stock;
         private TreeView treeView2;
         private Label label1;
         private Label label2;

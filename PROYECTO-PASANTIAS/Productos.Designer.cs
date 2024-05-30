@@ -39,23 +39,25 @@
             label9 = new Label();
             label10 = new Label();
             label11 = new Label();
-            btn_aceptar = new Button();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            textBox1 = new TextBox();
-            textBox4 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            comboBox3 = new ComboBox();
+            btn_agregar = new Button();
+            cmb_categoria = new ComboBox();
+            cmb_subcategoria = new ComboBox();
+            txt_nombre = new TextBox();
+            txt_preciocompra = new TextBox();
+            txt_stock = new TextBox();
+            txt_precio = new TextBox();
+            txt_descripcion = new TextBox();
+            cmb_proveedor = new ComboBox();
             label12 = new Label();
-            comboBox4 = new ComboBox();
+            cmb_unidadmedida = new ComboBox();
+            txt_codigobarra = new TextBox();
+            label13 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.BackColor = Color.Black;
-            label1.Location = new Point(623, 68);
+            label1.Location = new Point(636, 58);
             label1.Name = "label1";
             label1.Size = new Size(3, 394);
             label1.TabIndex = 0;
@@ -64,7 +66,7 @@
             // 
             label3.BackColor = Color.WhiteSmoke;
             label3.Font = new Font("Sitka Text", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(324, 38);
+            label3.Location = new Point(324, 58);
             label3.Name = "label3";
             label3.Size = new Size(177, 31);
             label3.TabIndex = 19;
@@ -74,7 +76,7 @@
             // 
             label2.BackColor = Color.WhiteSmoke;
             label2.Font = new Font("Sitka Text", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(763, 38);
+            label2.Location = new Point(761, 58);
             label2.Name = "label2";
             label2.Size = new Size(188, 31);
             label2.TabIndex = 20;
@@ -84,7 +86,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(260, 99);
+            label4.Location = new Point(260, 109);
             label4.Name = "label4";
             label4.Size = new Size(57, 15);
             label4.TabIndex = 21;
@@ -94,7 +96,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(260, 155);
+            label5.Location = new Point(260, 165);
             label5.Name = "label5";
             label5.Size = new Size(81, 15);
             label5.TabIndex = 22;
@@ -104,7 +106,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(260, 209);
+            label6.Location = new Point(260, 219);
             label6.Name = "label6";
             label6.Size = new Size(51, 15);
             label6.TabIndex = 23;
@@ -114,7 +116,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(260, 263);
+            label7.Location = new Point(260, 273);
             label7.Name = "label7";
             label7.Size = new Size(127, 15);
             label7.TabIndex = 24;
@@ -124,7 +126,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(457, 99);
+            label8.Location = new Point(457, 109);
             label8.Name = "label8";
             label8.Size = new Size(97, 15);
             label8.TabIndex = 25;
@@ -134,7 +136,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(457, 155);
+            label9.Location = new Point(457, 165);
             label9.Name = "label9";
             label9.Size = new Size(66, 15);
             label9.TabIndex = 26;
@@ -144,7 +146,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(457, 263);
+            label10.Location = new Point(457, 273);
             label10.Name = "label10";
             label10.Size = new Size(141, 15);
             label10.TabIndex = 27;
@@ -154,97 +156,115 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(457, 209);
+            label11.Location = new Point(457, 219);
             label11.Name = "label11";
             label11.Size = new Size(61, 15);
             label11.TabIndex = 28;
             label11.Text = "Proveedor";
             // 
-            // btn_aceptar
+            // btn_agregar
             // 
-            btn_aceptar.Location = new Point(375, 400);
-            btn_aceptar.Name = "btn_aceptar";
-            btn_aceptar.Size = new Size(75, 23);
-            btn_aceptar.TabIndex = 29;
-            btn_aceptar.Text = "Aceptar";
-            btn_aceptar.UseVisualStyleBackColor = true;
+            btn_agregar.Location = new Point(375, 405);
+            btn_agregar.Name = "btn_agregar";
+            btn_agregar.Size = new Size(80, 28);
+            btn_agregar.TabIndex = 29;
+            btn_agregar.Text = "Agregar";
+            btn_agregar.UseVisualStyleBackColor = true;
+            btn_agregar.Click += btn_agregar_Click;
             // 
-            // comboBox1
+            // cmb_categoria
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(260, 117);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(95, 23);
-            comboBox1.TabIndex = 30;
+            cmb_categoria.FormattingEnabled = true;
+            cmb_categoria.Location = new Point(260, 127);
+            cmb_categoria.Name = "cmb_categoria";
+            cmb_categoria.Size = new Size(104, 23);
+            cmb_categoria.TabIndex = 30;
             // 
-            // comboBox2
+            // cmb_subcategoria
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(260, 173);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(95, 23);
-            comboBox2.TabIndex = 31;
+            cmb_subcategoria.FormattingEnabled = true;
+            cmb_subcategoria.Location = new Point(260, 183);
+            cmb_subcategoria.Name = "cmb_subcategoria";
+            cmb_subcategoria.Size = new Size(104, 23);
+            cmb_subcategoria.TabIndex = 31;
             // 
-            // textBox1
+            // txt_nombre
             // 
-            textBox1.Location = new Point(260, 227);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(95, 23);
-            textBox1.TabIndex = 32;
+            txt_nombre.Location = new Point(260, 237);
+            txt_nombre.Name = "txt_nombre";
+            txt_nombre.Size = new Size(104, 23);
+            txt_nombre.TabIndex = 32;
             // 
-            // textBox4
+            // txt_preciocompra
             // 
-            textBox4.Location = new Point(457, 281);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(95, 23);
-            textBox4.TabIndex = 35;
+            txt_preciocompra.Location = new Point(459, 291);
+            txt_preciocompra.Name = "txt_preciocompra";
+            txt_preciocompra.Size = new Size(103, 23);
+            txt_preciocompra.TabIndex = 35;
             // 
-            // textBox6
+            // txt_stock
             // 
-            textBox6.Location = new Point(457, 173);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(95, 23);
-            textBox6.TabIndex = 37;
+            txt_stock.Location = new Point(459, 183);
+            txt_stock.Name = "txt_stock";
+            txt_stock.Size = new Size(103, 23);
+            txt_stock.TabIndex = 37;
             // 
-            // textBox7
+            // txt_precio
             // 
-            textBox7.Location = new Point(457, 117);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(95, 23);
-            textBox7.TabIndex = 38;
+            txt_precio.Location = new Point(459, 127);
+            txt_precio.Name = "txt_precio";
+            txt_precio.Size = new Size(103, 23);
+            txt_precio.TabIndex = 38;
             // 
-            // textBox8
+            // txt_descripcion
             // 
-            textBox8.Location = new Point(260, 281);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(95, 23);
-            textBox8.TabIndex = 39;
+            txt_descripcion.Location = new Point(260, 291);
+            txt_descripcion.Name = "txt_descripcion";
+            txt_descripcion.Size = new Size(104, 23);
+            txt_descripcion.TabIndex = 39;
             // 
-            // comboBox3
+            // cmb_proveedor
             // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(459, 227);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(95, 23);
-            comboBox3.TabIndex = 40;
+            cmb_proveedor.FormattingEnabled = true;
+            cmb_proveedor.Location = new Point(459, 237);
+            cmb_proveedor.Name = "cmb_proveedor";
+            cmb_proveedor.Size = new Size(103, 23);
+            cmb_proveedor.TabIndex = 40;
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(260, 320);
+            label12.Location = new Point(260, 330);
             label12.Name = "label12";
             label12.Size = new Size(104, 15);
             label12.TabIndex = 41;
             label12.Text = "Unidad de Medida";
             // 
-            // comboBox4
+            // cmb_unidadmedida
             // 
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(260, 338);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(95, 23);
-            comboBox4.TabIndex = 42;
+            cmb_unidadmedida.FormattingEnabled = true;
+            cmb_unidadmedida.Location = new Point(260, 348);
+            cmb_unidadmedida.Name = "cmb_unidadmedida";
+            cmb_unidadmedida.Size = new Size(104, 23);
+            cmb_unidadmedida.TabIndex = 42;
+            // 
+            // txt_codigobarra
+            // 
+            txt_codigobarra.Location = new Point(459, 348);
+            txt_codigobarra.Name = "txt_codigobarra";
+            txt_codigobarra.Size = new Size(103, 23);
+            txt_codigobarra.TabIndex = 44;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label13.Location = new Point(457, 330);
+            label13.Name = "label13";
+            label13.Size = new Size(75, 15);
+            label13.TabIndex = 43;
+            label13.Text = "Codigo Barra";
             // 
             // Productos
             // 
@@ -252,17 +272,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1100, 451);
-            Controls.Add(comboBox4);
+            Controls.Add(txt_codigobarra);
+            Controls.Add(label13);
+            Controls.Add(cmb_unidadmedida);
             Controls.Add(label12);
-            Controls.Add(comboBox3);
-            Controls.Add(textBox8);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox4);
-            Controls.Add(textBox1);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(btn_aceptar);
+            Controls.Add(cmb_proveedor);
+            Controls.Add(txt_descripcion);
+            Controls.Add(txt_precio);
+            Controls.Add(txt_stock);
+            Controls.Add(txt_preciocompra);
+            Controls.Add(txt_nombre);
+            Controls.Add(cmb_subcategoria);
+            Controls.Add(cmb_categoria);
+            Controls.Add(btn_agregar);
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(label9);
@@ -295,16 +317,18 @@
         private Label label9;
         private Label label10;
         private Label label11;
-        private Button btn_aceptar;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private TextBox textBox1;
-        private TextBox textBox4;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private ComboBox comboBox3;
+        private Button btn_agregar;
+        private ComboBox cmb_categoria;
+        private ComboBox cmb_subcategoria;
+        private TextBox txt_nombre;
+        private TextBox txt_preciocompra;
+        private TextBox txt_stock;
+        private TextBox txt_precio;
+        private TextBox txt_descripcion;
+        private ComboBox cmb_proveedor;
         private Label label12;
-        private ComboBox comboBox4;
+        private ComboBox cmb_unidadmedida;
+        private TextBox txt_codigobarra;
+        private Label label13;
     }
 }

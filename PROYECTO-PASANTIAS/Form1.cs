@@ -7,6 +7,8 @@ namespace PROYECTO_PASANTIAS
             InitializeComponent();
             ConfigurarBotonTransparente();
             this.IsMdiContainer = true;
+            Conexion conexion = new Conexion();
+            conexion.Establecer_Conexion();
         }
 
         private void ConfigurarBotonTransparente()
@@ -28,7 +30,7 @@ namespace PROYECTO_PASANTIAS
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if(Validar_Form("Productos") == false)
+            if (Validar_Form("Productos") == false)
             {
                 Productos productos = new Productos();
                 productos.MdiParent = this;
@@ -36,11 +38,11 @@ namespace PROYECTO_PASANTIAS
             }
         }
 
-        public bool Validar_Form (string nombre)
+        public bool Validar_Form(string nombre)
         {
-            foreach(var form_hijo in this.MdiChildren)
+            foreach (var form_hijo in this.MdiChildren)
             {
-                if(form_hijo.Name == nombre)
+                if (form_hijo.Name == nombre)
                 {
                     form_hijo.BringToFront();
                     return true;
@@ -58,7 +60,6 @@ namespace PROYECTO_PASANTIAS
 
             var nueva_ubi = new Point(obtener_ubi.X, obtener_ubi.Y + pixels);
 
-            // Establecer la nueva ubicación del TreeView
             treeView.Location = nueva_ubi;
         }
 
@@ -67,6 +68,14 @@ namespace PROYECTO_PASANTIAS
             MoverTreeViewAbajo(treeView1, 15);
         }
 
-
+        private void btn_stock_Click(object sender, EventArgs e)
+        {
+            if (Validar_Form("Stock") == false)
+            {
+                Stock stock = new Stock();
+                stock.MdiParent = this;
+                stock.Show();
+            }
+        }
     }
 }

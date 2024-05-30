@@ -16,3 +16,8 @@ D:\CURSOS\CURSO C#\proyecttos\PROYECTO-PASANTIAS\obj\Debug\net8.0-windows\PROYEC
 D:\CURSOS\CURSO C#\proyecttos\PROYECTO-PASANTIAS\obj\Debug\net8.0-windows\ref\PROYECTO-PASANTIAS.dll
 D:\CURSOS\CURSO C#\proyecttos\PROYECTO-PASANTIAS\obj\Debug\net8.0-windows\PROYECTO_PASANTIAS.Properties.Resources.resources
 D:\CURSOS\CURSO C#\proyecttos\PROYECTO-PASANTIAS\obj\Debug\net8.0-windows\PROYECTO_PASANTIAS.Productos.resources
+D:\CURSOS\CURSO C#\proyecttos\PROYECTO-PASANTIAS\obj\Debug\net8.0-windows\PROYECTO_PASANTIAS.Stock.resources
+D:\CURSOS\CURSO C#\proyecttos\PROYECTO-PASANTIAS\bin\Debug\net8.0-windows\MySql.Data.dll
+D:\CURSOS\CURSO C#\proyecttos\PROYECTO-PASANTIAS\bin\Debug\net8.0-windows\MySql.Data.xml
+D:\CURSOS\CURSO C#\proyecttos\PROYECTO-PASANTIAS\obj\Debug\net8.0-windows\PROYECTO-PASANTIAS.csproj.AssemblyReference.cache
+D:\CURSOS\CURSO C#\proyecttos\PROYECTO-PASANTIAS\obj\Debug\net8.0-windows\PROYECTO.E902378D.Up2Date
