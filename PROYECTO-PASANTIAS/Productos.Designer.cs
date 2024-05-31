@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             label3 = new Label();
             label2 = new Label();
             label4 = new Label();
@@ -52,15 +51,8 @@
             cmb_unidadmedida = new ComboBox();
             txt_codigobarra = new TextBox();
             label13 = new Label();
+            label1 = new Label();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.BackColor = Color.Black;
-            label1.Location = new Point(636, 58);
-            label1.Name = "label1";
-            label1.Size = new Size(3, 394);
-            label1.TabIndex = 0;
             // 
             // label3
             // 
@@ -266,12 +258,21 @@
             label13.TabIndex = 43;
             label13.Text = "Codigo Barra";
             // 
+            // label1
+            // 
+            label1.BackColor = Color.Black;
+            label1.Location = new Point(651, -1);
+            label1.Name = "label1";
+            label1.Size = new Size(3, 460);
+            label1.TabIndex = 45;
+            // 
             // Productos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1100, 451);
+            Controls.Add(label1);
             Controls.Add(txt_codigobarra);
             Controls.Add(label13);
             Controls.Add(cmb_unidadmedida);
@@ -295,7 +296,6 @@
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label3);
-            Controls.Add(label1);
             Name = "Productos";
             Text = "Productos";
             WindowState = FormWindowState.Maximized;
@@ -305,8 +305,6 @@
         }
 
         #endregion
-
-        private Label label1;
         private Label label3;
         private Label label2;
         private Label label4;
@@ -330,5 +328,6 @@
         private ComboBox cmb_unidadmedida;
         private TextBox txt_codigobarra;
         private Label label13;
+        private Label label1;
     }
 }

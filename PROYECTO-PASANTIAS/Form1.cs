@@ -5,23 +5,10 @@ namespace PROYECTO_PASANTIAS
         public Form1()
         {
             InitializeComponent();
-            ConfigurarBotonTransparente();
             this.IsMdiContainer = true;
             Conexion conexion = new Conexion();
             conexion.Establecer_Conexion();
         }
-
-        private void ConfigurarBotonTransparente()
-        {
-
-        }
-
-        private void Button1_Paint(object sender, PaintEventArgs e)
-        {
-            Button btn = sender as Button;
-            TextRenderer.DrawText(e.Graphics, btn.Text, btn.Font, btn.ClientRectangle, btn.ForeColor, Color.Transparent, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
-        }
-
 
         private void Form1_Load(object sender, EventArgs e)
         {

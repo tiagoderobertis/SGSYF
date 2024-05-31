@@ -7,22 +7,21 @@ using System.Threading.Tasks;
 
 namespace PROYECTO_PASANTIAS
 {
-    internal class Conexion
+    class Conexion
     {
-        MySqlConnection conex = new MySqlConnection();
-
         static string servidor = "localhost";
         static string bd = "gestor_stock";
         static string usuario = "root";
         static string password = "";
         static string puerto= "3306";
 
-        string cadena_conexion = "server=" + servidor + ";" + "port=" + puerto + ";" + "user id=" + usuario + ";" + "password=" + password + ";" + "database=" + bd + ";";
+        static string cadena_conexion = "server=" + servidor + ";" + "port=" + puerto + ";" + "user id=" + usuario + ";" + "password=" + password + ";" + "database=" + bd + ";";
 
         public MySqlConnection Establecer_Conexion()
         {
+            MySqlConnection conex = new MySqlConnection(cadena_conexion);
             try 
-            { 
+            {
                 conex.ConnectionString = cadena_conexion;
                 conex.Open();
             }

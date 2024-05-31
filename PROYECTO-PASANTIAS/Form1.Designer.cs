@@ -46,9 +46,9 @@
             // treeView1
             // 
             treeView1.BackColor = SystemColors.WindowFrame;
-            treeView1.Location = new Point(1, 46);
+            treeView1.Location = new Point(1, 43);
             treeView1.Name = "treeView1";
-            treeView1.Size = new Size(129, 514);
+            treeView1.Size = new Size(124, 470);
             treeView1.TabIndex = 0;
             // 
             // button2
@@ -57,9 +57,9 @@
             button2.FlatAppearance.BorderColor = Color.White;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(12, 253);
+            button2.Location = new Point(12, 292);
             button2.Name = "button2";
-            button2.Size = new Size(104, 34);
+            button2.Size = new Size(104, 59);
             button2.TabIndex = 12;
             button2.Text = "button7";
             button2.UseVisualStyleBackColor = false;
@@ -70,9 +70,9 @@
             button3.FlatAppearance.BorderColor = Color.White;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(12, 213);
+            button3.Location = new Point(12, 357);
             button3.Name = "button3";
-            button3.Size = new Size(104, 34);
+            button3.Size = new Size(104, 59);
             button3.TabIndex = 13;
             button3.Text = "button8";
             button3.UseVisualStyleBackColor = false;
@@ -83,11 +83,11 @@
             button4.FlatAppearance.BorderColor = Color.White;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(12, 173);
+            button4.Location = new Point(12, 227);
             button4.Name = "button4";
-            button4.Size = new Size(104, 34);
+            button4.Size = new Size(104, 59);
             button4.TabIndex = 14;
-            button4.Text = "button9";
+            button4.Text = "Proveedores";
             button4.UseVisualStyleBackColor = false;
             // 
             // button5
@@ -96,11 +96,11 @@
             button5.FlatAppearance.BorderColor = Color.White;
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Location = new Point(14, 133);
+            button5.Location = new Point(12, 162);
             button5.Name = "button5";
-            button5.Size = new Size(104, 34);
+            button5.Size = new Size(104, 59);
             button5.TabIndex = 15;
-            button5.Text = "button10";
+            button5.Text = "Facturacion";
             button5.UseVisualStyleBackColor = false;
             // 
             // btn_stock
@@ -109,9 +109,9 @@
             btn_stock.FlatAppearance.BorderColor = Color.White;
             btn_stock.FlatAppearance.BorderSize = 0;
             btn_stock.FlatStyle = FlatStyle.Flat;
-            btn_stock.Location = new Point(1, 93);
+            btn_stock.Location = new Point(12, 110);
             btn_stock.Name = "btn_stock";
-            btn_stock.Size = new Size(124, 34);
+            btn_stock.Size = new Size(102, 46);
             btn_stock.TabIndex = 16;
             btn_stock.Text = "Stock";
             btn_stock.UseVisualStyleBackColor = false;
@@ -122,7 +122,7 @@
             treeView2.BackColor = Color.WhiteSmoke;
             treeView2.Location = new Point(1, -1);
             treeView2.Name = "treeView2";
-            treeView2.Size = new Size(1123, 51);
+            treeView2.Size = new Size(1123, 48);
             treeView2.TabIndex = 17;
             // 
             // label1
@@ -181,9 +181,9 @@
             button6.FlatAppearance.BorderColor = Color.White;
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
-            button6.Location = new Point(14, 62);
+            button6.Location = new Point(12, 53);
             button6.Name = "button6";
-            button6.Size = new Size(104, 25);
+            button6.Size = new Size(102, 51);
             button6.TabIndex = 24;
             button6.Text = "Productos";
             button6.UseVisualStyleBackColor = false;
@@ -194,7 +194,7 @@
             AutoScaleDimensions = new SizeF(8F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1124, 501);
+            ClientSize = new Size(1122, 472);
             Controls.Add(button6);
             Controls.Add(label6);
             Controls.Add(label5);
