@@ -64,5 +64,26 @@ namespace PROYECTO_PASANTIAS
                 stock.Show();
             }
         }
+
+        private void btn_compra_Click(object sender, EventArgs e)
+        {
+            if (Validar_Form("Compra") == false)
+            {
+                Compra compra = new Compra();
+                compra.MdiParent = this;
+                compra.Show();
+            }
+        }
+
+
+        private void btn_categorias_Click_1(object sender, EventArgs e)
+        {
+            if (Validar_Form("Categorias") == false)
+            {
+                Categorias categorias = new Categorias();
+                categorias.MdiParent = this;
+                categorias.Show();
+            }
+        }
     }
 }

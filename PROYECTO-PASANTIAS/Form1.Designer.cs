@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             treeView1 = new TreeView();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            btn_compra = new Button();
+            btn_categorias = new Button();
             button5 = new Button();
             btn_stock = new Button();
             treeView2 = new TreeView();
@@ -48,47 +47,36 @@
             treeView1.BackColor = SystemColors.WindowFrame;
             treeView1.Location = new Point(1, 43);
             treeView1.Name = "treeView1";
-            treeView1.Size = new Size(124, 470);
+            treeView1.Size = new Size(124, 618);
             treeView1.TabIndex = 0;
             // 
-            // button2
+            // btn_compra
             // 
-            button2.BackColor = SystemColors.WindowFrame;
-            button2.FlatAppearance.BorderColor = Color.White;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(12, 292);
-            button2.Name = "button2";
-            button2.Size = new Size(104, 59);
-            button2.TabIndex = 12;
-            button2.Text = "button7";
-            button2.UseVisualStyleBackColor = false;
+            btn_compra.BackColor = SystemColors.WindowFrame;
+            btn_compra.FlatAppearance.BorderColor = Color.White;
+            btn_compra.FlatAppearance.BorderSize = 0;
+            btn_compra.FlatStyle = FlatStyle.Flat;
+            btn_compra.Location = new Point(12, 227);
+            btn_compra.Name = "btn_compra";
+            btn_compra.Size = new Size(104, 59);
+            btn_compra.TabIndex = 12;
+            btn_compra.Text = "Compra de productos";
+            btn_compra.UseVisualStyleBackColor = false;
+            btn_compra.Click += btn_compra_Click;
             // 
-            // button3
+            // btn_categorias
             // 
-            button3.BackColor = SystemColors.WindowFrame;
-            button3.FlatAppearance.BorderColor = Color.White;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(12, 357);
-            button3.Name = "button3";
-            button3.Size = new Size(104, 59);
-            button3.TabIndex = 13;
-            button3.Text = "button8";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = SystemColors.WindowFrame;
-            button4.FlatAppearance.BorderColor = Color.White;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(12, 227);
-            button4.Name = "button4";
-            button4.Size = new Size(104, 59);
-            button4.TabIndex = 14;
-            button4.Text = "Proveedores";
-            button4.UseVisualStyleBackColor = false;
+            btn_categorias.BackColor = SystemColors.WindowFrame;
+            btn_categorias.FlatAppearance.BorderColor = Color.White;
+            btn_categorias.FlatAppearance.BorderSize = 0;
+            btn_categorias.FlatStyle = FlatStyle.Flat;
+            btn_categorias.Location = new Point(10, 292);
+            btn_categorias.Name = "btn_categorias";
+            btn_categorias.Size = new Size(104, 59);
+            btn_categorias.TabIndex = 13;
+            btn_categorias.Text = "Categorias";
+            btn_categorias.UseVisualStyleBackColor = false;
+            btn_categorias.Click += btn_categorias_Click_1;
             // 
             // button5
             // 
@@ -122,7 +110,7 @@
             treeView2.BackColor = Color.WhiteSmoke;
             treeView2.Location = new Point(1, -1);
             treeView2.Name = "treeView2";
-            treeView2.Size = new Size(1123, 48);
+            treeView2.Size = new Size(1293, 48);
             treeView2.TabIndex = 17;
             // 
             // label1
@@ -149,7 +137,7 @@
             // 
             label3.BackColor = Color.WhiteSmoke;
             label3.Font = new Font("Sitka Text", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(458, 12);
+            label3.Location = new Point(574, 9);
             label3.Name = "label3";
             label3.Size = new Size(234, 31);
             label3.TabIndex = 20;
@@ -159,7 +147,7 @@
             // 
             label5.BackColor = Color.WhiteSmoke;
             label5.Font = new Font("Sitka Text", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(914, 9);
+            label5.Location = new Point(1091, 9);
             label5.Name = "label5";
             label5.Size = new Size(141, 31);
             label5.TabIndex = 22;
@@ -169,7 +157,7 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.WhiteSmoke;
-            label6.Location = new Point(1061, 12);
+            label6.Location = new Point(1248, 12);
             label6.Name = "label6";
             label6.Size = new Size(33, 15);
             label6.TabIndex = 23;
@@ -194,7 +182,7 @@
             AutoScaleDimensions = new SizeF(8F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1122, 472);
+            ClientSize = new Size(1293, 659);
             Controls.Add(button6);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -204,9 +192,8 @@
             Controls.Add(treeView2);
             Controls.Add(btn_stock);
             Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(btn_categorias);
+            Controls.Add(btn_compra);
             Controls.Add(treeView1);
             Font = new Font("Constantia", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Name = "Form1";
@@ -219,9 +206,8 @@
         #endregion
 
         private TreeView treeView1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button btn_compra;
+        private Button btn_categorias;
         private Button button5;
         private Button btn_stock;
         private TreeView treeView2;
