@@ -1,4 +1,2 @@
-# Proyecto-Gestion
-Aplicacion
+Sistema gestor de stock y facturacion
 
-Carpeta "gestor_stock": base de dastos
