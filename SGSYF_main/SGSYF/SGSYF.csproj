@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <Reference Include="MySql.Data">
-      <HintPath>..\MySQLConector\MySql.Data.dll</HintPath>
+		<HintPath>..\MySQLConector\MySql.Data.dll</HintPath>
     </Reference>
   </ItemGroup>
 
@@ -43,7 +43,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SGSYF_clases\SGSYF_clases.csproj" />
     <ProjectReference Include="..\SGSYF_conex\SGSYF_conexion.csproj" />
-    <ProjectReference Include="..\SGSYF_vistas\SGSYF_conexion.csproj" />
+    
   </ItemGroup>
 
 </Project>
