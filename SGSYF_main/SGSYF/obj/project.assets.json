@@ -552,6 +552,9 @@
       "SGSYF_conexion/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MySql.Data": "8.4.0"
+        },
         "compile": {
           "bin/placeholder/SGSYF_conexion.dll": {}
         },
@@ -1830,11 +1833,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF\\SGSYF.csproj",
+      "projectUniqueName": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF\\SGSYF.csproj",
       "projectName": "SGSYF",
-      "projectPath": "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF\\SGSYF.csproj",
+      "projectPath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF\\SGSYF.csproj",
       "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF\\obj\\",
+      "outputPath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1855,14 +1858,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF_clases\\SGSYF_clases.csproj": {
-              "projectPath": "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF_clases\\SGSYF_clases.csproj"
+            "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF_clases\\SGSYF_clases.csproj": {
+              "projectPath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF_clases\\SGSYF_clases.csproj"
             },
-            "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF_conex\\SGSYF_conexion.csproj": {
-              "projectPath": "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF_conex\\SGSYF_conexion.csproj"
-            },
-            "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF_vistas\\SGSYF_conexion.csproj": {
-              "projectPath": "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF_vistas\\SGSYF_conexion.csproj"
+            "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj": {
+              "projectPath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj"
             }
           }
         }

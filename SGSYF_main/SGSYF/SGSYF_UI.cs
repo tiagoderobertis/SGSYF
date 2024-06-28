@@ -88,5 +88,10 @@ namespace SGSYF
                 categorias.Show();
             }
         }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+        }
     }
 }

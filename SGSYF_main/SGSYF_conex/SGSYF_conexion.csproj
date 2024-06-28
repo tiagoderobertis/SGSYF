@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="MySql.Data">
       <HintPath>..\..\MySqlConnector\MySql.Data.dll</HintPath>
     </Reference>

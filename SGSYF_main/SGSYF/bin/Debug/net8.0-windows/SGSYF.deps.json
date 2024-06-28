@@ -237,6 +237,9 @@
         }
       },
       "SGSYF_conexion/1.0.0": {
+        "dependencies": {
+          "MySql.Data": "8.4.0"
+        },
         "runtime": {
           "SGSYF_conexion.dll": {}
         }

@@ -49,6 +49,7 @@
             treeView1.Name = "treeView1";
             treeView1.Size = new Size(124, 618);
             treeView1.TabIndex = 0;
+            treeView1.AfterSelect += treeView1_AfterSelect;
             // 
             // btn_compra
             // 
@@ -137,7 +138,7 @@
             // 
             label3.BackColor = Color.WhiteSmoke;
             label3.Font = new Font("Sitka Text", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(574, 9);
+            label3.Location = new Point(578, 9);
             label3.Name = "label3";
             label3.Size = new Size(234, 31);
             label3.TabIndex = 20;
@@ -177,7 +178,7 @@
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
-            // Form1
+            // SGSYF_UI
             // 
             AutoScaleDimensions = new SizeF(8F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -196,7 +197,7 @@
             Controls.Add(btn_compra);
             Controls.Add(treeView1);
             Font = new Font("Constantia", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Name = "Form1";
+            Name = "SGSYF_UI";
             Text = "DataStocker";
             Load += Form1_Load;
             ResumeLayout(false);

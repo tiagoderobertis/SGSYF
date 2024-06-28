@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF_conex\\SGSYF_conexion.csproj": {}
+    "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF_conex\\SGSYF_conexion.csproj": {
+    "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF_conex\\SGSYF_conexion.csproj",
+        "projectUniqueName": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj",
         "projectName": "SGSYF_conexion",
-        "projectPath": "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF_conex\\SGSYF_conexion.csproj",
+        "projectPath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj",
         "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF_conex\\obj\\",
+        "outputPath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF_conex\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -48,6 +48,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

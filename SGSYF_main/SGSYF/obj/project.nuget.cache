@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d7qCzrmzN87b2XBuWg7sAepu53pqIDCu52qn28prhLNgnwzXUpdVVcOU/BZupURWXVAsMAeW6rBcuxLkHfhmSg==",
+  "dgSpecHash": "B3wPEJn91i8ZXuDs6HvLvCaUFJT3p5fGVAwJjMAtg6rxUB/qS8ghsbD7uf74E16baC5mls5zL4Jdemc/6qbWOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tiago\\source\\repos\\Proyecto-Gestion\\SGSYF\\SGSYF.csproj",
+  "projectFilePath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF\\SGSYF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tiago\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\tiago\\.nuget\\packages\\google.protobuf\\3.25.1\\google.protobuf.3.25.1.nupkg.sha512",
