@@ -50,8 +50,6 @@
             cmb_unidadmedida = new ComboBox();
             txt_codigobarra = new TextBox();
             label13 = new Label();
-            lbl_previsualizacion = new Label();
-            label2 = new Label();
             SuspendLayout();
             // 
             // label3
@@ -261,31 +259,12 @@
             label13.TabIndex = 43;
             label13.Text = "Codigo Barra";
             // 
-            // lbl_previsualizacion
-            // 
-            lbl_previsualizacion.BackColor = Color.LightGray;
-            lbl_previsualizacion.Location = new Point(719, 112);
-            lbl_previsualizacion.Name = "lbl_previsualizacion";
-            lbl_previsualizacion.Size = new Size(180, 259);
-            lbl_previsualizacion.TabIndex = 45;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(719, 74);
-            label2.Name = "label2";
-            label2.Size = new Size(91, 15);
-            label2.TabIndex = 46;
-            label2.Text = "Previsualizacion";
-            // 
             // AgregarProductoNuevo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1051, 462);
-            Controls.Add(label2);
-            Controls.Add(lbl_previsualizacion);
             Controls.Add(txt_codigobarra);
             Controls.Add(label13);
             Controls.Add(cmb_unidadmedida);
@@ -339,7 +318,5 @@
         private ComboBox cmb_unidadmedida;
         private TextBox txt_codigobarra;
         private Label label13;
-        private Label lbl_previsualizacion;
-        private Label label2;
     }
 }
