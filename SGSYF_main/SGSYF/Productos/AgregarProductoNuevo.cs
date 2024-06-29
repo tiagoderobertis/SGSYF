@@ -125,18 +125,18 @@ namespace SGSYF
             else
             {
                 // Actualizar el texto del label con la previsualización
-                lbl_previsualizacion.Text = $"Código de Barra: {txt_codigobarra.Text}\n" +
+                string previsualizacionText = $"Nombre: {txt_nombre.Text}\n" +
+                                            $"Descripción: {txt_descripcion.Text}\n" +
                                             $"Categoría: {cmb_categoria.Text}\n" +
                                             $"Subcategoría: {cmb_subcategoria.Text}\n" +
-                                            $"Nombre: {txt_nombre.Text}\n" +
-                                            $"Descripción: {txt_descripcion.Text}\n" +
                                             $"Precio: {txt_precio.Text}\n" +
-                                            $"Unidad de Medida: {cmb_unidadmedida.Text}\n" +
                                             $"Precio de Compra: {txt_preciocompra.Text}\n" +
+                                            $"Código de Barra: {txt_codigobarra.Text}\n" +
+                                            $"Unidad de Medida: {cmb_unidadmedida.Text}\n" +
                                             $"Stock: {txt_stock.Text}";
 
                 // Confirmar si desea agregar el producto
-                var confirmResult = MessageBox.Show("¿Desea agregar este producto?", "Confirmar Agregar Producto", MessageBoxButtons.YesNo);
+                var confirmResult = MessageBox.Show($"¿Desea agregar este producto?\n" + previsualizacionText, "Confirmar Agregar Producto Nuevo", MessageBoxButtons.YesNo);
                 if (confirmResult == DialogResult.Yes)
                 {
                     // - AGREGAR PRODUCTOS A LA BASE DE DATOS
@@ -162,7 +162,7 @@ namespace SGSYF
 
                     string query = "INSERT INTO productos (codigo_barra, categoria, subcategoria, nombre, descripcion, precio, unidad_medida, precio_compra, stock_total) " +
                                    "VALUES (" + codigoBarra + ", '" + categoria + "', '" + subCategoria + "', '" + nombre + "', '" + descripcion + "', " + precio + ", '" + unidadMedida + "', " + precioCompra + ", " + stock + ");";
-
+                    
                     MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
                     try
                     {
