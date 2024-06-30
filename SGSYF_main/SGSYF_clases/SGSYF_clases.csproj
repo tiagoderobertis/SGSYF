@@ -7,4 +7,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SGSYF_conex\SGSYF_conexion.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\MySqlConnector\MySql.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

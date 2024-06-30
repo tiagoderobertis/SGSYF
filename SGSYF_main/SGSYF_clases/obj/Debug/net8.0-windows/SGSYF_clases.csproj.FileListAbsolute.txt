@@ -22,3 +22,10 @@ C:\Users\tiago\source\repos\SGSYF\SGSYF_main\SGSYF_clases\obj\Debug\net8.0-windo
 C:\Users\tiago\source\repos\SGSYF\SGSYF_main\SGSYF_clases\obj\Debug\net8.0-windows\refint\SGSYF_clases.dll
 C:\Users\tiago\source\repos\SGSYF\SGSYF_main\SGSYF_clases\obj\Debug\net8.0-windows\SGSYF_clases.pdb
 C:\Users\tiago\source\repos\SGSYF\SGSYF_main\SGSYF_clases\obj\Debug\net8.0-windows\ref\SGSYF_clases.dll
+C:\Users\tiago\source\repos\SGSYF\SGSYF_main\SGSYF_clases\bin\Debug\net8.0-windows\SGSYF_conexion.deps.json
+C:\Users\tiago\source\repos\SGSYF\SGSYF_main\SGSYF_clases\bin\Debug\net8.0-windows\SGSYF_conexion.runtimeconfig.json
+C:\Users\tiago\source\repos\SGSYF\SGSYF_main\SGSYF_clases\bin\Debug\net8.0-windows\SGSYF_conexion.exe
+C:\Users\tiago\source\repos\SGSYF\SGSYF_main\SGSYF_clases\bin\Debug\net8.0-windows\SGSYF_conexion.dll
+C:\Users\tiago\source\repos\SGSYF\SGSYF_main\SGSYF_clases\bin\Debug\net8.0-windows\SGSYF_conexion.pdb
+C:\Users\tiago\source\repos\SGSYF\SGSYF_main\SGSYF_clases\obj\Debug\net8.0-windows\SGSYF_clases.csproj.AssemblyReference.cache
+C:\Users\tiago\source\repos\SGSYF\SGSYF_main\SGSYF_clases\obj\Debug\net8.0-windows\SGSYF_cl.D7DB0F97.Up2Date

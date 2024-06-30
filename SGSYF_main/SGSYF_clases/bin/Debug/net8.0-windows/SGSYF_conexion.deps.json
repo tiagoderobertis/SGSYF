@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "SGSYF_clases/1.0.0": {
+      "SGSYF_conexion/1.0.0": {
         "dependencies": {
-          "SGSYF_conexion": "1.0.0"
+          "MySql.Data": "8.4.0"
         },
         "runtime": {
-          "SGSYF_clases.dll": {}
+          "SGSYF_conexion.dll": {}
         }
       },
       "BouncyCastle.Cryptography/2.2.1": {
@@ -228,19 +228,11 @@
             "fileVersion": "0.7.1.0"
           }
         }
-      },
-      "SGSYF_conexion/1.0.0": {
-        "dependencies": {
-          "MySql.Data": "8.4.0"
-        },
-        "runtime": {
-          "SGSYF_conexion.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "SGSYF_clases/1.0.0": {
+    "SGSYF_conexion/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -468,11 +460,6 @@
       "sha512": "sha512-Idgg+mJEyAujqDPzA3APy9dNoyw0YQcNA65GgYjktDRtJ+nvx/hv+J+m6Eax3JJMGEYGy04oc5YNP6ZvQ3Y1vQ==",
       "path": "zstdsharp.port/0.7.1",
       "hashPath": "zstdsharp.port.0.7.1.nupkg.sha512"
-    },
-    "SGSYF_conexion/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

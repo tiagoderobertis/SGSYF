@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+using SGSYF_conexion;
 
 namespace SGSYF_clases
 {
@@ -57,5 +59,11 @@ namespace SGSYF_clases
         public string Precio_compra { get => precio_compra; set => Precio_compra = value; }
         public string Stock_total { get => stock_total; set => Stock_total = value; }
         //public string Proveedores { get => proveedores; set => Proveedores = value; }
+
+
+        
     }
+
+
 }
+
