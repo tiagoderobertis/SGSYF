@@ -162,7 +162,7 @@ namespace SGSYF
 
                     string query = "INSERT INTO productos (codigo_barra, categoria, subcategoria, nombre, descripcion, precio, unidad_medida, precio_compra, stock_total) " +
                                    "VALUES (" + codigoBarra + ", '" + categoria + "', '" + subCategoria + "', '" + nombre + "', '" + descripcion + "', " + precio + ", '" + unidadMedida + "', " + precioCompra + ", " + stock + ");";
-                    
+
                     MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
                     try
                     {
@@ -181,6 +181,9 @@ namespace SGSYF
             }
         }
 
+        private void cmb_categoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

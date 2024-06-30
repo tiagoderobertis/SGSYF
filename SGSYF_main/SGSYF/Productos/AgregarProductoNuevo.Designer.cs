@@ -161,6 +161,7 @@
             cmb_categoria.Name = "cmb_categoria";
             cmb_categoria.Size = new Size(104, 23);
             cmb_categoria.TabIndex = 30;
+            cmb_categoria.SelectedIndexChanged += cmb_categoria_SelectedIndexChanged;
             // 
             // cmb_subcategoria
             // 

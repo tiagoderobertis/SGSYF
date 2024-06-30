@@ -1,6 +1,6 @@
 ﻿namespace SGSYF
 {
-    partial class Productos
+    partial class ProductosUI
     {
         /// <summary>
         /// Required designer variable.
@@ -31,6 +31,7 @@
             label2 = new Label();
             btn_agregarProducto = new Button();
             label1 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label2
@@ -39,9 +40,9 @@
             label2.Font = new Font("Sitka Text", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(266, 150);
             label2.Name = "label2";
-            label2.Size = new Size(188, 31);
+            label2.Size = new Size(340, 29);
             label2.TabIndex = 20;
-            label2.Text = "Eliminar Producto";
+            label2.Text = "Eliminar Producto Completamente";
             // 
             // btn_agregarProducto
             // 
@@ -64,16 +65,27 @@
             label1.TabIndex = 47;
             label1.Text = "Agregar Producto Nuevo";
             // 
-            // Productos
+            // button1
+            // 
+            button1.Location = new Point(266, 197);
+            button1.Name = "button1";
+            button1.Size = new Size(206, 23);
+            button1.TabIndex = 48;
+            button1.Text = "Eliminar Producto Completamente";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // ProductosUI
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(997, 451);
+            Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(btn_agregarProducto);
             Controls.Add(label2);
-            Name = "Productos";
+            Name = "ProductosUI";
             Text = "Productos";
             WindowState = FormWindowState.Maximized;
             Load += Productos_Load;
@@ -85,5 +97,6 @@
         private Label label2;
         private Button btn_agregarProducto;
         private Label label1;
+        private Button button1;
     }
 }
