@@ -24,74 +24,9 @@ namespace SGSYF
 
         private void Productos_Load(object sender, EventArgs e)
         {
-            LlenarComboBoxCategorias();
-            LlenarComboBoxSubCategorias();
-        }
-
-        private void LlenarComboBoxCategorias()
-        {
-            Conexion conexion = new Conexion();
-            MySqlConnection mySqlConnection = conexion.Establecer_Conexion();
-
-            if (mySqlConnection == null)
-            {
-                MessageBox.Show("No se pudo establecer la conexión a la base de datos.");
-                return;
-            }
-
-            string query = "SELECT * FROM categorias";
-            MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
-
-            try
-            {
-                MySqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    cmb_categoria.Items.Add(reader["nombre"].ToString());
-                }
-                reader.Close();
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-            finally
-            {
-                mySqlConnection.Close();
-            }
-        }
-
-        private void LlenarComboBoxSubCategorias()
-        {
-            Conexion conexion = new Conexion();
-            MySqlConnection mySqlConnection = conexion.Establecer_Conexion();
-
-            if (mySqlConnection == null)
-            {
-                MessageBox.Show("No se pudo establecer la conexión a la base de datos.");
-                return;
-            }
-
-            string query = "SELECT * FROM subcategorias";
-            MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
-
-            try
-            {
-                MySqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    cmb_subcategoria.Items.Add(reader["nombre"].ToString());
-                }
-                reader.Close();
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-            finally
-            {
-                mySqlConnection.Close();
-            }
+            LlenarComboBox llenar = new LlenarComboBox();
+            llenar.llenarComboBoxProductos(cmb_categoria);
+            llenar.llenarComboBoxProductos(cmb_subcategoria);
         }
 
         private void btn_agregar_Click(object sender, EventArgs e)
