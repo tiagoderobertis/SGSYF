@@ -28,47 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             dataGridView1 = new DataGridView();
-            Producto = new DataGridViewTextBoxColumn();
-            Precio = new DataGridViewTextBoxColumn();
-            Proveedor = new DataGridViewTextBoxColumn();
-            StockTotal = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
+            // 
+            // mySqlCommand1
+            // 
+            mySqlCommand1.CacheAge = 0;
+            mySqlCommand1.Connection = null;
+            mySqlCommand1.EnableCaching = false;
+            mySqlCommand1.Transaction = null;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Producto, Precio, Proveedor, StockTotal });
-            dataGridView1.Location = new Point(331, 113);
+            dataGridView1.Location = new Point(148, 128);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(442, 234);
+            dataGridView1.Size = new Size(946, 233);
             dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // Producto
-            // 
-            Producto.HeaderText = "Producto";
-            Producto.Name = "Producto";
-            Producto.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            Precio.HeaderText = "Precio";
-            Precio.Name = "Precio";
-            Precio.ReadOnly = true;
-            // 
-            // Proveedor
-            // 
-            Proveedor.HeaderText = "Proveedor";
-            Proveedor.Name = "Proveedor";
-            Proveedor.ReadOnly = true;
-            // 
-            // StockTotal
-            // 
-            StockTotal.HeaderText = "Stock Total";
-            StockTotal.Name = "StockTotal";
-            StockTotal.ReadOnly = true;
             // 
             // Stock
             // 
@@ -86,10 +64,7 @@
 
         #endregion
 
+        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Producto;
-        private DataGridViewTextBoxColumn Precio;
-        private DataGridViewTextBoxColumn Proveedor;
-        private DataGridViewTextBoxColumn StockTotal;
     }
 }
