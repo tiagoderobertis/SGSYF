@@ -216,6 +216,7 @@
             Name = "Categorias";
             Text = "Categorias";
             WindowState = FormWindowState.Maximized;
+            Load += Categorias_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -98,7 +98,8 @@ namespace SGSYF
                 MessageBox.Show("No se pudo establecer la conexión a la base de datos.");
                 return;
             }
-
+            string a = cmb_categoria_asociada.SelectedItem.ToString();
+            int id_cat = QueCategoria(a);
 
             if (txt_nombresub.Text == "")
             {
@@ -108,11 +109,16 @@ namespace SGSYF
             {
                 string nombre_subcat = txt_nombresub.Text;
                 string subdescripcion = txt_subdescripcion.Text;
+                
+                
 
+                //intento n°1 para obtener id_categoria
 
-                string query = "INSERT INTO categorias (nombre, descripcion) VALUES ('" + nombre_subcat + "', '" + subdescripcion + "');";
+                string query = "INSERT INTO subcategorias (nombre, descripcion, id_categoria) VALUES ('" + nombre_subcat + "', '" + subdescripcion + "', '" + id_cat + "');";
 
                 MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
+
+
                 try
                 {
                     cmd.ExecuteNonQuery();
@@ -129,5 +135,41 @@ namespace SGSYF
         {
 
         }
+
+        private void Categorias_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public int QueCategoria(string nombre_cat)
+        {
+            int a = 0;
+            Conexion conexion = new Conexion();
+            MySqlConnection mySqlConnection = conexion.Establecer_Conexion();
+
+            if (mySqlConnection == null)
+            {
+                MessageBox.Show("No se pudo establecer la conexión a la base de datos.");
+            }
+            string query1 = "select id_categoria from categorias where nombre = '" + nombre_cat + "';";
+            MySqlCommand cmd1 = new MySqlCommand(query1, mySqlConnection);
+
+            try
+            {
+                cmd1.ExecuteNonQuery();
+                object result = cmd1.ExecuteScalar();
+                a = Convert.ToInt32(result);
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                mySqlConnection.Close();
+            }
+            return a;
+        }
+      
     }
 }
