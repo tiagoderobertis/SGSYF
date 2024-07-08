@@ -539,6 +539,9 @@
       "SGSYF_clases/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SGSYF_conexion": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/SGSYF_clases.dll": {}
         },
@@ -1827,23 +1830,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tiago\\.nuget\\packages\\": {},
+    "C:\\Users\\joaco\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF\\SGSYF.csproj",
+      "projectUniqueName": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\SGSYF.csproj",
       "projectName": "SGSYF",
-      "projectPath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF\\SGSYF.csproj",
-      "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF\\obj\\",
+      "projectPath": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\SGSYF.csproj",
+      "packagesPath": "C:\\Users\\joaco\\.nuget\\packages\\",
+      "outputPath": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\joaco\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1852,17 +1855,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF_clases\\SGSYF_clases.csproj": {
-              "projectPath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF_clases\\SGSYF_clases.csproj"
+            "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF_clases\\SGSYF_clases.csproj": {
+              "projectPath": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF_clases\\SGSYF_clases.csproj"
             },
-            "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj": {
-              "projectPath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj"
+            "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj": {
+              "projectPath": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj"
             }
           }
         }
@@ -1906,7 +1910,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

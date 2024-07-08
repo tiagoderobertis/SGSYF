@@ -4,13 +4,25 @@
     <Compile Update="Categorias\Categorias.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Inicio de Sesion\Form_Administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Inicio de Sesion\Form_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Inicio de Sesion\Form_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Productos\AgregarProductoNuevo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="SGSYF_UI.cs">
+    <Compile Update="Productos\EliminarProductoCompletamente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Productos\Productos.cs">
+    <Compile Update="Productos\ProductosUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SGSYF_UI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Stock\Stock.cs">

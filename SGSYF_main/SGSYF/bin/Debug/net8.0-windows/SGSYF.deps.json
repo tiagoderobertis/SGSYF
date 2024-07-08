@@ -232,6 +232,9 @@
         }
       },
       "SGSYF_clases/1.0.0": {
+        "dependencies": {
+          "SGSYF_conexion": "1.0.0"
+        },
         "runtime": {
           "SGSYF_clases.dll": {}
         }

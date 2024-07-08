@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF\\",
+  "WorkspaceRootPath": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|c:\\users\\tiago\\source\\repos\\sgsyf\\sgsyf_main\\sgsyf\\productos\\agregarproductonuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|solutionrelative:productos\\agregarproductonuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|c:\\proyecto_repo_tiago\\sgsyf_main\\sgsyf\\inicio de sesion\\form_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|solutionrelative:inicio de sesion\\form_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|c:\\users\\tiago\\source\\repos\\sgsyf\\sgsyf_main\\sgsyf\\productos\\agregarproductonuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|solutionrelative:productos\\agregarproductonuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|c:\\proyecto_repo_tiago\\sgsyf_main\\sgsyf\\inicio de sesion\\form_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|solutionrelative:inicio de sesion\\form_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,39 +18,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 198,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AgregarProductoNuevo.cs",
-              "DocumentMoniker": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF\\Productos\\AgregarProductoNuevo.cs",
-              "RelativeDocumentMoniker": "Productos\\AgregarProductoNuevo.cs",
-              "ToolTip": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF\\Productos\\AgregarProductoNuevo.cs",
-              "RelativeToolTip": "Productos\\AgregarProductoNuevo.cs",
-              "ViewState": "AQIAAJYAAAAAAAAAAAAwwLYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T20:07:25.061Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AgregarProductoNuevo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF\\Productos\\AgregarProductoNuevo.cs",
-              "RelativeDocumentMoniker": "Productos\\AgregarProductoNuevo.cs",
-              "ToolTip": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF_main\\SGSYF\\Productos\\AgregarProductoNuevo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Productos\\AgregarProductoNuevo.cs [Dise\u00F1o]",
+              "Title": "Form_Usuario.cs",
+              "DocumentMoniker": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Usuario.cs",
+              "RelativeDocumentMoniker": "Inicio de Sesion\\Form_Usuario.cs",
+              "ToolTip": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Usuario.cs",
+              "RelativeToolTip": "Inicio de Sesion\\Form_Usuario.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAowB4AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T19:57:02.475Z",
+              "WhenOpened": "2024-07-08T13:47:34.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form_Usuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Usuario.cs",
+              "RelativeDocumentMoniker": "Inicio de Sesion\\Form_Usuario.cs",
+              "ToolTip": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Usuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Inicio de Sesion\\Form_Usuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T13:47:27.897Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

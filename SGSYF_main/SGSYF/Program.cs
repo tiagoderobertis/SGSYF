@@ -1,3 +1,5 @@
+using SGSYF.Inicio_de_Sesion;
+
 namespace SGSYF
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace SGSYF
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new SGSYF_UI());
+            Application.Run(new Form_Principal());
         }
     }
 }

@@ -30,7 +30,7 @@
         {
             cmb_eliminarProducto = new ComboBox();
             label1 = new Label();
-            button1 = new Button();
+            btn_eliminar = new Button();
             SuspendLayout();
             // 
             // cmb_eliminarProducto
@@ -50,21 +50,22 @@
             label1.TabIndex = 1;
             label1.Text = "¿Que producto deseas eliminar?";
             // 
-            // button1
+            // btn_eliminar
             // 
-            button1.Location = new Point(343, 194);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btn_eliminar.Location = new Point(309, 183);
+            btn_eliminar.Name = "btn_eliminar";
+            btn_eliminar.Size = new Size(148, 23);
+            btn_eliminar.TabIndex = 2;
+            btn_eliminar.Text = "Eliminar Definitivamente";
+            btn_eliminar.UseVisualStyleBackColor = true;
+            btn_eliminar.Click += btn_eliminar_Click;
             // 
             // EliminarProductoCompletamente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(btn_eliminar);
             Controls.Add(label1);
             Controls.Add(cmb_eliminarProducto);
             Name = "EliminarProductoCompletamente";
@@ -77,6 +78,6 @@
 
         private ComboBox cmb_eliminarProducto;
         private Label label1;
-        private Button button1;
+        private Button btn_eliminar;
     }
 }

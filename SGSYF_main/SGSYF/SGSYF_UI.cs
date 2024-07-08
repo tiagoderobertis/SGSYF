@@ -22,7 +22,7 @@ namespace SGSYF
         {
             if (Validar_Form("Productos") == false)
             {
-                Productos productos = new Productos();
+                ProductosUI productos = new ProductosUI();
                 productos.MdiParent = this;
                 productos.Show();
             }
