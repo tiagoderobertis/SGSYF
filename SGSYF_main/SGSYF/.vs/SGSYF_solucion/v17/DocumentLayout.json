@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|c:\\proyecto_repo_tiago\\sgsyf_main\\sgsyf\\inicio de sesion\\form_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|solutionrelative:inicio de sesion\\form_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|c:\\proyecto_repo_tiago\\sgsyf_main\\sgsyf\\inicio de sesion\\form_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|solutionrelative:inicio de sesion\\form_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|c:\\proyecto_repo_tiago\\sgsyf_main\\sgsyf\\inicio de sesion\\form_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|solutionrelative:inicio de sesion\\form_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|c:\\proyecto_repo_tiago\\sgsyf_main\\sgsyf\\inicio de sesion\\form_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|solutionrelative:inicio de sesion\\form_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|c:\\proyecto_repo_tiago\\sgsyf_main\\sgsyf\\inicio de sesion\\form_administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|solutionrelative:inicio de sesion\\form_administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|c:\\proyecto_repo_tiago\\sgsyf_main\\sgsyf\\inicio de sesion\\form_administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FF59EE5-9B86-4228-A364-D0FD88148099}|SGSYF.csproj|solutionrelative:inicio de sesion\\form_administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,26 +59,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form_Usuario.cs",
-              "DocumentMoniker": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Usuario.cs",
-              "RelativeDocumentMoniker": "Inicio de Sesion\\Form_Usuario.cs",
-              "ToolTip": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Usuario.cs",
-              "RelativeToolTip": "Inicio de Sesion\\Form_Usuario.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAowB4AAAAYAAAA",
+              "Title": "Form_Principal.cs",
+              "DocumentMoniker": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Principal.cs",
+              "RelativeDocumentMoniker": "Inicio de Sesion\\Form_Principal.cs",
+              "ToolTip": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Principal.cs",
+              "RelativeToolTip": "Inicio de Sesion\\Form_Principal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T13:47:34.074Z",
+              "WhenOpened": "2024-07-10T16:03:58.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form_Usuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Usuario.cs",
-              "RelativeDocumentMoniker": "Inicio de Sesion\\Form_Usuario.cs",
-              "ToolTip": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Usuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Inicio de Sesion\\Form_Usuario.cs [Dise\u00F1o]",
+              "Title": "Form_Principal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Principal.cs",
+              "RelativeDocumentMoniker": "Inicio de Sesion\\Form_Principal.cs",
+              "ToolTip": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Principal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Inicio de Sesion\\Form_Principal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T13:47:27.897Z",
+              "WhenOpened": "2024-07-10T16:03:57.526Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form_Administrador.cs",
+              "DocumentMoniker": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Administrador.cs",
+              "RelativeDocumentMoniker": "Inicio de Sesion\\Form_Administrador.cs",
+              "ToolTip": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Administrador.cs",
+              "RelativeToolTip": "Inicio de Sesion\\Form_Administrador.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAwDEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T16:03:44.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form_Administrador.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Administrador.cs",
+              "RelativeDocumentMoniker": "Inicio de Sesion\\Form_Administrador.cs",
+              "ToolTip": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF\\Inicio de Sesion\\Form_Administrador.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Inicio de Sesion\\Form_Administrador.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T16:03:43.16Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

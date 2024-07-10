@@ -12,13 +12,10 @@ namespace SGSYF.Inicio_de_Sesion
 {
     public partial class Form_Principal : Form
     {
-        
-        
         public Form_Principal()
         {
             InitializeComponent();
         }
-
         private void btn_administador_Click(object sender, EventArgs e)
         {
             Form_Administrador form_ad = new Form_Administrador();
@@ -38,6 +35,11 @@ namespace SGSYF.Inicio_de_Sesion
             form_us.StartPosition = FormStartPosition.Manual;
             form_us.Location = this.Location;
             this.Hide();
+        }
+
+        private void Form_Principal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -43,9 +43,11 @@ namespace SGSYF.Inicio_de_Sesion
 
             bool resultado = verificar.Verificar(usuario, contraseña, tipo);
 
-            if (resultado==true) 
+            if (resultado == true)
             {
+                Form_Principal fp = new Form_Principal();
                 SGSYF_UI form_entero = new SGSYF_UI();
+                
                 form_entero.Show();
 
                 form_entero.StartPosition = FormStartPosition.Manual;
@@ -57,6 +59,11 @@ namespace SGSYF.Inicio_de_Sesion
             {
                 MessageBox.Show("Usuario/Contraseña invalido");
             }
+        }
+
+        private void Form_Administrador_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

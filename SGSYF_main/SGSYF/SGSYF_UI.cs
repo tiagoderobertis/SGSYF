@@ -1,5 +1,6 @@
 using SGSYF_conexion;
 using SGSYF;
+using SGSYF.Inicio_de_Sesion;
 
 namespace SGSYF
 {
@@ -92,6 +93,22 @@ namespace SGSYF
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_confg_Click(object sender, EventArgs e)
+        {
+            Configuracion.Form_Principal_Confg form_confg = new Configuracion.Form_Principal_Confg();
+            form_confg.Show();
+
+            form_confg.StartPosition = FormStartPosition.Manual;
+            form_confg.Location = this.Location; //Establece la misma posición que el formulario actual
+
+            this.Hide();
         }
     }
 }

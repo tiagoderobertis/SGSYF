@@ -40,6 +40,7 @@
             label5 = new Label();
             label6 = new Label();
             button6 = new Button();
+            btn_confg = new Button();
             SuspendLayout();
             // 
             // treeView1
@@ -47,7 +48,7 @@
             treeView1.BackColor = SystemColors.WindowFrame;
             treeView1.Location = new Point(1, 43);
             treeView1.Name = "treeView1";
-            treeView1.Size = new Size(124, 618);
+            treeView1.Size = new Size(124, 539);
             treeView1.TabIndex = 0;
             treeView1.AfterSelect += treeView1_AfterSelect;
             // 
@@ -111,7 +112,7 @@
             treeView2.BackColor = Color.WhiteSmoke;
             treeView2.Location = new Point(1, -1);
             treeView2.Name = "treeView2";
-            treeView2.Size = new Size(1293, 48);
+            treeView2.Size = new Size(1170, 48);
             treeView2.TabIndex = 17;
             // 
             // label1
@@ -138,7 +139,7 @@
             // 
             label3.BackColor = Color.WhiteSmoke;
             label3.Font = new Font("Sitka Text", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(578, 9);
+            label3.Location = new Point(490, 9);
             label3.Name = "label3";
             label3.Size = new Size(234, 31);
             label3.TabIndex = 20;
@@ -148,7 +149,7 @@
             // 
             label5.BackColor = Color.WhiteSmoke;
             label5.Font = new Font("Sitka Text", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(1091, 9);
+            label5.Location = new Point(968, 12);
             label5.Name = "label5";
             label5.Size = new Size(141, 31);
             label5.TabIndex = 22;
@@ -158,7 +159,7 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.WhiteSmoke;
-            label6.Location = new Point(1248, 12);
+            label6.Location = new Point(1128, 15);
             label6.Name = "label6";
             label6.Size = new Size(33, 15);
             label6.TabIndex = 23;
@@ -178,12 +179,25 @@
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
+            // btn_confg
+            // 
+            btn_confg.FlatStyle = FlatStyle.Flat;
+            btn_confg.Font = new Font("Georgia", 6.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_confg.Location = new Point(16, 546);
+            btn_confg.Name = "btn_confg";
+            btn_confg.Size = new Size(84, 23);
+            btn_confg.TabIndex = 25;
+            btn_confg.Text = "Configuracion";
+            btn_confg.UseVisualStyleBackColor = true;
+            btn_confg.Click += btn_confg_Click;
+            // 
             // SGSYF_UI
             // 
             AutoScaleDimensions = new SizeF(8F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1293, 659);
+            ClientSize = new Size(1170, 581);
+            Controls.Add(btn_confg);
             Controls.Add(button6);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -218,5 +232,6 @@
         private Label label5;
         private Label label6;
         private Button button6;
+        private Button btn_confg;
     }
 }

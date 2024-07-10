@@ -88,6 +88,7 @@
             Controls.Add(label1);
             Name = "Form_Principal";
             Text = "Form_Principal";
+            Load += Form_Principal_Load;
             ResumeLayout(false);
         }
 

@@ -119,6 +119,7 @@
             Controls.Add(btn_volver);
             Name = "Form_Administrador";
             Text = "Form_Administrador";
+            Load += Form_Administrador_Load;
             ResumeLayout(false);
             PerformLayout();
         }

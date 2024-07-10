@@ -4,6 +4,12 @@
     <Compile Update="Categorias\Categorias.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Configuracion\Form_Principal_Confg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Configuracion\Info_Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Inicio de Sesion\Form_Administrador.cs">
       <SubType>Form</SubType>
     </Compile>
