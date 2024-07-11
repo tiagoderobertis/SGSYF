@@ -28,21 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label2 = new Label();
             btn_agregarProducto = new Button();
-            label1 = new Label();
             button1 = new Button();
+            btn_modificarproducto = new Button();
             SuspendLayout();
-            // 
-            // label2
-            // 
-            label2.BackColor = Color.Red;
-            label2.Font = new Font("Sitka Text", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(266, 150);
-            label2.Name = "label2";
-            label2.Size = new Size(340, 29);
-            label2.TabIndex = 20;
-            label2.Text = "Eliminar Producto Completamente";
             // 
             // btn_agregarProducto
             // 
@@ -54,26 +43,24 @@
             btn_agregarProducto.UseVisualStyleBackColor = true;
             btn_agregarProducto.Click += btn_agregarProducto_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.LightSeaGreen;
-            label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(266, 63);
-            label1.Name = "label1";
-            label1.Size = new Size(232, 28);
-            label1.TabIndex = 47;
-            label1.Text = "Agregar Producto Nuevo";
-            // 
             // button1
             // 
-            button1.Location = new Point(266, 197);
+            button1.Location = new Point(294, 154);
             button1.Name = "button1";
-            button1.Size = new Size(206, 23);
+            button1.Size = new Size(116, 40);
             button1.TabIndex = 48;
             button1.Text = "Eliminar Producto Completamente";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // btn_modificarproducto
+            // 
+            btn_modificarproducto.Location = new Point(266, 215);
+            btn_modificarproducto.Name = "btn_modificarproducto";
+            btn_modificarproducto.Size = new Size(169, 23);
+            btn_modificarproducto.TabIndex = 49;
+            btn_modificarproducto.Text = "Modificar Producto";
+            btn_modificarproducto.UseVisualStyleBackColor = true;
             // 
             // ProductosUI
             // 
@@ -81,22 +68,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(997, 451);
+            Controls.Add(btn_modificarproducto);
             Controls.Add(button1);
-            Controls.Add(label1);
             Controls.Add(btn_agregarProducto);
-            Controls.Add(label2);
             Name = "ProductosUI";
             Text = "Productos";
             WindowState = FormWindowState.Maximized;
             Load += Productos_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-        private Label label2;
         private Button btn_agregarProducto;
-        private Label label1;
         private Button button1;
+        private Button btn_modificarproducto;
     }
 }

@@ -24,7 +24,12 @@ namespace SGSYF.Configuracion
 
         private void btn_guardar_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void Info_Personal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -135,3 +135,4 @@ C:\Proyecto_Repo_Tiago\SGSYF_main\SGSYF\obj\Debug\net8.0-windows\SGSYF.Inicio_de
 C:\Proyecto_Repo_Tiago\SGSYF_main\SGSYF\obj\Debug\net8.0-windows\SGSYF.Inicio_de_Sesion.Form_Usuario.resources
 C:\Proyecto_Repo_Tiago\SGSYF_main\SGSYF\obj\Debug\net8.0-windows\SGSYF.Configuracion.Form_Principal_Confg.resources
 C:\Proyecto_Repo_Tiago\SGSYF_main\SGSYF\obj\Debug\net8.0-windows\SGSYF.Configuracion.Info_Personal.resources
+C:\Proyecto_Repo_Tiago\SGSYF_main\SGSYF\obj\Debug\net8.0-windows\SGSYF.Productos.Modificar.resources

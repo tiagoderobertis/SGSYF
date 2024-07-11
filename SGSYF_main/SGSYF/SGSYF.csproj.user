@@ -25,6 +25,9 @@
     <Compile Update="Productos\EliminarProductoCompletamente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Productos\Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Productos\ProductosUI.cs">
       <SubType>Form</SubType>
     </Compile>

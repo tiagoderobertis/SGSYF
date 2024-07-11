@@ -149,6 +149,7 @@
             Controls.Add(label1);
             Name = "Info_Personal";
             Text = "Info_Personal";
+            Load += Info_Personal_Load;
             ResumeLayout(false);
             PerformLayout();
         }
