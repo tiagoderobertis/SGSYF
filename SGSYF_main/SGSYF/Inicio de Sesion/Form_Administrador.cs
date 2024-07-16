@@ -45,6 +45,14 @@ namespace SGSYF.Inicio_de_Sesion
 
             if (resultado == true)
             {
+                // Generar el token JWT
+                var tokenService = new TokenService();
+                var token = tokenService.GenerateToken(usuario, tipo);
+
+                // Guardar el token en algún lugar para su uso posterior
+                Properties.Settings.Default.UserToken = token;
+                Properties.Settings.Default.Save();
+
                 Form_Principal fp = new Form_Principal();
                 SGSYF_UI form_entero = new SGSYF_UI();
                 

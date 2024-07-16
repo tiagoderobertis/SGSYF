@@ -48,6 +48,15 @@ namespace SGSYF.Inicio_de_Sesion
 
             if (resultado == true)
             {
+                var tokenService = new TokenService();
+                var token = tokenService.GenerateToken(usuario, tipo);
+
+                // Guardar el token en algún lugar para su uso posterior
+                Properties.Settings.Default.UserToken = token;
+                Properties.Settings.Default.Save();
+                // Mostrar el token para depuración
+                //MessageBox.Show("Token generado: " + token);
+
                 //MUESTRA EL FORM ENTERO POR AHORA!!! CUANDO SE CREE EL FORM DE "FACTURAR", CAMBIAR "form_entero" POR "form_facturacion"
                 SGSYF_UI form_entero = new SGSYF_UI();
                 form_entero.Show();
