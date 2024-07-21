@@ -1,6 +1,5 @@
 using SGSYF_conexion;
 using SGSYF;
-using SGSYF.Inicio_de_Sesion;
 
 namespace SGSYF
 {
@@ -9,17 +8,152 @@ namespace SGSYF
         public SGSYF_UI()
         {
             InitializeComponent();
-            this.IsMdiContainer = true;
             Conexion conexion = new Conexion();
             conexion.Establecer_Conexion();
+            this.WindowState = FormWindowState.Maximized;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void SGSYF_UI_Load(object sender, EventArgs e)
+        {
+
+        }
+        private Form formActivo = null;
+
+
+
+        public void abrirFormHijo(Form formHijo)
+        {
+            if (formActivo != null)
+            {
+                formActivo.Close();
+            }
+            formActivo = formHijo;
+            // Configura el formulario hijo
+            formHijo.TopLevel = false;
+            formHijo.FormBorderStyle = FormBorderStyle.None;
+            formHijo.Dock = DockStyle.Fill;
+
+            // Añade el formulario hijo al panel padre
+            this.pnl_contenedor.Controls.Add(formHijo);
+            this.pnl_contenedor.Tag = formHijo;
+
+            // Muestra el formulario hijo
+            formHijo.BringToFront();
+            formHijo.Show();
+        }
+
+        // Metodo para esconder SubMenus
+        #region metodoEsconderSubMenus
+        private void esconderSubMenu(int esconder)
+        {
+            switch (esconder)
+            {
+                case 0: subpnl_stock.Visible = false; break;
+                case 1: subpnl_productos.Visible = false; break;
+            }
+        }
+        #endregion
+
+        // Metodo para mostrar SubMenus, en cada evento click correspondiente
+        #region Metodo Mostrar SubMenu
+        private void mostrarSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                esconderSubMenu(0);
+                esconderSubMenu(1);
+                esconderSubMenu(2);
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
+        }
+        #endregion
+
+        #region ClickAbrirSubMenus
+        // Evento click del panel Productos
+        private void btn_pnl_Productos_Click(object sender, EventArgs e)
+        {
+            mostrarSubMenu(subpnl_productos);
+        }
+
+
+        // Evento click del panel Stock
+        private void btn_pnl_Stock_Click(object sender, EventArgs e)
+        {
+            mostrarSubMenu(subpnl_stock);
+        }
+        #endregion
+
+        // Eventos click de botones en subMenus
+        #region ClickBotonesSubMenus
+        private void btn_agregarProductos_Productos_Click(object sender, EventArgs e)
+        {
+
+            abrirFormHijo(new AgregarProductoNuevo());
+            pnl_menuLateral.Visible = false;
+            esconderSubMenu(1);
+        }
+
+        private void btn_eliminarProductos_Productos_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new EliminarProductoCompletamente());
+            pnl_menuLateral.Visible = false;
+            esconderSubMenu(1);
+        }
+
+        private void btn_editarProductos_Productos_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Productos.Modificar());
+            esconderSubMenu(1);
+            pnl_menuLateral.Visible = false;
+        }
+
+        private void btn_listaProductos_Stock_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Stock());
+            pnl_menuLateral.Visible = false;
+            esconderSubMenu(0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (btn_pnl_Productos.Visible == false)
+            {
+                pnl_menuLateral.Visible = true;
+                btn_desplegarMenuLateral.Text = "<";
+            }
+            else
+            {
+                pnl_menuLateral.Visible = false;
+                btn_desplegarMenuLateral.Text = ">";
+            }
+        }
+
+        private void btn_config_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Configuracion.Form_Principal_Confg());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Configuracion.Form_Principal_Confg());
+            pnl_menuLateral.Visible = false;
+        }
+
+        private void SGSYF_UI_Load_1(object sender, EventArgs e)
         {
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
+
+        #endregion
+
+
+
+
+        // CODIGO OBSOLETO
+        /*private void button6_Click(object sender, EventArgs e)
         {
             if (Validar_Form("Productos") == false)
             {
@@ -73,9 +207,9 @@ namespace SGSYF
         {
             if (Validar_Form("Compra") == false)
             {
-                /*Compra compra = new Compra();
+                *//*Compra compra = new Compra();
                 compra.MdiParent = this;
-                compra.Show();*/
+                compra.Show();*//*
             }
         }
 
@@ -93,21 +227,6 @@ namespace SGSYF
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
 
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_confg_Click(object sender, EventArgs e)
-        {
-            if (Validar_Form("Configuracion") == false)
-            {
-                Configuracion.Form_Principal_Confg fp = new Configuracion.Form_Principal_Confg();
-                fp.MdiParent = this;
-                fp.Show();
-            }
-        }
+        }*/
     }
 }

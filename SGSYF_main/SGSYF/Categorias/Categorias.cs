@@ -18,8 +18,8 @@ namespace SGSYF
         public Categorias()
         {
             InitializeComponent();
-            SGSYF_UI formi = new SGSYF_UI();
-            formi.Mover();
+            
+            
             CategoriaDevolver();
         }
         public void CategoriaDevolver()

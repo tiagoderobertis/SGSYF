@@ -15,6 +15,7 @@ namespace SGSYF.Inicio_de_Sesion
         public Form_Principal()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
         private void btn_administador_Click(object sender, EventArgs e)
         {

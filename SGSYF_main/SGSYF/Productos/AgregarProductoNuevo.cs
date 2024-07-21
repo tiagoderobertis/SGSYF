@@ -18,8 +18,6 @@ namespace SGSYF
         public AgregarProductoNuevo()
         {
             InitializeComponent();
-            SGSYF_UI ui = new SGSYF_UI();
-            ui.Mover();
         }
 
         private void Productos_Load(object sender, EventArgs e)
@@ -38,9 +36,9 @@ namespace SGSYF
                 cmb_subcategoria.Text,
                 txt_nombre.Text,
                 txt_descripcion.Text,
-                txt_precio.Text,
+                
                 cmb_unidadmedida.Text,
-                txt_preciocompra.Text,
+                
                 txt_stock.Text
             //cmb_proveedor.Text
             );
@@ -50,9 +48,9 @@ namespace SGSYF
                 string.IsNullOrEmpty(cmb_subcategoria.Text) ||
                 string.IsNullOrEmpty(txt_nombre.Text) ||
                 string.IsNullOrEmpty(cmb_unidadmedida.Text) ||
-                string.IsNullOrEmpty(txt_precio.Text) ||
+                
                 string.IsNullOrEmpty(txt_stock.Text) ||
-                string.IsNullOrEmpty(txt_preciocompra.Text) ||
+                
                 string.IsNullOrEmpty(txt_codigobarra.Text))
             {
                 MessageBox.Show("Completa el o los campos vacios");
@@ -64,8 +62,6 @@ namespace SGSYF
                                             $"Descripción: {txt_descripcion.Text}\n" +
                                             $"Categoría: {cmb_categoria.Text}\n" +
                                             $"Subcategoría: {cmb_subcategoria.Text}\n" +
-                                            $"Precio: {txt_precio.Text}\n" +
-                                            $"Precio de Compra: {txt_preciocompra.Text}\n" +
                                             $"Código de Barra: {txt_codigobarra.Text}\n" +
                                             $"Unidad de Medida: {cmb_unidadmedida.Text}\n" +
                                             $"Stock: {txt_stock.Text}";
@@ -88,15 +84,13 @@ namespace SGSYF
                     string categoria = productosControlador.Categoria;
                     string subCategoria = productosControlador.Subcategoria;
                     string nombre = productosControlador.Nombre;
-                    string descripcion = productosControlador.Descripcion;
-                    int precio = Convert.ToInt32(productosControlador.Precio);
+                    string descripcion = productosControlador.Descripcion; 
                     string unidadMedida = productosControlador.Unidad_medida;
-                    int precioCompra = Convert.ToInt32(productosControlador.Precio_compra);
                     int stock = Convert.ToInt32(productosControlador.Stock_total);
                     //string proveedor = productosControlador.Proveedores;
 
                     string query = "INSERT INTO productos (codigo_barra, categoria, subcategoria, nombre, descripcion, precio, unidad_medida, precio_compra, stock_total) " +
-                                   "VALUES (" + codigoBarra + ", '" + categoria + "', '" + subCategoria + "', '" + nombre + "', '" + descripcion + "', " + precio + ", '" + unidadMedida + "', " + precioCompra + ", " + stock + ");";
+                                   "VALUES (" + codigoBarra + ", '" + categoria + "', '" + subCategoria + "', '" + nombre + "', '" + descripcion + "', " + ", '" + unidadMedida + "', " + ", " + stock + ");";
 
                     MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
                     try
@@ -119,6 +113,11 @@ namespace SGSYF
         private void cmb_categoria_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -19,13 +19,14 @@ namespace SGSYF.Configuracion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Info_Personal inper = new Info_Personal();
-            inper.Show();
+            this.Close();
+            Info_Personal uiInfo = new Info_Personal();
+            uiInfo.Show();
+        }
 
-            inper.StartPosition = FormStartPosition.Manual;
-            inper.Location = this.Location; //Establece la misma posición que el formulario actual
-
-            this.Hide();
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

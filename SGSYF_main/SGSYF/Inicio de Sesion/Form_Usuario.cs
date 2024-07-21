@@ -74,46 +74,17 @@ namespace SGSYF.Inicio_de_Sesion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string usuario = txt_usuario.Text;
-            string contraseña = txt_contrseña.Text;
-            string palabra = txt_palabra.Text;
+            
+        }
 
-            Verificar_Datos verificar = new Verificar_Datos();
-            bool resultado = verificar.Verificar_Para_Crear(palabra);
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form_CrearCuentaUsuario form_us = new Form_CrearCuentaUsuario();
+            form_us.Show();
 
-            if (resultado == true)
-            {
-                Conexion conexion = new Conexion();
-                MySqlConnection mySqlConnection = conexion.Establecer_Conexion();
-
-                if (mySqlConnection == null)
-                {
-                    MessageBox.Show("No se pudo establecer la conexión a la base de datos.");
-                    return;
-                }
-
-
-                string query = "INSERT INTO usuario (usuario, contraseña, tipo_usuario)  VALUES ('" + usuario + "', '" + contraseña + "', 'Usuario');";
-
-                MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
-                try
-                {
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Usuario creado exitosamente");
-                }
-                catch (MySqlException ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
-                finally
-                {
-                    mySqlConnection.Close();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Palabra de aministrador incorrecta");
-            }
+            form_us.StartPosition = FormStartPosition.Manual;
+            form_us.Location = this.Location;
+            this.Close();
         }
     }
 }

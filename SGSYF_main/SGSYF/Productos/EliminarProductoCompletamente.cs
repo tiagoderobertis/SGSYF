@@ -32,7 +32,7 @@ namespace SGSYF
                 MessageBox.Show("No se pudo establecer la conexión a la base de datos.");
             }
             string nombre_producto = cmb_eliminarProducto.SelectedItem.ToString();
-            string query = "DELETE FROM Productos WHERE nombre = '" + nombre_producto +"';";
+            string query = "DELETE FROM Productos WHERE nombre = '" + nombre_producto + "';";
             MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
 
             try
@@ -48,6 +48,11 @@ namespace SGSYF
             {
                 mySqlConnection.Close();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

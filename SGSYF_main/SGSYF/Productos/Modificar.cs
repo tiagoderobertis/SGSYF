@@ -17,8 +17,7 @@ namespace SGSYF.Productos
         public Modificar()
         {
             InitializeComponent();
-            SGSYF_UI formi = new SGSYF_UI();
-            formi.Mover();
+
         }
 
         private void cmb_seleccionar_producto_SelectedIndexChanged(object sender, EventArgs e)
@@ -47,6 +46,11 @@ namespace SGSYF.Productos
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -17,8 +17,7 @@ namespace SGSYF
         public Stock()
         {
             InitializeComponent();
-            SGSYF_UI formi = new SGSYF_UI();
-            formi.Mover();
+
             dataGridView1.ReadOnly = true;
         }
 
@@ -51,14 +50,19 @@ namespace SGSYF
             }
             catch (MySqlException ex)
             {
-                 MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
-            
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
