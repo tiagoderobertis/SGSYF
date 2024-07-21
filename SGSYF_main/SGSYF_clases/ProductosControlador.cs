@@ -16,9 +16,9 @@ namespace SGSYF_clases
         private string subcategoria;
         private string nombre;
         private string descripcion;
-        private string precio;
+        //private string precio;
         private string unidad_medida;
-        private string precio_compra;
+        //private string precio_compra;
         private string stock_total;
        //private string proveedores;
 
@@ -29,9 +29,9 @@ namespace SGSYF_clases
             string subcategoria,
             string nombre,
             string descripcion,
-            string precio,
+            //string precio,
             string unidad_medida,
-            string precio_compra,
+            //string precio_compra,
             string stock_total
             //string proveedores
             ) { 
@@ -41,9 +41,9 @@ namespace SGSYF_clases
             this.subcategoria = subcategoria;
             this.nombre = nombre;
             this.descripcion = descripcion;
-            this.precio = precio;
+            //this.precio = precio;
             this.unidad_medida = unidad_medida;
-            this.precio_compra = precio_compra;
+            //this.precio_compra = precio_compra;
             this.stock_total = stock_total;
             //this.proveedores = proveedores;
 
@@ -54,9 +54,9 @@ namespace SGSYF_clases
         public string Subcategoria { get => subcategoria; set => Subcategoria = value; }
         public string Nombre { get => nombre; set => Nombre = value; }
         public string Descripcion { get => descripcion; set => Descripcion = value; }
-        public string Precio { get => precio; set => Precio = value; }
+        //public string Precio { get => precio; set => Precio = value; }
         public string Unidad_medida { get => unidad_medida; set => Unidad_medida = value; }
-        public string Precio_compra { get => precio_compra; set => Precio_compra = value; }
+        //public string Precio_compra { get => precio_compra; set => Precio_compra = value; }
         public string Stock_total { get => stock_total; set => Stock_total = value; }
         //public string Proveedores { get => proveedores; set => Proveedores = value; }
 
