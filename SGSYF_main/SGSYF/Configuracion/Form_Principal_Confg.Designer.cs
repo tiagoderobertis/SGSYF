@@ -67,7 +67,6 @@
             MinimumSize = new Size(900, 600);
             Name = "Form_Principal_Confg";
             Text = "Form_Principal_Confg";
-            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
         }
 
