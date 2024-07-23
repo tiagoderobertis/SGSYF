@@ -291,7 +291,6 @@
             MinimumSize = new Size(900, 600);
             Name = "AgregarProductoNuevo";
             Text = "Productos";
-            WindowState = FormWindowState.Maximized;
             Load += Productos_Load;
             ResumeLayout(false);
             PerformLayout();
