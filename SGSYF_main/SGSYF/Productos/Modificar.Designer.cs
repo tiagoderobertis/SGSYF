@@ -31,7 +31,7 @@
             btn_guardar = new Button();
             txt_codigo = new TextBox();
             label6 = new Label();
-            txt_precio = new TextBox();
+            txt_stock = new TextBox();
             label2 = new Label();
             txt_nombre = new TextBox();
             label1 = new Label();
@@ -54,6 +54,7 @@
             btn_guardar.TabIndex = 70;
             btn_guardar.Text = "Guardar";
             btn_guardar.UseVisualStyleBackColor = false;
+            btn_guardar.Click += btn_guardar_Click;
             // 
             // txt_codigo
             // 
@@ -76,14 +77,14 @@
             label6.TabIndex = 68;
             label6.Text = "Codigo de Barra";
             // 
-            // txt_precio
+            // txt_stock
             // 
-            txt_precio.Anchor = AnchorStyles.None;
-            txt_precio.BackColor = SystemColors.Control;
-            txt_precio.Location = new Point(526, 286);
-            txt_precio.Name = "txt_precio";
-            txt_precio.Size = new Size(120, 23);
-            txt_precio.TabIndex = 67;
+            txt_stock.Anchor = AnchorStyles.None;
+            txt_stock.BackColor = SystemColors.Control;
+            txt_stock.Location = new Point(526, 286);
+            txt_stock.Name = "txt_stock";
+            txt_stock.Size = new Size(120, 23);
+            txt_stock.TabIndex = 67;
             // 
             // label2
             // 
@@ -93,9 +94,9 @@
             label2.ForeColor = SystemColors.ControlLightLight;
             label2.Location = new Point(526, 268);
             label2.Name = "label2";
-            label2.Size = new Size(40, 15);
+            label2.Size = new Size(37, 15);
             label2.TabIndex = 66;
-            label2.Text = "Precio";
+            label2.Text = "Stock";
             // 
             // txt_nombre
             // 
@@ -198,7 +199,7 @@
             Controls.Add(btn_guardar);
             Controls.Add(txt_codigo);
             Controls.Add(label6);
-            Controls.Add(txt_precio);
+            Controls.Add(txt_stock);
             Controls.Add(label2);
             Controls.Add(txt_nombre);
             Controls.Add(label1);
@@ -210,6 +211,7 @@
             MinimumSize = new Size(900, 600);
             Name = "Modificar";
             Text = "Modificar";
+            Load += Modificar_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -219,7 +221,7 @@
         private Button btn_guardar;
         private TextBox txt_codigo;
         private Label label6;
-        private TextBox txt_precio;
+        private TextBox txt_stock;
         private Label label2;
         private TextBox txt_nombre;
         private Label label1;
