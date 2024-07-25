@@ -47,8 +47,8 @@
             btn_desplegarMenuLateral = new Button();
             panel1 = new Panel();
             btn_config = new Button();
-            panel2 = new Panel();
-            label4 = new Label();
+            foto_perfil = new Panel();
+            lbl_nom = new Label();
             pnl_menuLateral.SuspendLayout();
             subpnl_stock.SuspendLayout();
             subpnl_productos.SuspendLayout();
@@ -291,13 +291,14 @@
             // 
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(btn_config);
-            panel1.Controls.Add(panel2);
-            panel1.Controls.Add(label4);
+            panel1.Controls.Add(foto_perfil);
+            panel1.Controls.Add(lbl_nom);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1008, 78);
             panel1.TabIndex = 27;
+            panel1.Paint += panel1_Paint;
             // 
             // btn_config
             // 
@@ -313,25 +314,25 @@
             btn_config.UseVisualStyleBackColor = false;
             btn_config.Click += btn_config_Click;
             // 
-            // panel2
+            // foto_perfil
             // 
-            panel2.BackColor = Color.White;
-            panel2.Location = new Point(10, 12);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(40, 40);
-            panel2.TabIndex = 28;
+            foto_perfil.BackColor = Color.White;
+            foto_perfil.Location = new Point(10, 12);
+            foto_perfil.Name = "foto_perfil";
+            foto_perfil.Size = new Size(40, 40);
+            foto_perfil.TabIndex = 28;
             // 
-            // label4
+            // lbl_nom
             // 
-            label4.Anchor = AnchorStyles.None;
-            label4.AutoSize = true;
-            label4.Font = new Font("Constantia", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(381, 19);
-            label4.Name = "label4";
-            label4.Size = new Size(277, 33);
-            label4.TabIndex = 0;
-            label4.Text = "Kiosco Mar Del Plata";
+            lbl_nom.Anchor = AnchorStyles.None;
+            lbl_nom.AutoSize = true;
+            lbl_nom.Font = new Font("Constantia", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_nom.ForeColor = Color.White;
+            lbl_nom.Location = new Point(381, 19);
+            lbl_nom.Name = "lbl_nom";
+            lbl_nom.Size = new Size(305, 33);
+            lbl_nom.TabIndex = 0;
+            lbl_nom.Text = "Nombre de tu Empresa";
             // 
             // SGSYF_UI
             // 
@@ -378,7 +379,7 @@
         private Label label2;
         private Panel panel1;
         private Button btn_config;
-        private Panel panel2;
-        private Label label4;
+        private Panel foto_perfil;
+        private Label lbl_nom;
     }
 }

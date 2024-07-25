@@ -1,5 +1,6 @@
 using SGSYF_conexion;
 using SGSYF;
+using MySql.Data.MySqlClient;
 
 namespace SGSYF
 {
@@ -12,7 +13,7 @@ namespace SGSYF
             conexion.Establecer_Conexion();
             this.WindowState = FormWindowState.Maximized;
         }
-
+       
         private void SGSYF_UI_Load(object sender, EventArgs e)
         {
 
@@ -142,6 +143,11 @@ namespace SGSYF
         }
 
         private void SGSYF_UI_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

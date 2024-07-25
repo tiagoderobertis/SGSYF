@@ -1,12 +1,11 @@
-﻿using System;
+﻿using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Microsoft.IdentityModel.Tokens;
 
 public class TokenService
 {
-    private const string SecretKey = "Soy_DE_River_Y_ARGENTINO91218-18-12-2022"; // Cambia esto por una clave segura
+    private const string SecretKey = "Soy_DE_River_Y_ARGENTINO91218-18-12-2022";
     private const int TokenExpirationMinutes = 60;
 
     public string GenerateToken(string username, string role)
@@ -17,6 +16,7 @@ public class TokenService
         var claims = new[]
         {
             new Claim(JwtRegisteredClaimNames.Sub, username),
+            new Claim(ClaimTypes.Name, username),
             new Claim(ClaimTypes.Role, role),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
@@ -60,5 +60,30 @@ public class TokenService
             ValidateLifetime = true,
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SecretKey))
         };
+    }
+
+    public string GetUsernameFromToken(string token)
+    {
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var key = Encoding.ASCII.GetBytes(SecretKey);
+        var validationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(key),
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ClockSkew = TimeSpan.Zero
+        };
+
+        try
+        {
+            var principal = tokenHandler.ValidateToken(token, validationParameters, out SecurityToken validatedToken);
+            var usernameClaim = principal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name);
+            return usernameClaim?.Value;
+        }
+        catch
+        {
+            return null;
+        }
     }
 }

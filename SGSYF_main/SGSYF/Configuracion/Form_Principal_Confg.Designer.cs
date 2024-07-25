@@ -30,6 +30,7 @@
         {
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -56,12 +57,23 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // button3
+            // 
+            button3.Location = new Point(91, 115);
+            button3.Name = "button3";
+            button3.Size = new Size(170, 23);
+            button3.TabIndex = 23;
+            button3.Text = "Ajustes de empresa";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form_Principal_Confg
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(884, 561);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             MinimumSize = new Size(900, 600);
@@ -73,5 +85,6 @@
         #endregion
         private Button button1;
         private Button button2;
+        private Button button3;
     }
 }

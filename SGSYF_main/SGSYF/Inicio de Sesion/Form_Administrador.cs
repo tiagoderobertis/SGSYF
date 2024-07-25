@@ -36,7 +36,6 @@ namespace SGSYF.Inicio_de_Sesion
         private void btn_iniciar_Click(object sender, EventArgs e)
         {
             Verificar_Datos verificar = new Verificar_Datos();
-
             string usuario = txt_user.Text;
             string contraseña = txt_pass.Text;
             string tipo = "Administrador";
@@ -60,6 +59,10 @@ namespace SGSYF.Inicio_de_Sesion
 
                 form_entero.StartPosition = FormStartPosition.Manual;
                 form_entero.Location = this.Location; //Establece la misma posición que el formulario actual
+                
+                
+                Guardar_datos gd = new Guardar_datos();
+                gd.Nombre_usuario = usuario;
 
                 this.Hide();
             }
@@ -68,7 +71,6 @@ namespace SGSYF.Inicio_de_Sesion
                 MessageBox.Show("Usuario/Contraseña invalido");
             }
         }
-
         private void Form_Administrador_Load(object sender, EventArgs e)
         {
 

@@ -54,8 +54,6 @@ namespace SGSYF.Inicio_de_Sesion
                 // Guardar el token en algún lugar para su uso posterior
                 Properties.Settings.Default.UserToken = token;
                 Properties.Settings.Default.Save();
-                // Mostrar el token para depuración
-                //MessageBox.Show("Token generado: " + token);
 
                 //MUESTRA EL FORM ENTERO POR AHORA!!! CUANDO SE CREE EL FORM DE "FACTURAR", CAMBIAR "form_entero" POR "form_facturacion"
                 SGSYF_UI form_entero = new SGSYF_UI();
@@ -63,7 +61,8 @@ namespace SGSYF.Inicio_de_Sesion
 
                 form_entero.StartPosition = FormStartPosition.Manual;
                 form_entero.Location = this.Location; //Establece la misma posición que el formulario actual
-
+                Guardar_datos gd = new Guardar_datos();
+                gd.Nombre_usuario = usuario;
                 this.Hide();
             }
             else
