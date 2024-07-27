@@ -69,21 +69,21 @@ namespace SGSYF.Productos
 
             List<string> camposParaActualizar = new List<string>();
 
-            if (!string.IsNullOrWhiteSpace(produ_actu.Nombre_ac))
+            if (!string.IsNullOrWhiteSpace(txt_nombre.Text))
             {
-                camposParaActualizar.Add("nombre = '" + produ_actu.Nombre_ac + "'");
+                camposParaActualizar.Add("nombre = '" + txt_nombre.Text + "'");
             }
-            if (!string.IsNullOrWhiteSpace(produ_actu.Descripcion_ac))                              //si esta vacio, o es nulo, o tiene espacion en blanco, devuelve false y no se agrega
+            if (!string.IsNullOrWhiteSpace(txt_descripcion.Text))                              //si esta vacio, o es nulo, o tiene espacion en blanco, devuelve false y no se agrega
             {
-                camposParaActualizar.Add("descripcion = '" + produ_actu.Descripcion_ac + "'");
+                camposParaActualizar.Add("descripcion = '" + txt_descripcion.Text + "'");
             }
-            if (!string.IsNullOrWhiteSpace(produ_actu.Stock_ac))
+            if (!string.IsNullOrWhiteSpace(txt_stock.Text))
             {
-                camposParaActualizar.Add("stock_total = '" + produ_actu.Stock_ac + "'");
+                camposParaActualizar.Add("stock_total = '" + txt_stock.Text + "'");
             }
-            if (!string.IsNullOrWhiteSpace(produ_actu.Codigobarra_ac))
+            if (!string.IsNullOrWhiteSpace(txt_codigo.Text))
             {
-                camposParaActualizar.Add("codigo_barra = '" + produ_actu.Codigobarra_ac + "'");
+                camposParaActualizar.Add("codigo_barra = '" + txt_codigo.Text + "'");
             }
 
             if (camposParaActualizar.Count == 0)
@@ -92,8 +92,7 @@ namespace SGSYF.Productos
                 return;
             }
 
-            string query = "UPDATE productos SET " + string.Join(", ", camposParaActualizar) +                  //se concatena la lista y ademas se agrega el separador
-                           " WHERE nombre = '" + cmb_seleccionar_producto.SelectedItem.ToString() + "';";
+            
 
             Conexion conexion = new Conexion();
             MySqlConnection mySqlConnection = conexion.Establecer_Conexion();
@@ -103,20 +102,28 @@ namespace SGSYF.Productos
                 return;
             }
 
-            MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
-
-            try
+            if(cmb_seleccionar_producto.SelectedItem == null)
             {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Producto cambiado con éxito.");
+                MessageBox.Show("Ingrese producto para modificar.");
             }
-            catch (MySqlException ex)
+            else
             {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-            finally
-            {
-                mySqlConnection.Close();
+                string query = "UPDATE productos SET " + string.Join(", ", camposParaActualizar) +                  //se concatena la lista y ademas se agrega el separador
+                           " WHERE nombre = '" + cmb_seleccionar_producto.SelectedItem.ToString() + "';";
+                MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Producto cambiado con éxito.");
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    mySqlConnection.Close();
+                }
             }
 
         }
