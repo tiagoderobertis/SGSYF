@@ -48,13 +48,14 @@
             btn_desplegarMenuLateral = new Button();
             panel1 = new Panel();
             btn_config = new Button();
-            foto_perfil = new Panel();
             lbl_nom = new Label();
+            pic_logo = new PictureBox();
             pnl_menuLateral.SuspendLayout();
             subpnl_stock.SuspendLayout();
             subpnl_productos.SuspendLayout();
             pnl_logo.SuspendLayout();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pic_logo).BeginInit();
             SuspendLayout();
             // 
             // pnl_menuLateral
@@ -291,6 +292,7 @@
             pnl_contenedor.Name = "pnl_contenedor";
             pnl_contenedor.Size = new Size(1008, 651);
             pnl_contenedor.TabIndex = 26;
+            pnl_contenedor.Paint += pnl_contenedor_Paint;
             // 
             // btn_desplegarMenuLateral
             // 
@@ -309,8 +311,8 @@
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(pic_logo);
             panel1.Controls.Add(btn_config);
-            panel1.Controls.Add(foto_perfil);
             panel1.Controls.Add(lbl_nom);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -333,14 +335,6 @@
             btn_config.UseVisualStyleBackColor = false;
             btn_config.Click += btn_config_Click;
             // 
-            // foto_perfil
-            // 
-            foto_perfil.BackColor = Color.White;
-            foto_perfil.Location = new Point(10, 12);
-            foto_perfil.Name = "foto_perfil";
-            foto_perfil.Size = new Size(40, 40);
-            foto_perfil.TabIndex = 28;
-            // 
             // lbl_nom
             // 
             lbl_nom.Anchor = AnchorStyles.None;
@@ -352,6 +346,14 @@
             lbl_nom.Size = new Size(305, 33);
             lbl_nom.TabIndex = 0;
             lbl_nom.Text = "Nombre de tu Empresa";
+            // 
+            // pic_logo
+            // 
+            pic_logo.Location = new Point(22, 12);
+            pic_logo.Name = "pic_logo";
+            pic_logo.Size = new Size(51, 50);
+            pic_logo.TabIndex = 30;
+            pic_logo.TabStop = false;
             // 
             // SGSYF_UI
             // 
@@ -378,6 +380,7 @@
             pnl_logo.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pic_logo).EndInit();
             ResumeLayout(false);
         }
 
@@ -400,8 +403,8 @@
         private Label label2;
         private Panel panel1;
         private Button btn_config;
-        private Panel foto_perfil;
         private Label lbl_nom;
         private Button btn_categorias;
+        private PictureBox pic_logo;
     }
 }

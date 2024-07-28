@@ -14,7 +14,36 @@ namespace SGSYF
             InitializeComponent();
             Conexion conexion = new Conexion();
             conexion.Establecer_Conexion();
+            CambiarNombreEmpresa();
 
+
+        }
+
+        public void CambiarNombreEmpresa()
+        {
+            Conexion conexion = new Conexion();
+            MySqlConnection mySqlConnection = conexion.Establecer_Conexion();
+            if (mySqlConnection == null)
+            {
+                MessageBox.Show("No se pudo establecer la conexión a la base de datos.");
+                return;
+            }
+            string query = "select nombre_empresa from configuracion where id_config = 2;";
+            MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
+            try
+            {
+                object nombre_sql = cmd.ExecuteScalar();
+                string nombre = nombre_sql.ToString();
+                lbl_nom.Text = nombre;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                mySqlConnection.Close();
+            }
         }
 
         private void SGSYF_UI_Shown(object sender, EventArgs e)
@@ -170,6 +199,11 @@ namespace SGSYF
             Categorias categorias = new Categorias();
             abrirFormHijo(categorias);
             pnl_menuLateral.Visible = false;
+        }
+
+        private void pnl_contenedor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
 

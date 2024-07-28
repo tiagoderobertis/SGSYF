@@ -28,33 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txt_logo_e = new TextBox();
-            label3 = new Label();
             txt_nombre_e = new TextBox();
             label2 = new Label();
             button2 = new Button();
             label1 = new Label();
             btn_guardar = new Button();
             SuspendLayout();
-            // 
-            // txt_logo_e
-            // 
-            txt_logo_e.Anchor = AnchorStyles.None;
-            txt_logo_e.Location = new Point(447, 246);
-            txt_logo_e.Name = "txt_logo_e";
-            txt_logo_e.Size = new Size(122, 23);
-            txt_logo_e.TabIndex = 9;
-            // 
-            // label3
-            // 
-            label3.Anchor = AnchorStyles.None;
-            label3.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(299, 246);
-            label3.Name = "label3";
-            label3.Size = new Size(142, 28);
-            label3.TabIndex = 8;
-            label3.Text = "Logo Empresa:";
             // 
             // txt_nombre_e
             // 
@@ -105,12 +84,13 @@
             btn_guardar.Anchor = AnchorStyles.None;
             btn_guardar.BackColor = SystemColors.ControlLightLight;
             btn_guardar.FlatStyle = FlatStyle.Flat;
-            btn_guardar.Location = new Point(402, 307);
+            btn_guardar.Location = new Point(399, 252);
             btn_guardar.Name = "btn_guardar";
             btn_guardar.Size = new Size(75, 23);
             btn_guardar.TabIndex = 25;
             btn_guardar.Text = "Guardar";
             btn_guardar.UseVisualStyleBackColor = false;
+            btn_guardar.Click += btn_guardar_Click;
             // 
             // Ajustes_Empresa
             // 
@@ -121,8 +101,6 @@
             Controls.Add(btn_guardar);
             Controls.Add(label1);
             Controls.Add(button2);
-            Controls.Add(txt_logo_e);
-            Controls.Add(label3);
             Controls.Add(txt_nombre_e);
             Controls.Add(label2);
             Name = "Ajustes_Empresa";
@@ -132,9 +110,6 @@
         }
 
         #endregion
-
-        private TextBox txt_logo_e;
-        private Label label3;
         private TextBox txt_nombre_e;
         private Label label2;
         private Button button2;
