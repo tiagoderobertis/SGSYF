@@ -23,8 +23,82 @@ namespace SGSYF
         private void Productos_Load(object sender, EventArgs e)
         {
             LlenarComboBox llenar = new LlenarComboBox();
-            llenar.llenarComboBoxProductos(cmb_categoria);
-            llenar.llenarComboBoxProductos(cmb_subcategoria);
+            
+            cmb_categoria.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmb_subcategoria.DropDownStyle = ComboBoxStyle.DropDownList;
+            LlenarComboBoxCategorias();
+            cmb_categoria.SelectedIndexChanged += new EventHandler(cmb_categoria_SelectedIndexChanged);
+        }
+
+        private void LlenarComboBoxCategorias()
+        {
+            Conexion conexion = new Conexion();
+            MySqlConnection conex = conexion.Establecer_Conexion();
+            string query = "SELECT id_categoria, nombre FROM categorias";
+
+            using (conex)
+            {
+                try
+                {
+                    MySqlCommand command = new MySqlCommand(query, conex);
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                    DataTable dataTable = new DataTable();
+                    dataTable.Load(reader);
+
+                    cmb_categoria.DataSource = dataTable;
+                    cmb_categoria.DisplayMember = "nombre";
+                    cmb_categoria.ValueMember = "id_categoria"; // Usamos ValueMember para obtener el id de la categoría seleccionada
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    conex.Close();
+                }
+            }
+        }
+
+        private void cmb_categoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmb_categoria.SelectedValue != null && cmb_categoria.SelectedValue is int)
+            {
+                int categoriaId = (int)cmb_categoria.SelectedValue;
+                LlenarComboBoxSubcategorias(categoriaId);
+            }
+        }
+
+        private void LlenarComboBoxSubcategorias(int categoriaId)
+        {
+            Conexion conexion = new Conexion();
+            MySqlConnection conex = conexion.Establecer_Conexion();
+            string query = "SELECT nombre FROM subcategorias WHERE id_categoria = @categoriaId";
+
+            using (conex)
+            {
+                try
+                {
+                    MySqlCommand command = new MySqlCommand(query, conex);
+                    command.Parameters.AddWithValue("@categoriaId", categoriaId);
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                    DataTable dataTable = new DataTable();
+                    dataTable.Load(reader);
+
+                    cmb_subcategoria.DataSource = dataTable;
+                    cmb_subcategoria.DisplayMember = "nombre";
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    conex.Close();
+                }
+            }
         }
 
         private void btn_agregar_Click(object sender, EventArgs e)
@@ -36,11 +110,8 @@ namespace SGSYF
                 cmb_subcategoria.Text,
                 txt_nombre.Text,
                 txt_descripcion.Text,
-                
                 cmb_unidadmedida.Text,
-                
                 txt_stock.Text
-            //cmb_proveedor.Text
             );
 
             // VERIFICADORES DE CAMPOS
@@ -48,23 +119,21 @@ namespace SGSYF
                 string.IsNullOrEmpty(cmb_subcategoria.Text) ||
                 string.IsNullOrEmpty(txt_nombre.Text) ||
                 string.IsNullOrEmpty(cmb_unidadmedida.Text) ||
-                
                 string.IsNullOrEmpty(txt_stock.Text) ||
-                
                 string.IsNullOrEmpty(txt_codigobarra.Text))
             {
-                MessageBox.Show("Completa el o los campos vacios");
+                MessageBox.Show("Completa el o los campos vacíos");
             }
             else
             {
                 // Actualizar el texto del label con la previsualización
                 string previsualizacionText = $"Nombre: {txt_nombre.Text}\n" +
-                                            $"Descripción: {txt_descripcion.Text}\n" +
-                                            $"Categoría: {cmb_categoria.Text}\n" +
-                                            $"Subcategoría: {cmb_subcategoria.Text}\n" +
-                                            $"Código de Barra: {txt_codigobarra.Text}\n" +
-                                            $"Unidad de Medida: {cmb_unidadmedida.Text}\n" +
-                                            $"Stock: {txt_stock.Text}";
+                                              $"Descripción: {txt_descripcion.Text}\n" +
+                                              $"Categoría: {cmb_categoria.Text}\n" +
+                                              $"Subcategoría: {cmb_subcategoria.Text}\n" +
+                                              $"Código de Barra: {txt_codigobarra.Text}\n" +
+                                              $"Unidad de Medida: {cmb_unidadmedida.Text}\n" +
+                                              $"Stock: {txt_stock.Text}";
 
                 // Confirmar si desea agregar el producto
                 var confirmResult = MessageBox.Show($"¿Desea agregar este producto?\n" + previsualizacionText, "Confirmar Agregar Producto Nuevo", MessageBoxButtons.YesNo);
@@ -80,19 +149,28 @@ namespace SGSYF
                         return;
                     }
 
-                    int codigoBarra = Convert.ToInt32(productosControlador.Codigo_barra);
+                    // Convertir y obtener los valores de los controles
+                    string codigoBarra = productosControlador.Codigo_barra;
                     string categoria = productosControlador.Categoria;
                     string subCategoria = productosControlador.Subcategoria;
                     string nombre = productosControlador.Nombre;
-                    string descripcion = productosControlador.Descripcion; 
+                    string descripcion = productosControlador.Descripcion;
                     string unidadMedida = productosControlador.Unidad_medida;
                     int stock = Convert.ToInt32(productosControlador.Stock_total);
-                    //string proveedor = productosControlador.Proveedores;
 
-                    string query = "INSERT INTO productos (codigo_barra, categoria, subcategoria, nombre, descripcion, precio, unidad_medida, precio_compra, stock_total) " +
-                                   "VALUES (" + codigoBarra + ", '" + categoria + "', '" + subCategoria + "', '" + nombre + "', '" + descripcion + "', " + ", '" + unidadMedida + "', " + ", " + stock + ");";
+                    // Consulta SQL con parámetros
+                    string query = "INSERT INTO productos (codigo_barra, categoria, subcategoria, nombre, descripcion, unidad_medida, stock_total) " +
+                                   "VALUES (@codigoBarra, @categoria, @subCategoria, @nombre, @descripcion, @unidadMedida, @stock)";
 
                     MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
+                    cmd.Parameters.AddWithValue("@codigoBarra", codigoBarra);
+                    cmd.Parameters.AddWithValue("@categoria", categoria);
+                    cmd.Parameters.AddWithValue("@subCategoria", subCategoria);
+                    cmd.Parameters.AddWithValue("@nombre", nombre);
+                    cmd.Parameters.AddWithValue("@descripcion", descripcion);
+                    cmd.Parameters.AddWithValue("@unidadMedida", unidadMedida);
+                    cmd.Parameters.AddWithValue("@stock", stock);
+
                     try
                     {
                         cmd.ExecuteNonQuery();
@@ -110,10 +188,8 @@ namespace SGSYF
             }
         }
 
-        private void cmb_categoria_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {

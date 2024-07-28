@@ -23,14 +23,7 @@ namespace SGSYF.Inicio_de_Sesion
 
         private void btn_volver_Click(object sender, EventArgs e)
         {
-            Form_Principal form_prin = new Form_Principal();
-            form_prin.Show();
-
-            form_prin.StartPosition = FormStartPosition.Manual;
-            form_prin.Location = this.Location; //Pone el form en la misma posición que el formulario actual
-
-            this.Hide();
-
+            this.Close();
         }
 
         private void btn_iniciar_Click(object sender, EventArgs e)
@@ -52,10 +45,7 @@ namespace SGSYF.Inicio_de_Sesion
                 Properties.Settings.Default.UserToken = token;
                 Properties.Settings.Default.Save();
 
-                Form_Principal fp = new Form_Principal();
                 SGSYF_UI form_entero = new SGSYF_UI();
-                
-                form_entero.Show();
 
                 form_entero.StartPosition = FormStartPosition.Manual;
                 form_entero.Location = this.Location; //Establece la misma posición que el formulario actual
@@ -64,7 +54,11 @@ namespace SGSYF.Inicio_de_Sesion
                 Guardar_datos gd = new Guardar_datos();
                 gd.Nombre_usuario = usuario;
 
-                this.Hide();
+                form_entero.Show();
+                Form_Principal.Instance.Hide();
+                this.Close();
+                
+
             }
             else
             {

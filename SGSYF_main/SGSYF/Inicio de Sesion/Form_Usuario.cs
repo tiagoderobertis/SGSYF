@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SGSYF;
 
 namespace SGSYF.Inicio_de_Sesion
 {
@@ -22,13 +23,7 @@ namespace SGSYF.Inicio_de_Sesion
 
         private void btn_volver_Click(object sender, EventArgs e)
         {
-            Form_Principal form_prin = new Form_Principal();
-            form_prin.Show();
-
-            form_prin.StartPosition = FormStartPosition.Manual;
-            form_prin.Location = this.Location; //Establece la misma posición que el formulario actual
-
-            this.Hide();
+            this.Close();
         }
 
         private void Form_Usuario_Load(object sender, EventArgs e)
@@ -57,13 +52,13 @@ namespace SGSYF.Inicio_de_Sesion
 
                 //MUESTRA EL FORM ENTERO POR AHORA!!! CUANDO SE CREE EL FORM DE "FACTURAR", CAMBIAR "form_entero" POR "form_facturacion"
                 SGSYF_UI form_entero = new SGSYF_UI();
-                form_entero.Show();
-
+                
                 form_entero.StartPosition = FormStartPosition.Manual;
                 form_entero.Location = this.Location; //Establece la misma posición que el formulario actual
                 Guardar_datos gd = new Guardar_datos();
                 gd.Nombre_usuario = usuario;
-                this.Hide();
+                AbrirFormulariosInicioSesion abrir = new AbrirFormulariosInicioSesion();
+                //abrir.AbrirFormulario(FORM VENTAS,this);
             }
             else
             {
@@ -78,12 +73,9 @@ namespace SGSYF.Inicio_de_Sesion
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form_CrearCuentaUsuario form_us = new Form_CrearCuentaUsuario();
-            form_us.Show();
-
-            form_us.StartPosition = FormStartPosition.Manual;
-            form_us.Location = this.Location;
-            this.Close();
+            FormManager abrir = new FormManager(pnl_contenedor);
+            abrir.AbrirFormHijo(new Form_CrearCuentaUsuario());
+            
         }
     }
 }

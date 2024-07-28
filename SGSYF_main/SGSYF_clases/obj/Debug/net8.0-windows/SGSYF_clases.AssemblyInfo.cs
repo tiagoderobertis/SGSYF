@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SGSYF_clases")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68555c8ea36867cc743dca3dac540443e752bbf0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d1dda53383d857310b427a92a14d216e659cd49")]
 [assembly: System.Reflection.AssemblyProductAttribute("SGSYF_clases")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SGSYF_clases")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

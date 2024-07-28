@@ -72,12 +72,6 @@ namespace SGSYF.Inicio_de_Sesion
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form_Principal form_prin = new Form_Principal();
-            form_prin.Show();
-
-            form_prin.StartPosition = FormStartPosition.Manual;
-            form_prin.Location = this.Location; 
-
             this.Close();
         }
     }

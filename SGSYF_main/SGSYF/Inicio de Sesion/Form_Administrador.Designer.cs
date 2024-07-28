@@ -43,7 +43,7 @@
             btn_volver.BackColor = Color.Black;
             btn_volver.FlatStyle = FlatStyle.Flat;
             btn_volver.ForeColor = Color.White;
-            btn_volver.Location = new Point(940, 23);
+            btn_volver.Location = new Point(810, 30);
             btn_volver.Name = "btn_volver";
             btn_volver.Size = new Size(45, 45);
             btn_volver.TabIndex = 4;
@@ -56,7 +56,7 @@
             btn_iniciar.Anchor = AnchorStyles.None;
             btn_iniciar.BackColor = Color.Black;
             btn_iniciar.ForeColor = Color.White;
-            btn_iniciar.Location = new Point(468, 412);
+            btn_iniciar.Location = new Point(406, 328);
             btn_iniciar.Name = "btn_iniciar";
             btn_iniciar.Size = new Size(79, 33);
             btn_iniciar.TabIndex = 22;
@@ -69,7 +69,7 @@
             label5.Anchor = AnchorStyles.None;
             label5.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ButtonHighlight;
-            label5.Location = new Point(396, 357);
+            label5.Location = new Point(334, 273);
             label5.Name = "label5";
             label5.Size = new Size(107, 26);
             label5.TabIndex = 21;
@@ -78,7 +78,7 @@
             // txt_pass
             // 
             txt_pass.Anchor = AnchorStyles.None;
-            txt_pass.Location = new Point(509, 356);
+            txt_pass.Location = new Point(447, 272);
             txt_pass.Name = "txt_pass";
             txt_pass.PasswordChar = '*';
             txt_pass.Size = new Size(100, 23);
@@ -89,7 +89,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(396, 314);
+            label4.Location = new Point(334, 230);
             label4.Name = "label4";
             label4.Size = new Size(83, 26);
             label4.TabIndex = 19;
@@ -98,7 +98,7 @@
             // txt_user
             // 
             txt_user.Anchor = AnchorStyles.None;
-            txt_user.Location = new Point(509, 313);
+            txt_user.Location = new Point(447, 229);
             txt_user.Name = "txt_user";
             txt_user.Size = new Size(100, 23);
             txt_user.TabIndex = 18;
@@ -108,7 +108,7 @@
             label3.Anchor = AnchorStyles.None;
             label3.Font = new Font("SimSun", 14.25F, FontStyle.Bold);
             label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(425, 248);
+            label3.Location = new Point(363, 164);
             label3.Name = "label3";
             label3.Size = new Size(184, 26);
             label3.TabIndex = 17;
@@ -119,7 +119,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(1008, 729);
+            ClientSize = new Size(884, 561);
             Controls.Add(btn_iniciar);
             Controls.Add(label5);
             Controls.Add(txt_pass);
@@ -127,10 +127,9 @@
             Controls.Add(txt_user);
             Controls.Add(label3);
             Controls.Add(btn_volver);
-            MinimumSize = new Size(1024, 768);
+            MinimumSize = new Size(900, 600);
             Name = "Form_Administrador";
             Text = "Form_Administrador";
-            WindowState = FormWindowState.Maximized;
             Load += Form_Administrador_Load;
             ResumeLayout(false);
             PerformLayout();

@@ -1,19 +1,27 @@
-using SGSYF_conexion;
+using SGSYF_conexion; 
 using SGSYF;
 using MySql.Data.MySqlClient;
+using SGSYF.Inicio_de_Sesion;
+
 
 namespace SGSYF
 {
     public partial class SGSYF_UI : Form
     {
+
         public SGSYF_UI()
         {
             InitializeComponent();
             Conexion conexion = new Conexion();
             conexion.Establecer_Conexion();
-            this.WindowState = FormWindowState.Maximized;
+
         }
-       
+
+        private void SGSYF_UI_Shown(object sender, EventArgs e)
+        {
+
+        }
+
         private void SGSYF_UI_Load(object sender, EventArgs e)
         {
 
@@ -116,7 +124,7 @@ namespace SGSYF
             pnl_menuLateral.Visible = false;
             esconderSubMenu(0);
         }
-
+        #endregion
         private void button1_Click(object sender, EventArgs e)
         {
             if (btn_pnl_Productos.Visible == false)
@@ -152,8 +160,20 @@ namespace SGSYF
 
         }
 
+        private void SGSYF_UI_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Form_Principal.Instance.Close();
+        }
 
-        #endregion
+        private void btn_categorias_Click(object sender, EventArgs e)
+        {
+            Categorias categorias = new Categorias();
+            abrirFormHijo(categorias);
+            pnl_menuLateral.Visible = false;
+        }
+
+
+
 
 
 
