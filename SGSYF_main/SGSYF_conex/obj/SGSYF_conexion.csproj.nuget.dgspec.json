@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj": {}
+    "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj": {
+    "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj",
+        "projectUniqueName": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj",
         "projectName": "SGSYF_conexion",
-        "projectPath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj",
-        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\source\\repos\\SGSYF\\SGSYF\\SGSYF_main\\SGSYF_conex\\obj\\",
+        "projectPath": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF_conex\\SGSYF_conexion.csproj",
+        "packagesPath": "C:\\Users\\joaco\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto_Repo_Tiago\\SGSYF_main\\SGSYF_conex\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joaco\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
