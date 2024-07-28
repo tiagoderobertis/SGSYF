@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SGSYF_UI));
             pnl_menuLateral = new Panel();
-            btn_pnl_help = new Button();
             button6 = new Button();
+            btn_pnl_help = new Button();
             subpnl_stock = new Panel();
+            button1 = new Button();
             btn_listaProductos_Stock = new Button();
             btn_pnl_Stock = new Button();
             subpnl_productos = new Panel();
@@ -47,9 +48,9 @@
             pnl_contenedor = new Panel();
             btn_desplegarMenuLateral = new Button();
             panel1 = new Panel();
+            pic_logo = new PictureBox();
             btn_config = new Button();
             lbl_nom = new Label();
-            pic_logo = new PictureBox();
             pnl_menuLateral.SuspendLayout();
             subpnl_stock.SuspendLayout();
             subpnl_productos.SuspendLayout();
@@ -63,8 +64,8 @@
             pnl_menuLateral.AutoScroll = true;
             pnl_menuLateral.BackColor = Color.Black;
             pnl_menuLateral.BorderStyle = BorderStyle.FixedSingle;
-            pnl_menuLateral.Controls.Add(btn_pnl_help);
             pnl_menuLateral.Controls.Add(button6);
+            pnl_menuLateral.Controls.Add(btn_pnl_help);
             pnl_menuLateral.Controls.Add(subpnl_stock);
             pnl_menuLateral.Controls.Add(btn_pnl_Stock);
             pnl_menuLateral.Controls.Add(subpnl_productos);
@@ -73,51 +74,68 @@
             pnl_menuLateral.Dock = DockStyle.Left;
             pnl_menuLateral.Location = new Point(0, 78);
             pnl_menuLateral.Name = "pnl_menuLateral";
-            pnl_menuLateral.Size = new Size(253, 651);
+            pnl_menuLateral.Size = new Size(238, 651);
             pnl_menuLateral.TabIndex = 25;
             pnl_menuLateral.Visible = false;
-            // 
-            // btn_pnl_help
-            // 
-            btn_pnl_help.BackColor = Color.Black;
-            btn_pnl_help.Dock = DockStyle.Top;
-            btn_pnl_help.FlatAppearance.BorderSize = 0;
-            btn_pnl_help.FlatStyle = FlatStyle.Flat;
-            btn_pnl_help.ForeColor = Color.White;
-            btn_pnl_help.Location = new Point(0, 455);
-            btn_pnl_help.Margin = new Padding(0);
-            btn_pnl_help.Name = "btn_pnl_help";
-            btn_pnl_help.Size = new Size(251, 45);
-            btn_pnl_help.TabIndex = 31;
-            btn_pnl_help.Text = "Help";
-            btn_pnl_help.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
             button6.BackColor = Color.Black;
-            button6.Dock = DockStyle.Top;
+            button6.Dock = DockStyle.Bottom;
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
             button6.ForeColor = Color.White;
-            button6.Location = new Point(0, 410);
+            button6.Location = new Point(0, 559);
             button6.Margin = new Padding(0);
             button6.Name = "button6";
-            button6.Size = new Size(251, 45);
+            button6.Size = new Size(236, 45);
             button6.TabIndex = 29;
             button6.Text = "Configuracion";
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
+            // btn_pnl_help
+            // 
+            btn_pnl_help.BackColor = Color.Black;
+            btn_pnl_help.Dock = DockStyle.Bottom;
+            btn_pnl_help.FlatAppearance.BorderSize = 0;
+            btn_pnl_help.FlatStyle = FlatStyle.Flat;
+            btn_pnl_help.ForeColor = Color.White;
+            btn_pnl_help.Location = new Point(0, 604);
+            btn_pnl_help.Margin = new Padding(0);
+            btn_pnl_help.Name = "btn_pnl_help";
+            btn_pnl_help.Size = new Size(236, 45);
+            btn_pnl_help.TabIndex = 31;
+            btn_pnl_help.Text = "Help";
+            btn_pnl_help.UseVisualStyleBackColor = false;
+            // 
             // subpnl_stock
             // 
             subpnl_stock.BackColor = Color.Black;
+            subpnl_stock.Controls.Add(button1);
             subpnl_stock.Controls.Add(btn_listaProductos_Stock);
             subpnl_stock.Dock = DockStyle.Top;
             subpnl_stock.Location = new Point(0, 357);
             subpnl_stock.Name = "subpnl_stock";
-            subpnl_stock.Size = new Size(251, 53);
+            subpnl_stock.Size = new Size(236, 77);
             subpnl_stock.TabIndex = 28;
             subpnl_stock.Visible = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.White;
+            button1.Dock = DockStyle.Top;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.Navy;
+            button1.Location = new Point(0, 40);
+            button1.Name = "button1";
+            button1.Padding = new Padding(10, 0, 0, 0);
+            button1.Size = new Size(236, 40);
+            button1.TabIndex = 27;
+            button1.Text = "Datos de ventas";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = false;
             // 
             // btn_listaProductos_Stock
             // 
@@ -129,7 +147,7 @@
             btn_listaProductos_Stock.Location = new Point(0, 0);
             btn_listaProductos_Stock.Name = "btn_listaProductos_Stock";
             btn_listaProductos_Stock.Padding = new Padding(10, 0, 0, 0);
-            btn_listaProductos_Stock.Size = new Size(251, 40);
+            btn_listaProductos_Stock.Size = new Size(236, 40);
             btn_listaProductos_Stock.TabIndex = 26;
             btn_listaProductos_Stock.Text = "Ver Lista de Productos";
             btn_listaProductos_Stock.TextAlign = ContentAlignment.MiddleLeft;
@@ -146,7 +164,7 @@
             btn_pnl_Stock.Location = new Point(0, 312);
             btn_pnl_Stock.Margin = new Padding(0);
             btn_pnl_Stock.Name = "btn_pnl_Stock";
-            btn_pnl_Stock.Size = new Size(251, 45);
+            btn_pnl_Stock.Size = new Size(236, 45);
             btn_pnl_Stock.TabIndex = 27;
             btn_pnl_Stock.Text = "Stock";
             btn_pnl_Stock.TextAlign = ContentAlignment.MiddleLeft;
@@ -163,7 +181,7 @@
             subpnl_productos.Dock = DockStyle.Top;
             subpnl_productos.Location = new Point(0, 145);
             subpnl_productos.Name = "subpnl_productos";
-            subpnl_productos.Size = new Size(251, 167);
+            subpnl_productos.Size = new Size(236, 167);
             subpnl_productos.TabIndex = 26;
             subpnl_productos.Visible = false;
             // 
@@ -177,7 +195,7 @@
             btn_categorias.Location = new Point(0, 120);
             btn_categorias.Name = "btn_categorias";
             btn_categorias.Padding = new Padding(10, 0, 0, 0);
-            btn_categorias.Size = new Size(251, 40);
+            btn_categorias.Size = new Size(236, 40);
             btn_categorias.TabIndex = 29;
             btn_categorias.Text = "Categorias de Productos";
             btn_categorias.TextAlign = ContentAlignment.MiddleLeft;
@@ -194,7 +212,7 @@
             btn_editarProductos_Productos.Location = new Point(0, 80);
             btn_editarProductos_Productos.Name = "btn_editarProductos_Productos";
             btn_editarProductos_Productos.Padding = new Padding(10, 0, 0, 0);
-            btn_editarProductos_Productos.Size = new Size(251, 40);
+            btn_editarProductos_Productos.Size = new Size(236, 40);
             btn_editarProductos_Productos.TabIndex = 28;
             btn_editarProductos_Productos.Text = "Editar Productos";
             btn_editarProductos_Productos.TextAlign = ContentAlignment.MiddleLeft;
@@ -211,7 +229,7 @@
             btn_eliminarProductos_Productos.Location = new Point(0, 40);
             btn_eliminarProductos_Productos.Name = "btn_eliminarProductos_Productos";
             btn_eliminarProductos_Productos.Padding = new Padding(10, 0, 0, 0);
-            btn_eliminarProductos_Productos.Size = new Size(251, 40);
+            btn_eliminarProductos_Productos.Size = new Size(236, 40);
             btn_eliminarProductos_Productos.TabIndex = 27;
             btn_eliminarProductos_Productos.Text = "Eliminar Productos";
             btn_eliminarProductos_Productos.TextAlign = ContentAlignment.MiddleLeft;
@@ -228,7 +246,7 @@
             btn_agregarProductos_Productos.Location = new Point(0, 0);
             btn_agregarProductos_Productos.Name = "btn_agregarProductos_Productos";
             btn_agregarProductos_Productos.Padding = new Padding(10, 0, 0, 0);
-            btn_agregarProductos_Productos.Size = new Size(251, 40);
+            btn_agregarProductos_Productos.Size = new Size(236, 40);
             btn_agregarProductos_Productos.TabIndex = 26;
             btn_agregarProductos_Productos.Text = "Agregar Productos";
             btn_agregarProductos_Productos.TextAlign = ContentAlignment.MiddleLeft;
@@ -245,7 +263,7 @@
             btn_pnl_Productos.Location = new Point(0, 100);
             btn_pnl_Productos.Margin = new Padding(0);
             btn_pnl_Productos.Name = "btn_pnl_Productos";
-            btn_pnl_Productos.Size = new Size(251, 45);
+            btn_pnl_Productos.Size = new Size(236, 45);
             btn_pnl_Productos.TabIndex = 26;
             btn_pnl_Productos.Text = "Productos";
             btn_pnl_Productos.TextAlign = ContentAlignment.MiddleLeft;
@@ -259,7 +277,7 @@
             pnl_logo.Dock = DockStyle.Top;
             pnl_logo.Location = new Point(0, 0);
             pnl_logo.Name = "pnl_logo";
-            pnl_logo.Size = new Size(251, 100);
+            pnl_logo.Size = new Size(236, 100);
             pnl_logo.TabIndex = 26;
             // 
             // label2
@@ -300,7 +318,7 @@
             btn_desplegarMenuLateral.Dock = DockStyle.Left;
             btn_desplegarMenuLateral.FlatStyle = FlatStyle.Flat;
             btn_desplegarMenuLateral.ForeColor = Color.White;
-            btn_desplegarMenuLateral.Location = new Point(253, 78);
+            btn_desplegarMenuLateral.Location = new Point(238, 78);
             btn_desplegarMenuLateral.Name = "btn_desplegarMenuLateral";
             btn_desplegarMenuLateral.Size = new Size(37, 651);
             btn_desplegarMenuLateral.TabIndex = 26;
@@ -321,6 +339,14 @@
             panel1.TabIndex = 27;
             panel1.Paint += panel1_Paint;
             // 
+            // pic_logo
+            // 
+            pic_logo.Location = new Point(22, 12);
+            pic_logo.Name = "pic_logo";
+            pic_logo.Size = new Size(51, 50);
+            pic_logo.TabIndex = 30;
+            pic_logo.TabStop = false;
+            // 
             // btn_config
             // 
             btn_config.Anchor = AnchorStyles.Top | AnchorStyles.Right;
@@ -333,7 +359,7 @@
             btn_config.Size = new Size(50, 50);
             btn_config.TabIndex = 29;
             btn_config.UseVisualStyleBackColor = false;
-            btn_config.Click += btn_config_Click;
+            btn_config.Click += btn_config_Click_1;
             // 
             // lbl_nom
             // 
@@ -346,14 +372,6 @@
             lbl_nom.Size = new Size(305, 33);
             lbl_nom.TabIndex = 0;
             lbl_nom.Text = "Nombre de tu Empresa";
-            // 
-            // pic_logo
-            // 
-            pic_logo.Location = new Point(22, 12);
-            pic_logo.Name = "pic_logo";
-            pic_logo.Size = new Size(51, 50);
-            pic_logo.TabIndex = 30;
-            pic_logo.TabStop = false;
             // 
             // SGSYF_UI
             // 
@@ -369,7 +387,7 @@
             ForeColor = SystemColors.ActiveCaption;
             MinimumSize = new Size(1024, 768);
             Name = "SGSYF_UI";
-            Text = "DataStocker";
+            Text = "SGSYF";
             WindowState = FormWindowState.Maximized;
             FormClosing += SGSYF_UI_FormClosing;
             Load += SGSYF_UI_Load_1;
@@ -403,8 +421,9 @@
         private Label label2;
         private Panel panel1;
         private Button btn_config;
-        private Label lbl_nom;
+        public Label lbl_nom;
         private Button btn_categorias;
         private PictureBox pic_logo;
+        private Button button1;
     }
 }

@@ -8,15 +8,14 @@ namespace SGSYF
 {
     public partial class SGSYF_UI : Form
     {
-
+        public static SGSYF_UI Instance { get; private set; }
         public SGSYF_UI()
         {
             InitializeComponent();
             Conexion conexion = new Conexion();
             conexion.Establecer_Conexion();
             CambiarNombreEmpresa();
-
-
+            Instance = this;
         }
 
         public void CambiarNombreEmpresa()
@@ -28,7 +27,7 @@ namespace SGSYF
                 MessageBox.Show("No se pudo establecer la conexión a la base de datos.");
                 return;
             }
-            string query = "select nombre_empresa from configuracion where id_config = 2;";
+            string query = "select nombre_empresa from configuracion where id_config = 1;";
             MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
             try
             {
@@ -206,11 +205,10 @@ namespace SGSYF
 
         }
 
-
-
-
-
-
+        private void btn_config_Click_1(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Configuracion.Form_Principal_Confg());
+        }
 
         // CODIGO OBSOLETO
         /*private void button6_Click(object sender, EventArgs e)

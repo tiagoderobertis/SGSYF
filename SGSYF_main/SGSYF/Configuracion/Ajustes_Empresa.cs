@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using SGSYF.Inicio_de_Sesion;
 using SGSYF_conexion;
 using System;
 using System.Collections.Generic;
@@ -17,10 +18,12 @@ namespace SGSYF.Configuracion
         public Ajustes_Empresa()
         {
             InitializeComponent();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
             this.Close();
         }
 
@@ -36,11 +39,15 @@ namespace SGSYF.Configuracion
 
             string nombre = txt_nombre_e.Text;
 
-            string query = "UPDATE configuracion SET nombre_empresa = '" + nombre + "' where id_config = 2;";
+            string query = "UPDATE configuracion SET nombre_empresa = '" + nombre + "' where id_config = 1;";
             MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
             try
             {
                 cmd.ExecuteNonQuery();
+                if (SGSYF_UI.Instance != null)
+                {
+                    SGSYF_UI.Instance.CambiarNombreEmpresa();
+                }
                 MessageBox.Show("Cambiado con exito.");
             }
             catch (MySqlException ex)

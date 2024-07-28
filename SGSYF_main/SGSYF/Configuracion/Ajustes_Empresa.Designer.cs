@@ -38,7 +38,7 @@
             // txt_nombre_e
             // 
             txt_nombre_e.Anchor = AnchorStyles.None;
-            txt_nombre_e.Location = new Point(447, 189);
+            txt_nombre_e.Location = new Point(445, 225);
             txt_nombre_e.Name = "txt_nombre_e";
             txt_nombre_e.Size = new Size(122, 23);
             txt_nombre_e.TabIndex = 7;
@@ -48,7 +48,7 @@
             label2.Anchor = AnchorStyles.None;
             label2.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(299, 189);
+            label2.Location = new Point(297, 225);
             label2.Name = "label2";
             label2.Size = new Size(142, 28);
             label2.TabIndex = 6;
@@ -60,7 +60,7 @@
             button2.BackColor = Color.Black;
             button2.FlatStyle = FlatStyle.Flat;
             button2.ForeColor = Color.White;
-            button2.Location = new Point(810, 26);
+            button2.Location = new Point(810, 30);
             button2.Name = "button2";
             button2.Size = new Size(45, 45);
             button2.TabIndex = 23;
@@ -73,7 +73,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.Font = new Font("SimSun", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(313, 81);
+            label1.Location = new Point(311, 117);
             label1.Name = "label1";
             label1.Size = new Size(246, 28);
             label1.TabIndex = 24;
@@ -84,7 +84,7 @@
             btn_guardar.Anchor = AnchorStyles.None;
             btn_guardar.BackColor = SystemColors.ControlLightLight;
             btn_guardar.FlatStyle = FlatStyle.Flat;
-            btn_guardar.Location = new Point(399, 252);
+            btn_guardar.Location = new Point(397, 288);
             btn_guardar.Name = "btn_guardar";
             btn_guardar.Size = new Size(75, 23);
             btn_guardar.TabIndex = 25;
@@ -97,7 +97,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(888, 488);
+            ClientSize = new Size(884, 561);
             Controls.Add(btn_guardar);
             Controls.Add(label1);
             Controls.Add(button2);
