@@ -35,20 +35,23 @@
             // 
             // button1
             // 
-            button1.Location = new Point(255, 85);
+            button1.BackColor = Color.FromArgb(165, 214, 167);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.FromArgb(46, 125, 50);
+            button1.Location = new Point(147, 165);
             button1.Name = "button1";
-            button1.Size = new Size(170, 27);
+            button1.Size = new Size(84, 74);
             button1.TabIndex = 21;
             button1.Text = "Ajustes de Informacion";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
             button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button2.BackColor = Color.Black;
+            button2.BackColor = Color.FromArgb(165, 214, 167);
             button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = Color.White;
+            button2.ForeColor = Color.FromArgb(46, 125, 50);
             button2.Location = new Point(810, 30);
             button2.Name = "button2";
             button2.Size = new Size(45, 45);
@@ -59,19 +62,22 @@
             // 
             // button3
             // 
-            button3.Location = new Point(255, 135);
+            button3.BackColor = Color.FromArgb(165, 214, 167);
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.ForeColor = Color.FromArgb(46, 125, 50);
+            button3.Location = new Point(274, 165);
             button3.Name = "button3";
-            button3.Size = new Size(170, 23);
+            button3.Size = new Size(84, 74);
             button3.TabIndex = 23;
             button3.Text = "Ajustes de empresa";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // Form_Principal_Confg
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaptionText;
+            BackColor = Color.FromArgb(200, 230, 201);
             ClientSize = new Size(884, 561);
             Controls.Add(button3);
             Controls.Add(button2);

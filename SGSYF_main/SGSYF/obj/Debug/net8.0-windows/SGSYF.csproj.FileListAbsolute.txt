@@ -255,3 +255,4 @@ C:\Users\tiago\source\repos\SGSYF\SGSYF\SGSYF_main\SGSYF\obj\Debug\net8.0-window
 C:\Users\tiago\source\repos\SGSYF\SGSYF\SGSYF_main\SGSYF\obj\Debug\net8.0-windows\SGSYF.pdb
 C:\Users\tiago\source\repos\SGSYF\SGSYF\SGSYF_main\SGSYF\obj\Debug\net8.0-windows\SGSYF.genruntimeconfig.cache
 C:\Users\tiago\source\repos\SGSYF\SGSYF\SGSYF_main\SGSYF\obj\Debug\net8.0-windows\ref\SGSYF.dll
+C:\Users\tiago\source\repos\SGSYF\SGSYF\SGSYF_main\SGSYF\obj\Debug\net8.0-windows\SGSYF.RegistrarVentas.resources

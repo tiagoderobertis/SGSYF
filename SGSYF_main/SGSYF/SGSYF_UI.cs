@@ -16,7 +16,9 @@ namespace SGSYF
             conexion.Establecer_Conexion();
             CambiarNombreEmpresa();
             Instance = this;
+            timer1.Enabled = true;
         }
+
 
         public void CambiarNombreEmpresa()
         {
@@ -155,6 +157,7 @@ namespace SGSYF
         #endregion
         private void button1_Click(object sender, EventArgs e)
         {
+
             if (btn_pnl_Productos.Visible == false)
             {
                 pnl_menuLateral.Visible = true;
@@ -208,6 +211,62 @@ namespace SGSYF
         private void btn_config_Click_1(object sender, EventArgs e)
         {
             abrirFormHijo(new Configuracion.Form_Principal_Confg());
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbl_horaActual.Text = DateTime.Now.ToString("hh:mm:ss");
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var ventas = new RegistrarVentas();
+            abrirFormHijo(ventas);
+            pnl_menuLateral.Visible = false;
+        }
+
+        private void btn_regVenta_Click(object sender, EventArgs e)
+        {
+            var ventas = new RegistrarVentas();
+            abrirFormHijo(ventas);
+
+        }
+
+        private void btn_agregarProductos_Click(object sender, EventArgs e)
+        {
+            var agProducto = new AgregarProductoNuevo();
+            abrirFormHijo(agProducto);
+
+        }
+
+        private void btn_eliminarProductos_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new EliminarProductoCompletamente());
+        }
+
+        private void btncategorias_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Categorias());
+        }
+
+        private void btnEditarProductos_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Productos.Modificar());
+        }
+
+        private void btnVerListaDeProductos_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Stock());
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
 
         // CODIGO OBSOLETO

@@ -52,9 +52,9 @@
             // label3
             // 
             label3.Anchor = AnchorStyles.None;
-            label3.BackColor = Color.Black;
+            label3.BackColor = Color.FromArgb(200, 230, 201);
             label3.Font = new Font("Sitka Text", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
+            label3.ForeColor = Color.FromArgb(46, 125, 50);
             label3.Location = new Point(333, 68);
             label3.Name = "label3";
             label3.Size = new Size(241, 31);
@@ -66,7 +66,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
+            label4.ForeColor = Color.FromArgb(46, 125, 50);
             label4.Location = new Point(279, 187);
             label4.Name = "label4";
             label4.Size = new Size(57, 15);
@@ -78,7 +78,7 @@
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.White;
+            label5.ForeColor = Color.FromArgb(46, 125, 50);
             label5.Location = new Point(280, 252);
             label5.Name = "label5";
             label5.Size = new Size(81, 15);
@@ -90,7 +90,7 @@
             label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
+            label6.ForeColor = Color.FromArgb(46, 125, 50);
             label6.Location = new Point(278, 115);
             label6.Name = "label6";
             label6.Size = new Size(51, 15);
@@ -102,7 +102,7 @@
             label7.Anchor = AnchorStyles.None;
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.White;
+            label7.ForeColor = Color.FromArgb(46, 125, 50);
             label7.Location = new Point(278, 325);
             label7.Name = "label7";
             label7.Size = new Size(127, 15);
@@ -114,7 +114,7 @@
             label9.Anchor = AnchorStyles.None;
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.White;
+            label9.ForeColor = Color.FromArgb(46, 125, 50);
             label9.Location = new Point(484, 115);
             label9.Name = "label9";
             label9.Size = new Size(66, 15);
@@ -126,7 +126,7 @@
             label11.Anchor = AnchorStyles.None;
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.White;
+            label11.ForeColor = Color.FromArgb(46, 125, 50);
             label11.Location = new Point(483, 325);
             label11.Name = "label11";
             label11.Size = new Size(61, 15);
@@ -136,7 +136,10 @@
             // btn_agregar
             // 
             btn_agregar.Anchor = AnchorStyles.None;
-            btn_agregar.BackColor = Color.Black;
+            btn_agregar.BackColor = Color.FromArgb(165, 214, 167);
+            btn_agregar.FlatAppearance.BorderColor = Color.FromArgb(46, 125, 50);
+            btn_agregar.FlatStyle = FlatStyle.Flat;
+            btn_agregar.ForeColor = Color.FromArgb(46, 125, 50);
             btn_agregar.Location = new Point(398, 406);
             btn_agregar.Name = "btn_agregar";
             btn_agregar.Size = new Size(100, 42);
@@ -148,7 +151,7 @@
             // cmb_categoria
             // 
             cmb_categoria.Anchor = AnchorStyles.None;
-            cmb_categoria.BackColor = Color.White;
+            cmb_categoria.BackColor = Color.FromArgb(232, 245, 233);
             cmb_categoria.ForeColor = SystemColors.WindowText;
             cmb_categoria.FormattingEnabled = true;
             cmb_categoria.Location = new Point(279, 205);
@@ -160,7 +163,7 @@
             // cmb_subcategoria
             // 
             cmb_subcategoria.Anchor = AnchorStyles.None;
-            cmb_subcategoria.BackColor = Color.White;
+            cmb_subcategoria.BackColor = Color.FromArgb(232, 245, 233);
             cmb_subcategoria.FormattingEnabled = true;
             cmb_subcategoria.Location = new Point(280, 270);
             cmb_subcategoria.Name = "cmb_subcategoria";
@@ -170,7 +173,8 @@
             // txt_nombre
             // 
             txt_nombre.Anchor = AnchorStyles.None;
-            txt_nombre.BackColor = Color.White;
+            txt_nombre.BackColor = Color.FromArgb(232, 245, 233);
+            txt_nombre.BorderStyle = BorderStyle.FixedSingle;
             txt_nombre.Location = new Point(278, 145);
             txt_nombre.Name = "txt_nombre";
             txt_nombre.Size = new Size(140, 23);
@@ -179,7 +183,8 @@
             // txt_stock
             // 
             txt_stock.Anchor = AnchorStyles.None;
-            txt_stock.BackColor = Color.White;
+            txt_stock.BackColor = Color.FromArgb(232, 245, 233);
+            txt_stock.BorderStyle = BorderStyle.FixedSingle;
             txt_stock.Location = new Point(484, 145);
             txt_stock.Name = "txt_stock";
             txt_stock.Size = new Size(140, 23);
@@ -188,8 +193,9 @@
             // txt_descripcion
             // 
             txt_descripcion.Anchor = AnchorStyles.None;
-            txt_descripcion.BackColor = Color.White;
-            txt_descripcion.Location = new Point(278, 343);
+            txt_descripcion.BackColor = Color.FromArgb(232, 245, 233);
+            txt_descripcion.BorderStyle = BorderStyle.FixedSingle;
+            txt_descripcion.Location = new Point(280, 343);
             txt_descripcion.Name = "txt_descripcion";
             txt_descripcion.Size = new Size(140, 23);
             txt_descripcion.TabIndex = 39;
@@ -197,7 +203,7 @@
             // cmb_proveedor
             // 
             cmb_proveedor.Anchor = AnchorStyles.None;
-            cmb_proveedor.BackColor = Color.White;
+            cmb_proveedor.BackColor = Color.FromArgb(232, 245, 233);
             cmb_proveedor.ForeColor = SystemColors.MenuText;
             cmb_proveedor.FormattingEnabled = true;
             cmb_proveedor.Location = new Point(484, 343);
@@ -210,7 +216,7 @@
             label12.Anchor = AnchorStyles.None;
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.White;
+            label12.ForeColor = Color.FromArgb(46, 125, 50);
             label12.Location = new Point(484, 252);
             label12.Name = "label12";
             label12.Size = new Size(104, 15);
@@ -220,7 +226,7 @@
             // cmb_unidadmedida
             // 
             cmb_unidadmedida.Anchor = AnchorStyles.None;
-            cmb_unidadmedida.BackColor = Color.White;
+            cmb_unidadmedida.BackColor = Color.FromArgb(232, 245, 233);
             cmb_unidadmedida.ForeColor = SystemColors.Desktop;
             cmb_unidadmedida.FormattingEnabled = true;
             cmb_unidadmedida.Location = new Point(484, 270);
@@ -231,7 +237,8 @@
             // txt_codigobarra
             // 
             txt_codigobarra.Anchor = AnchorStyles.None;
-            txt_codigobarra.BackColor = Color.White;
+            txt_codigobarra.BackColor = Color.FromArgb(232, 245, 233);
+            txt_codigobarra.BorderStyle = BorderStyle.FixedSingle;
             txt_codigobarra.Location = new Point(484, 205);
             txt_codigobarra.Name = "txt_codigobarra";
             txt_codigobarra.Size = new Size(140, 23);
@@ -242,7 +249,7 @@
             label13.Anchor = AnchorStyles.None;
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.White;
+            label13.ForeColor = Color.FromArgb(46, 125, 50);
             label13.Location = new Point(484, 187);
             label13.Name = "label13";
             label13.Size = new Size(75, 15);
@@ -252,8 +259,9 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button1.BackColor = Color.Black;
+            button1.BackColor = Color.FromArgb(165, 214, 167);
             button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.FromArgb(46, 125, 50);
             button1.Location = new Point(810, 30);
             button1.Name = "button1";
             button1.Size = new Size(45, 45);
@@ -266,7 +274,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
+            BackColor = Color.FromArgb(200, 230, 201);
             ClientSize = new Size(884, 561);
             Controls.Add(button1);
             Controls.Add(txt_codigobarra);
@@ -287,7 +295,7 @@
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            ForeColor = Color.White;
+            ForeColor = Color.FromArgb(46, 125, 50);
             MinimumSize = new Size(900, 600);
             Name = "AgregarProductoNuevo";
             Text = "Productos";

@@ -47,6 +47,7 @@
             // txt_descripcioncategoria
             // 
             txt_descripcioncategoria.Anchor = AnchorStyles.None;
+            txt_descripcioncategoria.BackColor = Color.FromArgb(232, 245, 233);
             txt_descripcioncategoria.Location = new Point(281, 289);
             txt_descripcioncategoria.Name = "txt_descripcioncategoria";
             txt_descripcioncategoria.Size = new Size(104, 23);
@@ -55,6 +56,7 @@
             // txt_nombrecategoria
             // 
             txt_nombrecategoria.Anchor = AnchorStyles.None;
+            txt_nombrecategoria.BackColor = Color.FromArgb(232, 245, 233);
             txt_nombrecategoria.Location = new Point(281, 234);
             txt_nombrecategoria.Name = "txt_nombrecategoria";
             txt_nombrecategoria.Size = new Size(104, 23);
@@ -64,7 +66,9 @@
             // btn_agregarcategoria
             // 
             btn_agregarcategoria.Anchor = AnchorStyles.None;
-            btn_agregarcategoria.BackColor = Color.Black;
+            btn_agregarcategoria.BackColor = Color.FromArgb(165, 214, 167);
+            btn_agregarcategoria.FlatStyle = FlatStyle.Flat;
+            btn_agregarcategoria.ForeColor = Color.FromArgb(46, 125, 50);
             btn_agregarcategoria.Location = new Point(209, 332);
             btn_agregarcategoria.Name = "btn_agregarcategoria";
             btn_agregarcategoria.Size = new Size(80, 28);
@@ -78,7 +82,7 @@
             label7.Anchor = AnchorStyles.None;
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.White;
+            label7.ForeColor = Color.FromArgb(46, 125, 50);
             label7.Location = new Point(113, 292);
             label7.Name = "label7";
             label7.Size = new Size(127, 15);
@@ -90,7 +94,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
+            label4.ForeColor = Color.FromArgb(46, 125, 50);
             label4.Location = new Point(113, 237);
             label4.Name = "label4";
             label4.Size = new Size(94, 15);
@@ -100,9 +104,9 @@
             // label3
             // 
             label3.Anchor = AnchorStyles.None;
-            label3.BackColor = Color.Black;
+            label3.BackColor = Color.FromArgb(200, 230, 201);
             label3.Font = new Font("Sitka Text", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
+            label3.ForeColor = Color.FromArgb(46, 125, 50);
             label3.Location = new Point(158, 184);
             label3.Name = "label3";
             label3.Size = new Size(186, 31);
@@ -112,6 +116,7 @@
             // txt_subdescripcion
             // 
             txt_subdescripcion.Anchor = AnchorStyles.None;
+            txt_subdescripcion.BackColor = Color.FromArgb(232, 245, 233);
             txt_subdescripcion.Location = new Point(688, 320);
             txt_subdescripcion.Name = "txt_subdescripcion";
             txt_subdescripcion.Size = new Size(104, 23);
@@ -120,6 +125,7 @@
             // txt_nombresub
             // 
             txt_nombresub.Anchor = AnchorStyles.None;
+            txt_nombresub.BackColor = Color.FromArgb(232, 245, 233);
             txt_nombresub.Location = new Point(688, 270);
             txt_nombresub.Name = "txt_nombresub";
             txt_nombresub.Size = new Size(104, 23);
@@ -128,7 +134,9 @@
             // btn_agregarsub
             // 
             btn_agregarsub.Anchor = AnchorStyles.None;
-            btn_agregarsub.BackColor = Color.Black;
+            btn_agregarsub.BackColor = Color.FromArgb(165, 214, 167);
+            btn_agregarsub.FlatStyle = FlatStyle.Flat;
+            btn_agregarsub.ForeColor = Color.FromArgb(46, 125, 50);
             btn_agregarsub.Location = new Point(616, 358);
             btn_agregarsub.Name = "btn_agregarsub";
             btn_agregarsub.Size = new Size(80, 28);
@@ -142,7 +150,7 @@
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.White;
+            label5.ForeColor = Color.FromArgb(46, 125, 50);
             label5.Location = new Point(520, 323);
             label5.Name = "label5";
             label5.Size = new Size(127, 15);
@@ -154,7 +162,7 @@
             label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
+            label6.ForeColor = Color.FromArgb(46, 125, 50);
             label6.Location = new Point(520, 231);
             label6.Name = "label6";
             label6.Size = new Size(108, 15);
@@ -166,7 +174,7 @@
             label9.Anchor = AnchorStyles.None;
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.White;
+            label9.ForeColor = Color.FromArgb(46, 125, 50);
             label9.Location = new Point(520, 273);
             label9.Name = "label9";
             label9.Size = new Size(115, 15);
@@ -176,18 +184,20 @@
             // label10
             // 
             label10.Anchor = AnchorStyles.None;
-            label10.BackColor = Color.Black;
+            label10.BackColor = Color.FromArgb(200, 230, 201);
             label10.Font = new Font("Sitka Text", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.White;
+            label10.ForeColor = Color.FromArgb(46, 125, 50);
             label10.Location = new Point(545, 184);
             label10.Name = "label10";
             label10.Size = new Size(228, 31);
             label10.TabIndex = 77;
             label10.Text = "Agregar Sub Categoria";
+            label10.Click += label10_Click;
             // 
             // cmb_categoria_asociada
             // 
             cmb_categoria_asociada.Anchor = AnchorStyles.None;
+            cmb_categoria_asociada.BackColor = Color.FromArgb(232, 245, 233);
             cmb_categoria_asociada.FormattingEnabled = true;
             cmb_categoria_asociada.Location = new Point(688, 228);
             cmb_categoria_asociada.Name = "cmb_categoria_asociada";
@@ -198,7 +208,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
+            BackColor = Color.FromArgb(200, 230, 201);
             ClientSize = new Size(884, 561);
             Controls.Add(cmb_categoria_asociada);
             Controls.Add(label10);

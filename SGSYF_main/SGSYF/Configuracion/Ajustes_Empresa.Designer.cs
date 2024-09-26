@@ -38,6 +38,8 @@
             // txt_nombre_e
             // 
             txt_nombre_e.Anchor = AnchorStyles.None;
+            txt_nombre_e.BackColor = Color.FromArgb(232, 245, 233);
+            txt_nombre_e.BorderStyle = BorderStyle.FixedSingle;
             txt_nombre_e.Location = new Point(445, 225);
             txt_nombre_e.Name = "txt_nombre_e";
             txt_nombre_e.Size = new Size(122, 23);
@@ -47,7 +49,7 @@
             // 
             label2.Anchor = AnchorStyles.None;
             label2.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.ForeColor = Color.FromArgb(46, 125, 50);
             label2.Location = new Point(297, 225);
             label2.Name = "label2";
             label2.Size = new Size(142, 28);
@@ -57,9 +59,9 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button2.BackColor = Color.Black;
+            button2.BackColor = Color.FromArgb(165, 214, 167);
             button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = Color.White;
+            button2.ForeColor = Color.FromArgb(46, 125, 50);
             button2.Location = new Point(810, 30);
             button2.Name = "button2";
             button2.Size = new Size(45, 45);
@@ -72,7 +74,7 @@
             // 
             label1.Anchor = AnchorStyles.None;
             label1.Font = new Font("SimSun", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.ForeColor = Color.FromArgb(46, 125, 50);
             label1.Location = new Point(311, 117);
             label1.Name = "label1";
             label1.Size = new Size(246, 28);
@@ -82,8 +84,9 @@
             // btn_guardar
             // 
             btn_guardar.Anchor = AnchorStyles.None;
-            btn_guardar.BackColor = SystemColors.ControlLightLight;
+            btn_guardar.BackColor = Color.FromArgb(165, 214, 167);
             btn_guardar.FlatStyle = FlatStyle.Flat;
+            btn_guardar.ForeColor = Color.FromArgb(46, 125, 50);
             btn_guardar.Location = new Point(397, 288);
             btn_guardar.Name = "btn_guardar";
             btn_guardar.Size = new Size(75, 23);
@@ -96,13 +99,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaptionText;
+            BackColor = Color.FromArgb(200, 230, 201);
             ClientSize = new Size(884, 561);
             Controls.Add(btn_guardar);
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(txt_nombre_e);
             Controls.Add(label2);
+            ForeColor = SystemColors.ControlText;
             Name = "Ajustes_Empresa";
             Text = "Ajustes_Empresa";
             ResumeLayout(false);

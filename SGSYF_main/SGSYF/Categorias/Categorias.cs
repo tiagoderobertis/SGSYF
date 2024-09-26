@@ -18,8 +18,8 @@ namespace SGSYF
         public Categorias()
         {
             InitializeComponent();
-            
-            
+
+
             CategoriaDevolver();
         }
         public void CategoriaDevolver()
@@ -109,8 +109,8 @@ namespace SGSYF
             {
                 string nombre_subcat = txt_nombresub.Text;
                 string subdescripcion = txt_subdescripcion.Text;
-                
-                
+
+
 
                 //intento n°1 para obtener id_categoria
 
@@ -170,6 +170,10 @@ namespace SGSYF
             }
             return a;
         }
-      
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
