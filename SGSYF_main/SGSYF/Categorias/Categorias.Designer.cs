@@ -42,6 +42,7 @@
             label9 = new Label();
             label10 = new Label();
             cmb_categoria_asociada = new ComboBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // txt_descripcioncategoria
@@ -66,9 +67,9 @@
             // btn_agregarcategoria
             // 
             btn_agregarcategoria.Anchor = AnchorStyles.None;
-            btn_agregarcategoria.BackColor = Color.FromArgb(165, 214, 167);
+            btn_agregarcategoria.BackColor = Color.FromArgb(239, 239, 239);
             btn_agregarcategoria.FlatStyle = FlatStyle.Flat;
-            btn_agregarcategoria.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_agregarcategoria.ForeColor = Color.FromArgb(0, 0, 0);
             btn_agregarcategoria.Location = new Point(209, 332);
             btn_agregarcategoria.Name = "btn_agregarcategoria";
             btn_agregarcategoria.Size = new Size(80, 28);
@@ -82,7 +83,7 @@
             label7.Anchor = AnchorStyles.None;
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.FromArgb(46, 125, 50);
+            label7.ForeColor = Color.FromArgb(0, 0, 0);
             label7.Location = new Point(113, 292);
             label7.Name = "label7";
             label7.Size = new Size(127, 15);
@@ -94,7 +95,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.FromArgb(46, 125, 50);
+            label4.ForeColor = Color.FromArgb(0, 0, 0);
             label4.Location = new Point(113, 237);
             label4.Name = "label4";
             label4.Size = new Size(94, 15);
@@ -104,9 +105,9 @@
             // label3
             // 
             label3.Anchor = AnchorStyles.None;
-            label3.BackColor = Color.FromArgb(200, 230, 201);
+            label3.BackColor = Color.FromArgb(249, 249, 249);
             label3.Font = new Font("Sitka Text", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.FromArgb(46, 125, 50);
+            label3.ForeColor = Color.FromArgb(0, 0, 0);
             label3.Location = new Point(158, 184);
             label3.Name = "label3";
             label3.Size = new Size(186, 31);
@@ -134,9 +135,9 @@
             // btn_agregarsub
             // 
             btn_agregarsub.Anchor = AnchorStyles.None;
-            btn_agregarsub.BackColor = Color.FromArgb(165, 214, 167);
+            btn_agregarsub.BackColor = Color.FromArgb(239, 239, 239);
             btn_agregarsub.FlatStyle = FlatStyle.Flat;
-            btn_agregarsub.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_agregarsub.ForeColor = Color.FromArgb(0, 0, 0);
             btn_agregarsub.Location = new Point(616, 358);
             btn_agregarsub.Name = "btn_agregarsub";
             btn_agregarsub.Size = new Size(80, 28);
@@ -150,7 +151,7 @@
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.FromArgb(46, 125, 50);
+            label5.ForeColor = Color.FromArgb(0, 0, 0);
             label5.Location = new Point(520, 323);
             label5.Name = "label5";
             label5.Size = new Size(127, 15);
@@ -162,7 +163,7 @@
             label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.FromArgb(46, 125, 50);
+            label6.ForeColor = Color.FromArgb(0, 0, 0);
             label6.Location = new Point(520, 231);
             label6.Name = "label6";
             label6.Size = new Size(108, 15);
@@ -174,7 +175,7 @@
             label9.Anchor = AnchorStyles.None;
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.FromArgb(46, 125, 50);
+            label9.ForeColor = Color.FromArgb(0, 0, 0);
             label9.Location = new Point(520, 273);
             label9.Name = "label9";
             label9.Size = new Size(115, 15);
@@ -184,9 +185,9 @@
             // label10
             // 
             label10.Anchor = AnchorStyles.None;
-            label10.BackColor = Color.FromArgb(200, 230, 201);
+            label10.BackColor = Color.FromArgb(249, 249, 249);
             label10.Font = new Font("Sitka Text", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.FromArgb(46, 125, 50);
+            label10.ForeColor = Color.FromArgb(0, 0, 0);
             label10.Location = new Point(545, 184);
             label10.Name = "label10";
             label10.Size = new Size(228, 31);
@@ -204,12 +205,27 @@
             cmb_categoria_asociada.Size = new Size(104, 23);
             cmb_categoria_asociada.TabIndex = 78;
             // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button1.BackColor = Color.FromArgb(239, 239, 239);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.FromArgb(0, 0, 0);
+            button1.Location = new Point(810, 30);
+            button1.Name = "button1";
+            button1.Size = new Size(45, 45);
+            button1.TabIndex = 79;
+            button1.Text = "X";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // Categorias
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(200, 230, 201);
+            BackColor = Color.FromArgb(249, 249, 249);
             ClientSize = new Size(884, 561);
+            Controls.Add(button1);
             Controls.Add(cmb_categoria_asociada);
             Controls.Add(label10);
             Controls.Add(label9);
@@ -249,5 +265,6 @@
         private Label label9;
         private Label label10;
         private ComboBox cmb_categoria_asociada;
+        private Button button1;
     }
 }

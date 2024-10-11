@@ -269,81 +269,57 @@ namespace SGSYF
 
         }
 
-        // CODIGO OBSOLETO
-        /*private void button6_Click(object sender, EventArgs e)
+        private void btn_closeProgram_Click(object sender, EventArgs e)
         {
-            if (Validar_Form("Productos") == false)
+            this.Close();
+        }
+
+        private void btn_maximize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
             {
-                ProductosUI productos = new ProductosUI();
-                productos.MdiParent = this;
-                productos.Show();
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
             }
         }
 
-        public bool Validar_Form(string nombre)
+        private void btn_minimize_Click(object sender, EventArgs e)
         {
-            foreach (var form_hijo in this.MdiChildren)
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
+
+        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = this.Location;
+        }
+
+        private void panelTitleBar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
             {
-                if (form_hijo.Name == nombre)
-                {
-                    form_hijo.BringToFront();
-                    return true;
-                }
-                return false;
-            }
-            return false;
-        }
-
-        public void MoverTreeViewAbajo(TreeView treeView, int pixels)
-        {
-            TreeView treeView1 = new TreeView();
-
-            var obtener_ubi = treeView.Location;
-
-            var nueva_ubi = new Point(obtener_ubi.X, obtener_ubi.Y + pixels);
-
-            treeView.Location = nueva_ubi;
-        }
-
-        public void Mover()
-        {
-            MoverTreeViewAbajo(treeView1, 15);
-        }
-
-        private void btn_stock_Click(object sender, EventArgs e)
-        {
-            if (Validar_Form("Stock") == false)
-            {
-                Stock stock = new Stock();
-                stock.MdiParent = this;
-                stock.Show();
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
             }
         }
 
-        private void btn_compra_Click(object sender, EventArgs e)
+        private void panelTitleBar_MouseUp(object sender, MouseEventArgs e)
         {
-            if (Validar_Form("Compra") == false)
-            {
-                *//*Compra compra = new Compra();
-                compra.MdiParent = this;
-                compra.Show();*//*
-            }
+            dragging = false;
         }
 
-
-        private void btn_categorias_Click_1(object sender, EventArgs e)
-        {
-            if (Validar_Form("Categorias") == false)
-            {
-                Categorias categorias = new Categorias();
-                categorias.MdiParent = this;
-                categorias.Show();
-            }
+        private void lbl_nom_Click(object sender, EventArgs e)
+        { 
+            if (formActivo != null) formActivo.Close();
         }
 
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-
-        }*/
     }
 }

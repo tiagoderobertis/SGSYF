@@ -43,7 +43,7 @@
             // 
             label8.Anchor = AnchorStyles.None;
             label8.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.FromArgb(46, 125, 50);
+            label8.ForeColor = Color.FromArgb(0,0,0);
             label8.Location = new Point(356, 295);
             label8.Name = "label8";
             label8.Size = new Size(107, 37);
@@ -62,9 +62,9 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.None;
-            button1.BackColor = Color.FromArgb(165, 214, 167);
+            button1.BackColor = Color.FromArgb(239, 239, 239);
             button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.FromArgb(46, 125, 50);
+            button1.ForeColor = Color.FromArgb(0,0,0);
             button1.Location = new Point(415, 352);
             button1.Name = "button1";
             button1.Size = new Size(79, 33);
@@ -77,7 +77,7 @@
             // 
             label6.Anchor = AnchorStyles.None;
             label6.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.FromArgb(46, 125, 50);
+            label6.ForeColor = Color.FromArgb(0,0,0);
             label6.Location = new Point(356, 255);
             label6.Name = "label6";
             label6.Size = new Size(107, 26);
@@ -97,7 +97,7 @@
             // 
             label7.Anchor = AnchorStyles.None;
             label7.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.FromArgb(46, 125, 50);
+            label7.ForeColor = Color.FromArgb(0,0,0);
             label7.Location = new Point(356, 212);
             label7.Name = "label7";
             label7.Size = new Size(83, 26);
@@ -116,7 +116,7 @@
             // 
             label2.Anchor = AnchorStyles.None;
             label2.Font = new Font("SimSun", 14.25F, FontStyle.Bold);
-            label2.ForeColor = Color.FromArgb(46, 125, 50);
+            label2.ForeColor = Color.FromArgb(0,0,0);
             label2.Location = new Point(383, 159);
             label2.Name = "label2";
             label2.Size = new Size(145, 26);
@@ -126,9 +126,9 @@
             // btn_volver
             // 
             btn_volver.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btn_volver.BackColor = Color.FromArgb(165, 214, 167);
+            btn_volver.BackColor = Color.FromArgb(239, 239, 239);
             btn_volver.FlatStyle = FlatStyle.Flat;
-            btn_volver.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_volver.ForeColor = Color.FromArgb(0,0,0);
             btn_volver.Location = new Point(810, 30);
             btn_volver.Name = "btn_volver";
             btn_volver.Size = new Size(45, 45);
@@ -141,7 +141,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(200, 230, 201);
+            BackColor = Color.FromArgb(249, 249, 249);
             ClientSize = new Size(884, 561);
             Controls.Add(btn_volver);
             Controls.Add(label8);

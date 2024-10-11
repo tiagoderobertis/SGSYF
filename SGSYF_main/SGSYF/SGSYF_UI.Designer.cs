@@ -62,24 +62,26 @@
             label3 = new Label();
             btn_desplegarMenuLateral = new Button();
             panel1 = new Panel();
-            pic_logo = new PictureBox();
             btn_config = new Button();
             lbl_nom = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            panelTitleBar = new Panel();
+            btn_closeProgram = new Button();
+            btn_maximize = new Button();
+            btn_minimize = new Button();
             pnl_menuLateral.SuspendLayout();
             subpnl_stock.SuspendLayout();
             subpnl_productos.SuspendLayout();
             pnl_logo.SuspendLayout();
             pnl_contenedor.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pic_logo).BeginInit();
+            panelTitleBar.SuspendLayout();
             SuspendLayout();
             // 
             // pnl_menuLateral
             // 
             pnl_menuLateral.AutoScroll = true;
-            pnl_menuLateral.BackColor = Color.FromArgb(46, 125, 50);
-            pnl_menuLateral.BorderStyle = BorderStyle.FixedSingle;
+            pnl_menuLateral.BackColor = Color.White;
             pnl_menuLateral.Controls.Add(button4);
             pnl_menuLateral.Controls.Add(button6);
             pnl_menuLateral.Controls.Add(btn_pnl_help);
@@ -89,23 +91,23 @@
             pnl_menuLateral.Controls.Add(btn_pnl_Productos);
             pnl_menuLateral.Controls.Add(pnl_logo);
             pnl_menuLateral.Dock = DockStyle.Left;
-            pnl_menuLateral.Location = new Point(0, 85);
+            pnl_menuLateral.Location = new Point(0, 118);
             pnl_menuLateral.Name = "pnl_menuLateral";
-            pnl_menuLateral.Size = new Size(257, 644);
+            pnl_menuLateral.Size = new Size(257, 650);
             pnl_menuLateral.TabIndex = 25;
             pnl_menuLateral.Visible = false;
             // 
             // button4
             // 
-            button4.BackColor = Color.FromArgb(56, 142, 60);
+            button4.BackColor = Color.White;
             button4.Dock = DockStyle.Top;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
-            button4.ForeColor = Color.FromArgb(232, 245, 233);
+            button4.ForeColor = Color.Black;
             button4.Location = new Point(0, 434);
             button4.Margin = new Padding(0);
             button4.Name = "button4";
-            button4.Size = new Size(255, 45);
+            button4.Size = new Size(257, 45);
             button4.TabIndex = 32;
             button4.Text = "Gestor de ventas";
             button4.TextAlign = ContentAlignment.MiddleLeft;
@@ -114,15 +116,15 @@
             // 
             // button6
             // 
-            button6.BackColor = Color.FromArgb(56, 142, 60);
+            button6.BackColor = Color.White;
             button6.Dock = DockStyle.Bottom;
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(0, 552);
+            button6.ForeColor = Color.Black;
+            button6.Location = new Point(0, 560);
             button6.Margin = new Padding(0);
             button6.Name = "button6";
-            button6.Size = new Size(255, 45);
+            button6.Size = new Size(257, 45);
             button6.TabIndex = 29;
             button6.Text = "Configuracion";
             button6.UseVisualStyleBackColor = false;
@@ -130,15 +132,15 @@
             // 
             // btn_pnl_help
             // 
-            btn_pnl_help.BackColor = Color.FromArgb(56, 142, 60);
+            btn_pnl_help.BackColor = Color.White;
             btn_pnl_help.Dock = DockStyle.Bottom;
             btn_pnl_help.FlatAppearance.BorderSize = 0;
             btn_pnl_help.FlatStyle = FlatStyle.Flat;
-            btn_pnl_help.ForeColor = Color.White;
-            btn_pnl_help.Location = new Point(0, 597);
+            btn_pnl_help.ForeColor = Color.Black;
+            btn_pnl_help.Location = new Point(0, 605);
             btn_pnl_help.Margin = new Padding(0);
             btn_pnl_help.Name = "btn_pnl_help";
-            btn_pnl_help.Size = new Size(255, 45);
+            btn_pnl_help.Size = new Size(257, 45);
             btn_pnl_help.TabIndex = 31;
             btn_pnl_help.Text = "Help";
             btn_pnl_help.UseVisualStyleBackColor = false;
@@ -151,21 +153,21 @@
             subpnl_stock.Dock = DockStyle.Top;
             subpnl_stock.Location = new Point(0, 357);
             subpnl_stock.Name = "subpnl_stock";
-            subpnl_stock.Size = new Size(255, 77);
+            subpnl_stock.Size = new Size(257, 77);
             subpnl_stock.TabIndex = 28;
             subpnl_stock.Visible = false;
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(165, 214, 167);
+            button1.BackColor = Color.FromArgb(239, 239, 239);
             button1.Dock = DockStyle.Top;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.FromArgb(46, 125, 50);
+            button1.ForeColor = Color.FromArgb(0, 0, 0);
             button1.Location = new Point(0, 40);
             button1.Name = "button1";
             button1.Padding = new Padding(10, 0, 0, 0);
-            button1.Size = new Size(255, 40);
+            button1.Size = new Size(257, 40);
             button1.TabIndex = 27;
             button1.Text = "Datos de ventas";
             button1.TextAlign = ContentAlignment.MiddleLeft;
@@ -173,15 +175,15 @@
             // 
             // btn_listaProductos_Stock
             // 
-            btn_listaProductos_Stock.BackColor = Color.FromArgb(165, 214, 167);
+            btn_listaProductos_Stock.BackColor = Color.FromArgb(239, 239, 239);
             btn_listaProductos_Stock.Dock = DockStyle.Top;
             btn_listaProductos_Stock.FlatAppearance.BorderSize = 0;
             btn_listaProductos_Stock.FlatStyle = FlatStyle.Flat;
-            btn_listaProductos_Stock.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_listaProductos_Stock.ForeColor = Color.FromArgb(0, 0, 0);
             btn_listaProductos_Stock.Location = new Point(0, 0);
             btn_listaProductos_Stock.Name = "btn_listaProductos_Stock";
             btn_listaProductos_Stock.Padding = new Padding(10, 0, 0, 0);
-            btn_listaProductos_Stock.Size = new Size(255, 40);
+            btn_listaProductos_Stock.Size = new Size(257, 40);
             btn_listaProductos_Stock.TabIndex = 26;
             btn_listaProductos_Stock.Text = "Ver Lista de Productos";
             btn_listaProductos_Stock.TextAlign = ContentAlignment.MiddleLeft;
@@ -190,15 +192,15 @@
             // 
             // btn_pnl_Stock
             // 
-            btn_pnl_Stock.BackColor = Color.FromArgb(56, 142, 60);
+            btn_pnl_Stock.BackColor = Color.White;
             btn_pnl_Stock.Dock = DockStyle.Top;
             btn_pnl_Stock.FlatAppearance.BorderSize = 0;
             btn_pnl_Stock.FlatStyle = FlatStyle.Flat;
-            btn_pnl_Stock.ForeColor = Color.FromArgb(232, 245, 233);
+            btn_pnl_Stock.ForeColor = Color.Black;
             btn_pnl_Stock.Location = new Point(0, 312);
             btn_pnl_Stock.Margin = new Padding(0);
             btn_pnl_Stock.Name = "btn_pnl_Stock";
-            btn_pnl_Stock.Size = new Size(255, 45);
+            btn_pnl_Stock.Size = new Size(257, 45);
             btn_pnl_Stock.TabIndex = 27;
             btn_pnl_Stock.Text = "Stock";
             btn_pnl_Stock.TextAlign = ContentAlignment.MiddleLeft;
@@ -207,7 +209,7 @@
             // 
             // subpnl_productos
             // 
-            subpnl_productos.BackColor = Color.FromArgb(46, 125, 50);
+            subpnl_productos.BackColor = Color.White;
             subpnl_productos.Controls.Add(btn_categorias);
             subpnl_productos.Controls.Add(btn_editarProductos_Productos);
             subpnl_productos.Controls.Add(btn_eliminarProductos_Productos);
@@ -215,21 +217,21 @@
             subpnl_productos.Dock = DockStyle.Top;
             subpnl_productos.Location = new Point(0, 145);
             subpnl_productos.Name = "subpnl_productos";
-            subpnl_productos.Size = new Size(255, 167);
+            subpnl_productos.Size = new Size(257, 167);
             subpnl_productos.TabIndex = 26;
             subpnl_productos.Visible = false;
             // 
             // btn_categorias
             // 
-            btn_categorias.BackColor = Color.FromArgb(165, 214, 167);
+            btn_categorias.BackColor = Color.FromArgb(239, 239, 239);
             btn_categorias.Dock = DockStyle.Top;
             btn_categorias.FlatAppearance.BorderSize = 0;
             btn_categorias.FlatStyle = FlatStyle.Flat;
-            btn_categorias.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_categorias.ForeColor = Color.FromArgb(0, 0, 0);
             btn_categorias.Location = new Point(0, 120);
             btn_categorias.Name = "btn_categorias";
             btn_categorias.Padding = new Padding(10, 0, 0, 0);
-            btn_categorias.Size = new Size(255, 40);
+            btn_categorias.Size = new Size(257, 40);
             btn_categorias.TabIndex = 29;
             btn_categorias.Text = "Categorias de Productos";
             btn_categorias.TextAlign = ContentAlignment.MiddleLeft;
@@ -238,15 +240,15 @@
             // 
             // btn_editarProductos_Productos
             // 
-            btn_editarProductos_Productos.BackColor = Color.FromArgb(165, 214, 167);
+            btn_editarProductos_Productos.BackColor = Color.FromArgb(239, 239, 239);
             btn_editarProductos_Productos.Dock = DockStyle.Top;
             btn_editarProductos_Productos.FlatAppearance.BorderSize = 0;
             btn_editarProductos_Productos.FlatStyle = FlatStyle.Flat;
-            btn_editarProductos_Productos.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_editarProductos_Productos.ForeColor = Color.FromArgb(0, 0, 0);
             btn_editarProductos_Productos.Location = new Point(0, 80);
             btn_editarProductos_Productos.Name = "btn_editarProductos_Productos";
             btn_editarProductos_Productos.Padding = new Padding(10, 0, 0, 0);
-            btn_editarProductos_Productos.Size = new Size(255, 40);
+            btn_editarProductos_Productos.Size = new Size(257, 40);
             btn_editarProductos_Productos.TabIndex = 28;
             btn_editarProductos_Productos.Text = "Editar Productos";
             btn_editarProductos_Productos.TextAlign = ContentAlignment.MiddleLeft;
@@ -255,15 +257,15 @@
             // 
             // btn_eliminarProductos_Productos
             // 
-            btn_eliminarProductos_Productos.BackColor = Color.FromArgb(165, 214, 167);
+            btn_eliminarProductos_Productos.BackColor = Color.FromArgb(239, 239, 239);
             btn_eliminarProductos_Productos.Dock = DockStyle.Top;
             btn_eliminarProductos_Productos.FlatAppearance.BorderSize = 0;
             btn_eliminarProductos_Productos.FlatStyle = FlatStyle.Flat;
-            btn_eliminarProductos_Productos.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_eliminarProductos_Productos.ForeColor = Color.FromArgb(0, 0, 0);
             btn_eliminarProductos_Productos.Location = new Point(0, 40);
             btn_eliminarProductos_Productos.Name = "btn_eliminarProductos_Productos";
             btn_eliminarProductos_Productos.Padding = new Padding(10, 0, 0, 0);
-            btn_eliminarProductos_Productos.Size = new Size(255, 40);
+            btn_eliminarProductos_Productos.Size = new Size(257, 40);
             btn_eliminarProductos_Productos.TabIndex = 27;
             btn_eliminarProductos_Productos.Text = "Eliminar Productos";
             btn_eliminarProductos_Productos.TextAlign = ContentAlignment.MiddleLeft;
@@ -272,15 +274,15 @@
             // 
             // btn_agregarProductos_Productos
             // 
-            btn_agregarProductos_Productos.BackColor = Color.FromArgb(165, 214, 167);
+            btn_agregarProductos_Productos.BackColor = Color.FromArgb(239, 239, 239);
             btn_agregarProductos_Productos.Dock = DockStyle.Top;
             btn_agregarProductos_Productos.FlatAppearance.BorderSize = 0;
             btn_agregarProductos_Productos.FlatStyle = FlatStyle.Flat;
-            btn_agregarProductos_Productos.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_agregarProductos_Productos.ForeColor = Color.FromArgb(0, 0, 0);
             btn_agregarProductos_Productos.Location = new Point(0, 0);
             btn_agregarProductos_Productos.Name = "btn_agregarProductos_Productos";
             btn_agregarProductos_Productos.Padding = new Padding(10, 0, 0, 0);
-            btn_agregarProductos_Productos.Size = new Size(255, 40);
+            btn_agregarProductos_Productos.Size = new Size(257, 40);
             btn_agregarProductos_Productos.TabIndex = 26;
             btn_agregarProductos_Productos.Text = "Agregar Productos";
             btn_agregarProductos_Productos.TextAlign = ContentAlignment.MiddleLeft;
@@ -289,15 +291,15 @@
             // 
             // btn_pnl_Productos
             // 
-            btn_pnl_Productos.BackColor = Color.FromArgb(56, 142, 60);
+            btn_pnl_Productos.BackColor = Color.White;
             btn_pnl_Productos.Dock = DockStyle.Top;
             btn_pnl_Productos.FlatAppearance.BorderSize = 0;
             btn_pnl_Productos.FlatStyle = FlatStyle.Flat;
-            btn_pnl_Productos.ForeColor = Color.FromArgb(232, 245, 233);
+            btn_pnl_Productos.ForeColor = Color.Black;
             btn_pnl_Productos.Location = new Point(0, 100);
             btn_pnl_Productos.Margin = new Padding(0);
             btn_pnl_Productos.Name = "btn_pnl_Productos";
-            btn_pnl_Productos.Size = new Size(255, 45);
+            btn_pnl_Productos.Size = new Size(257, 45);
             btn_pnl_Productos.TabIndex = 26;
             btn_pnl_Productos.Text = "Productos";
             btn_pnl_Productos.TextAlign = ContentAlignment.MiddleLeft;
@@ -306,19 +308,19 @@
             // 
             // pnl_logo
             // 
-            pnl_logo.BackColor = Color.FromArgb(46, 125, 50);
+            pnl_logo.BackColor = Color.White;
             pnl_logo.Controls.Add(label2);
             pnl_logo.Controls.Add(label1);
             pnl_logo.Dock = DockStyle.Top;
             pnl_logo.Location = new Point(0, 0);
             pnl_logo.Name = "pnl_logo";
-            pnl_logo.Size = new Size(255, 100);
+            pnl_logo.Size = new Size(257, 100);
             pnl_logo.TabIndex = 26;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.ForeColor = Color.FromArgb(232, 245, 233);
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(5, 62);
             label2.Name = "label2";
             label2.Size = new Size(239, 15);
@@ -330,8 +332,9 @@
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Constantia", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(232, 245, 233);
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(72, 29);
             label1.Name = "label1";
             label1.Size = new Size(95, 33);
@@ -341,7 +344,7 @@
             // 
             // pnl_contenedor
             // 
-            pnl_contenedor.BackColor = Color.FromArgb(200, 230, 201);
+            pnl_contenedor.BackColor = Color.FromArgb(249, 249, 249);
             pnl_contenedor.Controls.Add(label5);
             pnl_contenedor.Controls.Add(label6);
             pnl_contenedor.Controls.Add(label4);
@@ -355,9 +358,10 @@
             pnl_contenedor.Controls.Add(lbl_horaActual);
             pnl_contenedor.Controls.Add(label3);
             pnl_contenedor.Dock = DockStyle.Fill;
-            pnl_contenedor.Location = new Point(0, 85);
+            pnl_contenedor.ForeColor = Color.White;
+            pnl_contenedor.Location = new Point(0, 118);
             pnl_contenedor.Name = "pnl_contenedor";
-            pnl_contenedor.Size = new Size(1008, 644);
+            pnl_contenedor.Size = new Size(1024, 650);
             pnl_contenedor.TabIndex = 26;
             pnl_contenedor.Paint += pnl_contenedor_Paint;
             // 
@@ -366,8 +370,8 @@
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.Font = new Font("Constantia", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.FromArgb(46, 125, 50);
-            label5.Location = new Point(596, 146);
+            label5.ForeColor = Color.FromArgb(0, 0, 0);
+            label5.Location = new Point(604, 149);
             label5.Name = "label5";
             label5.Size = new Size(51, 19);
             label5.TabIndex = 41;
@@ -379,8 +383,8 @@
             label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
             label6.Font = new Font("Constantia", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.FromArgb(46, 125, 50);
-            label6.Location = new Point(351, 146);
+            label6.ForeColor = Color.FromArgb(0, 0, 0);
+            label6.Location = new Point(354, 149);
             label6.Name = "label6";
             label6.Size = new Size(87, 19);
             label6.TabIndex = 41;
@@ -392,8 +396,8 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Constantia", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.FromArgb(46, 125, 50);
-            label4.Location = new Point(351, 358);
+            label4.ForeColor = Color.FromArgb(0, 0, 0);
+            label4.Location = new Point(359, 382);
             label4.Name = "label4";
             label4.Size = new Size(60, 19);
             label4.TabIndex = 41;
@@ -403,13 +407,13 @@
             // btnVerListaDeProductos
             // 
             btnVerListaDeProductos.Anchor = AnchorStyles.None;
-            btnVerListaDeProductos.BackColor = Color.FromArgb(165, 214, 167);
-            btnVerListaDeProductos.FlatAppearance.BorderColor = Color.FromArgb(46, 125, 50);
+            btnVerListaDeProductos.BackColor = Color.FromArgb(239, 239, 239);
+            btnVerListaDeProductos.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0);
             btnVerListaDeProductos.FlatStyle = FlatStyle.Flat;
-            btnVerListaDeProductos.ForeColor = Color.FromArgb(46, 125, 50);
-            btnVerListaDeProductos.Location = new Point(596, 186);
+            btnVerListaDeProductos.ForeColor = Color.FromArgb(0, 0, 0);
+            btnVerListaDeProductos.Location = new Point(604, 188);
             btnVerListaDeProductos.Name = "btnVerListaDeProductos";
-            btnVerListaDeProductos.Size = new Size(82, 60);
+            btnVerListaDeProductos.Size = new Size(90, 70);
             btnVerListaDeProductos.TabIndex = 40;
             btnVerListaDeProductos.Text = "Ver lista de Productos";
             btnVerListaDeProductos.UseVisualStyleBackColor = false;
@@ -418,11 +422,11 @@
             // btnDatosDeVentas
             // 
             btnDatosDeVentas.Anchor = AnchorStyles.None;
-            btnDatosDeVentas.BackColor = Color.FromArgb(165, 214, 167);
-            btnDatosDeVentas.FlatAppearance.BorderColor = Color.FromArgb(46, 125, 50);
+            btnDatosDeVentas.BackColor = Color.Silver;
+            btnDatosDeVentas.FlatAppearance.BorderColor = Color.Silver;
             btnDatosDeVentas.FlatStyle = FlatStyle.Flat;
-            btnDatosDeVentas.ForeColor = Color.FromArgb(46, 125, 50);
-            btnDatosDeVentas.Location = new Point(596, 276);
+            btnDatosDeVentas.ForeColor = Color.Gray;
+            btnDatosDeVentas.Location = new Point(468, 423);
             btnDatosDeVentas.Name = "btnDatosDeVentas";
             btnDatosDeVentas.Size = new Size(82, 60);
             btnDatosDeVentas.TabIndex = 39;
@@ -432,14 +436,14 @@
             // btncategorias
             // 
             btncategorias.Anchor = AnchorStyles.None;
-            btncategorias.BackColor = Color.FromArgb(165, 214, 167);
-            btncategorias.FlatAppearance.BorderColor = Color.FromArgb(46, 125, 50);
+            btncategorias.BackColor = Color.FromArgb(239, 239, 239);
+            btncategorias.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0);
             btncategorias.FlatStyle = FlatStyle.Flat;
             btncategorias.Font = new Font("Constantia", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btncategorias.ForeColor = Color.FromArgb(46, 125, 50);
-            btncategorias.Location = new Point(471, 186);
+            btncategorias.ForeColor = Color.FromArgb(0, 0, 0);
+            btncategorias.Location = new Point(359, 189);
             btncategorias.Name = "btncategorias";
-            btncategorias.Size = new Size(82, 60);
+            btncategorias.Size = new Size(90, 70);
             btncategorias.TabIndex = 38;
             btncategorias.Text = "Categorias";
             btncategorias.UseVisualStyleBackColor = false;
@@ -448,13 +452,13 @@
             // btnEditarProductos
             // 
             btnEditarProductos.Anchor = AnchorStyles.None;
-            btnEditarProductos.BackColor = Color.FromArgb(165, 214, 167);
-            btnEditarProductos.FlatAppearance.BorderColor = Color.FromArgb(46, 125, 50);
+            btnEditarProductos.BackColor = Color.FromArgb(239, 239, 239);
+            btnEditarProductos.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0);
             btnEditarProductos.FlatStyle = FlatStyle.Flat;
-            btnEditarProductos.ForeColor = Color.FromArgb(46, 125, 50);
-            btnEditarProductos.Location = new Point(471, 276);
+            btnEditarProductos.ForeColor = Color.FromArgb(0, 0, 0);
+            btnEditarProductos.Location = new Point(468, 283);
             btnEditarProductos.Name = "btnEditarProductos";
-            btnEditarProductos.Size = new Size(82, 60);
+            btnEditarProductos.Size = new Size(90, 70);
             btnEditarProductos.TabIndex = 37;
             btnEditarProductos.Text = "Editar Productos";
             btnEditarProductos.UseVisualStyleBackColor = false;
@@ -463,13 +467,13 @@
             // btn_eliminarProductos
             // 
             btn_eliminarProductos.Anchor = AnchorStyles.None;
-            btn_eliminarProductos.BackColor = Color.FromArgb(165, 214, 167);
-            btn_eliminarProductos.FlatAppearance.BorderColor = Color.FromArgb(46, 125, 50);
+            btn_eliminarProductos.BackColor = Color.FromArgb(239, 239, 239);
+            btn_eliminarProductos.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0);
             btn_eliminarProductos.FlatStyle = FlatStyle.Flat;
-            btn_eliminarProductos.ForeColor = Color.FromArgb(46, 125, 50);
-            btn_eliminarProductos.Location = new Point(351, 276);
+            btn_eliminarProductos.ForeColor = Color.FromArgb(0, 0, 0);
+            btn_eliminarProductos.Location = new Point(359, 283);
             btn_eliminarProductos.Name = "btn_eliminarProductos";
-            btn_eliminarProductos.Size = new Size(82, 60);
+            btn_eliminarProductos.Size = new Size(90, 70);
             btn_eliminarProductos.TabIndex = 34;
             btn_eliminarProductos.Text = "Eliminar Productos";
             btn_eliminarProductos.UseVisualStyleBackColor = false;
@@ -478,11 +482,11 @@
             // btn_regVenta
             // 
             btn_regVenta.Anchor = AnchorStyles.None;
-            btn_regVenta.BackColor = Color.FromArgb(165, 214, 167);
-            btn_regVenta.FlatAppearance.BorderColor = Color.FromArgb(46, 125, 50);
+            btn_regVenta.BackColor = Color.Silver;
+            btn_regVenta.FlatAppearance.BorderColor = Color.Silver;
             btn_regVenta.FlatStyle = FlatStyle.Flat;
-            btn_regVenta.ForeColor = Color.FromArgb(46, 125, 50);
-            btn_regVenta.Location = new Point(351, 388);
+            btn_regVenta.ForeColor = Color.Gray;
+            btn_regVenta.Location = new Point(359, 423);
             btn_regVenta.Name = "btn_regVenta";
             btn_regVenta.Size = new Size(82, 60);
             btn_regVenta.TabIndex = 33;
@@ -493,13 +497,13 @@
             // btn_agregarProductos
             // 
             btn_agregarProductos.Anchor = AnchorStyles.None;
-            btn_agregarProductos.BackColor = Color.FromArgb(165, 214, 167);
-            btn_agregarProductos.FlatAppearance.BorderColor = Color.FromArgb(46, 125, 50);
+            btn_agregarProductos.BackColor = Color.FromArgb(239, 239, 239);
+            btn_agregarProductos.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0);
             btn_agregarProductos.FlatStyle = FlatStyle.Flat;
-            btn_agregarProductos.ForeColor = Color.FromArgb(46, 125, 50);
-            btn_agregarProductos.Location = new Point(351, 186);
+            btn_agregarProductos.ForeColor = Color.FromArgb(0, 0, 0);
+            btn_agregarProductos.Location = new Point(468, 188);
             btn_agregarProductos.Name = "btn_agregarProductos";
-            btn_agregarProductos.Size = new Size(82, 60);
+            btn_agregarProductos.Size = new Size(90, 70);
             btn_agregarProductos.TabIndex = 33;
             btn_agregarProductos.Text = "Agregar Productos";
             btn_agregarProductos.UseVisualStyleBackColor = false;
@@ -510,7 +514,7 @@
             lbl_horaActual.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lbl_horaActual.AutoSize = true;
             lbl_horaActual.Font = new Font("Agrandir Wide Light", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_horaActual.ForeColor = Color.FromArgb(46, 125, 50);
+            lbl_horaActual.ForeColor = Color.FromArgb(0, 0, 0);
             lbl_horaActual.Location = new Point(906, 3);
             lbl_horaActual.Name = "lbl_horaActual";
             lbl_horaActual.Size = new Size(77, 27);
@@ -522,8 +526,8 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Constantia", 40F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.FromArgb(46, 125, 50);
-            label3.Location = new Point(351, 35);
+            label3.ForeColor = Color.FromArgb(0, 0, 0);
+            label3.Location = new Point(359, 38);
             label3.Name = "label3";
             label3.Size = new Size(350, 66);
             label3.TabIndex = 31;
@@ -532,14 +536,14 @@
             // 
             // btn_desplegarMenuLateral
             // 
-            btn_desplegarMenuLateral.BackColor = Color.FromArgb(56, 142, 60);
+            btn_desplegarMenuLateral.BackColor = Color.White;
             btn_desplegarMenuLateral.Dock = DockStyle.Left;
-            btn_desplegarMenuLateral.FlatAppearance.BorderColor = Color.FromArgb(56, 142, 60);
+            btn_desplegarMenuLateral.FlatAppearance.BorderColor = Color.DimGray;
             btn_desplegarMenuLateral.FlatStyle = FlatStyle.Flat;
-            btn_desplegarMenuLateral.ForeColor = Color.White;
-            btn_desplegarMenuLateral.Location = new Point(257, 85);
+            btn_desplegarMenuLateral.ForeColor = Color.Black;
+            btn_desplegarMenuLateral.Location = new Point(257, 118);
             btn_desplegarMenuLateral.Name = "btn_desplegarMenuLateral";
-            btn_desplegarMenuLateral.Size = new Size(37, 644);
+            btn_desplegarMenuLateral.Size = new Size(37, 650);
             btn_desplegarMenuLateral.TabIndex = 26;
             btn_desplegarMenuLateral.Text = ">";
             btn_desplegarMenuLateral.UseVisualStyleBackColor = false;
@@ -547,33 +551,24 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(46, 125, 50);
-            panel1.Controls.Add(pic_logo);
+            panel1.BackColor = Color.White;
             panel1.Controls.Add(btn_config);
             panel1.Controls.Add(lbl_nom);
             panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(0, 33);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1008, 85);
+            panel1.Size = new Size(1024, 85);
             panel1.TabIndex = 27;
             panel1.Paint += panel1_Paint;
-            // 
-            // pic_logo
-            // 
-            pic_logo.Location = new Point(22, 12);
-            pic_logo.Name = "pic_logo";
-            pic_logo.Size = new Size(51, 50);
-            pic_logo.TabIndex = 30;
-            pic_logo.TabStop = false;
             // 
             // btn_config
             // 
             btn_config.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btn_config.BackColor = Color.FromArgb(46, 125, 50);
+            btn_config.BackColor = Color.White;
             btn_config.BackgroundImage = (Image)resources.GetObject("btn_config.BackgroundImage");
             btn_config.FlatAppearance.BorderSize = 0;
             btn_config.FlatStyle = FlatStyle.Flat;
-            btn_config.Location = new Point(948, 12);
+            btn_config.Location = new Point(964, 12);
             btn_config.Name = "btn_config";
             btn_config.Size = new Size(50, 50);
             btn_config.TabIndex = 29;
@@ -582,32 +577,90 @@
             // 
             // lbl_nom
             // 
-            lbl_nom.Anchor = AnchorStyles.None;
+            lbl_nom.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             lbl_nom.AutoSize = true;
+            lbl_nom.Cursor = Cursors.Hand;
             lbl_nom.Font = new Font("Constantia", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_nom.ForeColor = Color.FromArgb(232, 245, 233);
-            lbl_nom.Location = new Point(383, 24);
+            lbl_nom.ForeColor = Color.Black;
+            lbl_nom.Location = new Point(12, 29);
             lbl_nom.Name = "lbl_nom";
             lbl_nom.Size = new Size(305, 33);
             lbl_nom.TabIndex = 0;
             lbl_nom.Text = "Nombre de tu Empresa";
+            lbl_nom.Click += lbl_nom_Click;
             // 
             // timer1
             // 
             timer1.Tick += timer1_Tick;
+            // 
+            // panelTitleBar
+            // 
+            panelTitleBar.BackColor = Color.WhiteSmoke;
+            panelTitleBar.Controls.Add(btn_closeProgram);
+            panelTitleBar.Controls.Add(btn_maximize);
+            panelTitleBar.Controls.Add(btn_minimize);
+            panelTitleBar.Dock = DockStyle.Top;
+            panelTitleBar.Location = new Point(0, 0);
+            panelTitleBar.Name = "panelTitleBar";
+            panelTitleBar.Size = new Size(1024, 33);
+            panelTitleBar.TabIndex = 28;
+            panelTitleBar.MouseDown += panelTitleBar_MouseDown;
+            panelTitleBar.MouseMove += panelTitleBar_MouseMove;
+            panelTitleBar.MouseUp += panelTitleBar_MouseUp;
+            // 
+            // btn_closeProgram
+            // 
+            btn_closeProgram.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btn_closeProgram.ForeColor = Color.FromArgb(74, 74, 74);
+            btn_closeProgram.Location = new Point(989, 3);
+            btn_closeProgram.Name = "btn_closeProgram";
+            btn_closeProgram.Padding = new Padding(1, 0, 0, 1);
+            btn_closeProgram.Size = new Size(25, 25);
+            btn_closeProgram.TabIndex = 0;
+            btn_closeProgram.Text = "x";
+            btn_closeProgram.UseVisualStyleBackColor = true;
+            btn_closeProgram.Click += btn_closeProgram_Click;
+            // 
+            // btn_maximize
+            // 
+            btn_maximize.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btn_maximize.ForeColor = Color.FromArgb(74, 74, 74);
+            btn_maximize.Location = new Point(958, 3);
+            btn_maximize.Name = "btn_maximize";
+            btn_maximize.Padding = new Padding(2, 0, 0, 4);
+            btn_maximize.Size = new Size(25, 25);
+            btn_maximize.TabIndex = 0;
+            btn_maximize.Text = "+";
+            btn_maximize.UseVisualStyleBackColor = true;
+            btn_maximize.Click += btn_maximize_Click;
+            // 
+            // btn_minimize
+            // 
+            btn_minimize.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btn_minimize.ForeColor = Color.FromArgb(74, 74, 74);
+            btn_minimize.Location = new Point(927, 3);
+            btn_minimize.Name = "btn_minimize";
+            btn_minimize.Padding = new Padding(2, 0, 0, 0);
+            btn_minimize.Size = new Size(25, 25);
+            btn_minimize.TabIndex = 0;
+            btn_minimize.Text = "-";
+            btn_minimize.UseVisualStyleBackColor = true;
+            btn_minimize.Click += btn_minimize_Click;
             // 
             // SGSYF_UI
             // 
             AutoScaleDimensions = new SizeF(8F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(1008, 729);
+            ClientSize = new Size(1024, 768);
             Controls.Add(btn_desplegarMenuLateral);
             Controls.Add(pnl_menuLateral);
             Controls.Add(pnl_contenedor);
             Controls.Add(panel1);
+            Controls.Add(panelTitleBar);
             Font = new Font("Constantia", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ForeColor = SystemColors.ActiveCaption;
+            FormBorderStyle = FormBorderStyle.None;
             MinimumSize = new Size(1024, 768);
             Name = "SGSYF_UI";
             Text = "SGSYF";
@@ -623,7 +676,7 @@
             pnl_contenedor.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pic_logo).EndInit();
+            panelTitleBar.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -648,7 +701,6 @@
         private Button btn_config;
         public Label lbl_nom;
         private Button btn_categorias;
-        private PictureBox pic_logo;
         private Button button1;
         public Label label3;
         private System.Windows.Forms.Timer timer1;
@@ -664,5 +716,9 @@
         private Button button4;
         private Label label6;
         private Button btn_regVenta;
+        private Panel panelTitleBar;
+        private Button btn_closeProgram;
+        private Button btn_maximize;
+        private Button btn_minimize;
     }
 }

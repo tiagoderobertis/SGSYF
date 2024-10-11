@@ -41,7 +41,7 @@
             // 
             label1.Anchor = AnchorStyles.None;
             label1.Font = new Font("SimSun", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(46, 125, 50);
+            label1.ForeColor = Color.FromArgb(0,0,0);
             label1.Location = new Point(358, 247);
             label1.Name = "label1";
             label1.Size = new Size(299, 28);
@@ -51,9 +51,9 @@
             // btn_administador
             // 
             btn_administador.Anchor = AnchorStyles.None;
-            btn_administador.BackColor = Color.FromArgb(165, 214, 167);
+            btn_administador.BackColor = Color.FromArgb(239, 239, 239);
             btn_administador.FlatStyle = FlatStyle.Flat;
-            btn_administador.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_administador.ForeColor = Color.FromArgb(0,0,0);
             btn_administador.Location = new Point(457, 362);
             btn_administador.Name = "btn_administador";
             btn_administador.Size = new Size(100, 50);
@@ -65,9 +65,9 @@
             // btn_usuario
             // 
             btn_usuario.Anchor = AnchorStyles.None;
-            btn_usuario.BackColor = Color.FromArgb(165, 214, 167);
+            btn_usuario.BackColor = Color.FromArgb(239, 239, 239);
             btn_usuario.FlatStyle = FlatStyle.Flat;
-            btn_usuario.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_usuario.ForeColor = Color.FromArgb(0,0,0);
             btn_usuario.Location = new Point(457, 435);
             btn_usuario.Name = "btn_usuario";
             btn_usuario.Size = new Size(100, 50);
@@ -81,7 +81,7 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 15F);
-            label2.ForeColor = Color.FromArgb(46, 125, 50);
+            label2.ForeColor = Color.FromArgb(0,0,0);
             label2.Location = new Point(446, 303);
             label2.Name = "label2";
             label2.Size = new Size(127, 28);
@@ -99,7 +99,7 @@
             // 
             // pnl_contenedor
             // 
-            pnl_contenedor.BackColor = Color.FromArgb(200, 230, 201);
+            pnl_contenedor.BackColor = Color.FromArgb(249, 249, 249);
             pnl_contenedor.Controls.Add(label1);
             pnl_contenedor.Controls.Add(label3);
             pnl_contenedor.Controls.Add(btn_administador);
@@ -117,7 +117,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 729);
             Controls.Add(pnl_contenedor);
-            ForeColor = Color.FromArgb(46, 125, 50);
+            ForeColor = Color.FromArgb(0,0,0);
             MinimumSize = new Size(1024, 768);
             Name = "Form_Principal";
             Text = "Form_Principal";

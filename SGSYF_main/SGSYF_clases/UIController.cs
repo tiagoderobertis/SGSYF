@@ -9,6 +9,6 @@ namespace SGSYF_clases
 {
     public static class UIController
     {
-        public static Color colorLabel = Color.FromArgb(46, 125, 50);
+        public static Color colorLabel = Color.FromArgb(0,0,0);
     }
 }

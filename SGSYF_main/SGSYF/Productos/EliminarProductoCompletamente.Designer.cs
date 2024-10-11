@@ -49,7 +49,7 @@
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F);
-            label1.ForeColor = Color.FromArgb(46, 125, 50);
+            label1.ForeColor = Color.FromArgb(0,0,0);
             label1.Location = new Point(255, 174);
             label1.Name = "label1";
             label1.Size = new Size(396, 37);
@@ -59,9 +59,9 @@
             // btn_eliminar
             // 
             btn_eliminar.Anchor = AnchorStyles.Bottom;
-            btn_eliminar.BackColor = Color.FromArgb(165, 214, 167);
+            btn_eliminar.BackColor = Color.FromArgb(239, 239, 239);
             btn_eliminar.FlatStyle = FlatStyle.Flat;
-            btn_eliminar.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_eliminar.ForeColor = Color.FromArgb(0,0,0);
             btn_eliminar.Location = new Point(355, 286);
             btn_eliminar.Name = "btn_eliminar";
             btn_eliminar.Size = new Size(197, 48);
@@ -73,9 +73,9 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button2.BackColor = Color.FromArgb(165, 214, 167);
+            button2.BackColor = Color.FromArgb(239, 239, 239);
             button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = Color.FromArgb(46, 125, 50);
+            button2.ForeColor = Color.FromArgb(0,0,0);
             button2.Location = new Point(810, 30);
             button2.Name = "button2";
             button2.Size = new Size(45, 45);
@@ -88,13 +88,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(200, 230, 201);
+            BackColor = Color.FromArgb(249, 249, 249);
             ClientSize = new Size(884, 561);
             Controls.Add(button2);
             Controls.Add(btn_eliminar);
             Controls.Add(label1);
             Controls.Add(cmb_eliminarProducto);
-            ForeColor = Color.FromArgb(46, 125, 50);
+            ForeColor = Color.FromArgb(0,0,0);
             MinimumSize = new Size(900, 600);
             Name = "EliminarProductoCompletamente";
             Text = "EliminarProductoCompletamente";

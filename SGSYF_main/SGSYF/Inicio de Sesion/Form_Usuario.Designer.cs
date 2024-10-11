@@ -43,9 +43,9 @@
             // btn_volver
             // 
             btn_volver.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btn_volver.BackColor = Color.FromArgb(165, 214, 167);
+            btn_volver.BackColor = Color.FromArgb(239, 239, 239);
             btn_volver.FlatStyle = FlatStyle.Flat;
-            btn_volver.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_volver.ForeColor = Color.FromArgb(0,0,0);
             btn_volver.Location = new Point(810, 30);
             btn_volver.Name = "btn_volver";
             btn_volver.Size = new Size(45, 45);
@@ -58,7 +58,7 @@
             // 
             label3.Anchor = AnchorStyles.None;
             label3.Font = new Font("SimSun", 14.25F, FontStyle.Bold);
-            label3.ForeColor = Color.FromArgb(46, 125, 50);
+            label3.ForeColor = Color.FromArgb(0,0,0);
             label3.Location = new Point(373, 140);
             label3.Name = "label3";
             label3.Size = new Size(164, 26);
@@ -77,7 +77,7 @@
             // 
             label4.Anchor = AnchorStyles.None;
             label4.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.FromArgb(46, 125, 50);
+            label4.ForeColor = Color.FromArgb(0,0,0);
             label4.Location = new Point(352, 202);
             label4.Name = "label4";
             label4.Size = new Size(83, 26);
@@ -88,7 +88,7 @@
             // 
             label5.Anchor = AnchorStyles.None;
             label5.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.FromArgb(46, 125, 50);
+            label5.ForeColor = Color.FromArgb(0,0,0);
             label5.Location = new Point(352, 245);
             label5.Name = "label5";
             label5.Size = new Size(107, 26);
@@ -107,9 +107,9 @@
             // btn_iniciar
             // 
             btn_iniciar.Anchor = AnchorStyles.None;
-            btn_iniciar.BackColor = Color.FromArgb(165, 214, 167);
+            btn_iniciar.BackColor = Color.FromArgb(239, 239, 239);
             btn_iniciar.FlatStyle = FlatStyle.Flat;
-            btn_iniciar.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_iniciar.ForeColor = Color.FromArgb(0,0,0);
             btn_iniciar.Location = new Point(417, 305);
             btn_iniciar.Name = "btn_iniciar";
             btn_iniciar.Size = new Size(79, 33);
@@ -121,9 +121,9 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.None;
-            button2.BackColor = Color.FromArgb(165, 214, 167);
+            button2.BackColor = Color.FromArgb(239, 239, 239);
             button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = Color.FromArgb(46, 125, 50);
+            button2.ForeColor = Color.FromArgb(0,0,0);
             button2.Location = new Point(406, 387);
             button2.Name = "button2";
             button2.Size = new Size(100, 50);
@@ -134,7 +134,7 @@
             // 
             // pnl_contenedor
             // 
-            pnl_contenedor.BackColor = Color.FromArgb(200, 230, 201);
+            pnl_contenedor.BackColor = Color.FromArgb(249, 249, 249);
             pnl_contenedor.Controls.Add(btn_volver);
             pnl_contenedor.Controls.Add(label3);
             pnl_contenedor.Controls.Add(button2);
@@ -144,7 +144,7 @@
             pnl_contenedor.Controls.Add(label5);
             pnl_contenedor.Controls.Add(txt_pass);
             pnl_contenedor.Dock = DockStyle.Fill;
-            pnl_contenedor.ForeColor = Color.FromArgb(46, 125, 50);
+            pnl_contenedor.ForeColor = Color.FromArgb(0,0,0);
             pnl_contenedor.Location = new Point(0, 0);
             pnl_contenedor.Name = "pnl_contenedor";
             pnl_contenedor.Size = new Size(884, 561);

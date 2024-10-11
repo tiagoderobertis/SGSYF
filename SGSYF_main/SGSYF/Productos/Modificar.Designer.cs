@@ -46,10 +46,10 @@
             // btn_guardar
             // 
             btn_guardar.Anchor = AnchorStyles.None;
-            btn_guardar.BackColor = Color.FromArgb(165, 214, 167);
+            btn_guardar.BackColor = Color.FromArgb(239, 239, 239);
             btn_guardar.FlatStyle = FlatStyle.Flat;
             btn_guardar.Font = new Font("Segoe UI", 9.75F);
-            btn_guardar.ForeColor = Color.FromArgb(46, 125, 50);
+            btn_guardar.ForeColor = Color.FromArgb(0,0,0);
             btn_guardar.Location = new Point(380, 362);
             btn_guardar.Name = "btn_guardar";
             btn_guardar.Size = new Size(111, 31);
@@ -72,7 +72,7 @@
             label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.FromArgb(46, 125, 50);
+            label6.ForeColor = Color.FromArgb(0,0,0);
             label6.Location = new Point(526, 208);
             label6.Name = "label6";
             label6.Size = new Size(91, 15);
@@ -93,7 +93,7 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(46, 125, 50);
+            label2.ForeColor = Color.FromArgb(0,0,0);
             label2.Location = new Point(526, 268);
             label2.Name = "label2";
             label2.Size = new Size(37, 15);
@@ -114,7 +114,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(46, 125, 50);
+            label1.ForeColor = Color.FromArgb(0,0,0);
             label1.Location = new Point(234, 268);
             label1.Name = "label1";
             label1.Size = new Size(70, 15);
@@ -125,7 +125,7 @@
             // 
             label3.Anchor = AnchorStyles.None;
             label3.Font = new Font("SimSun", 14.25F, FontStyle.Bold);
-            label3.ForeColor = Color.FromArgb(46, 125, 50);
+            label3.ForeColor = Color.FromArgb(0,0,0);
             label3.Location = new Point(337, 171);
             label3.Name = "label3";
             label3.Size = new Size(235, 26);
@@ -158,7 +158,7 @@
             label7.Anchor = AnchorStyles.None;
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.FromArgb(46, 125, 50);
+            label7.ForeColor = Color.FromArgb(0,0,0);
             label7.Location = new Point(234, 208);
             label7.Name = "label7";
             label7.Size = new Size(51, 15);
@@ -170,7 +170,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.FromArgb(46, 125, 50);
+            label4.ForeColor = Color.FromArgb(0,0,0);
             label4.Location = new Point(337, 74);
             label4.Name = "label4";
             label4.Size = new Size(203, 28);
@@ -180,9 +180,9 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button2.BackColor = Color.FromArgb(165, 214, 167);
+            button2.BackColor = Color.FromArgb(239, 239, 239);
             button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = Color.FromArgb(46, 125, 50);
+            button2.ForeColor = Color.FromArgb(0,0,0);
             button2.Location = new Point(810, 30);
             button2.Name = "button2";
             button2.Size = new Size(45, 45);
@@ -195,7 +195,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(200, 230, 201);
+            BackColor = Color.FromArgb(249, 249, 249);
             ClientSize = new Size(884, 561);
             Controls.Add(button2);
             Controls.Add(btn_guardar);
