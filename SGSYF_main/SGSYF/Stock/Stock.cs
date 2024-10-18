@@ -64,5 +64,114 @@ namespace SGSYF
         {
             this.Close();
         }
+
+        private void btn_searchByName_Click(object sender, EventArgs e)
+        {
+            Conexion conexion = new Conexion();
+            MySqlConnection mySqlConnection = conexion.Establecer_Conexion();
+
+            if (mySqlConnection == null)
+            {
+                MessageBox.Show("No se pudo establecer la conexión a la base de datos.");
+                return;
+            }
+
+            if (!string.IsNullOrWhiteSpace(txt_searchByName.Text))
+            {
+                string nombrePro = txt_searchByName.Text;
+                string query = $"SELECT * FROM Productos where nombre like '%{nombrePro}%';";
+
+
+                MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
+
+                DataTable dt = new DataTable(); //Tabla en memoria
+
+                MySqlDataReader resultado; //  se crea una variable llamada resultado tipo "MySqlDataReader" que es una manera de leer datos, que se usa para leer datos sql devueltos
+
+
+                try
+                {
+                    resultado = cmd.ExecuteReader(); // se ejecuta el comando cmd, y se guarda la informacion el resultado
+                    dt.Load(resultado); // carga en la tabla, el resultado guardado del comando
+                    dataGridView1.DataSource = dt; //asigna el datatable al dgv
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+        }
+
+        private void btn_orderByAsc_Click(object sender, EventArgs e)
+        {
+            Conexion conexion = new Conexion();
+            MySqlConnection mySqlConnection = conexion.Establecer_Conexion();
+
+            if (mySqlConnection == null)
+            {
+                MessageBox.Show("No se pudo establecer la conexión a la base de datos.");
+                return;
+            }
+
+            
+
+                string query = $"SELECT * FROM Productos order by precio asc;";
+
+
+                MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
+
+                DataTable dt = new DataTable(); //Tabla en memoria
+
+                MySqlDataReader resultado; //  se crea una variable llamada resultado tipo "MySqlDataReader" que es una manera de leer datos, que se usa para leer datos sql devueltos
+
+
+                try
+                {
+                    resultado = cmd.ExecuteReader(); // se ejecuta el comando cmd, y se guarda la informacion el resultado
+                    dt.Load(resultado); // carga en la tabla, el resultado guardado del comando
+                    dataGridView1.DataSource = dt; //asigna el datatable al dgv
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            
+        }
+
+        private void btn_orderByDesc_Click(object sender, EventArgs e)
+        {
+            Conexion conexion = new Conexion();
+            MySqlConnection mySqlConnection = conexion.Establecer_Conexion();
+
+            if (mySqlConnection == null)
+            {
+                MessageBox.Show("No se pudo establecer la conexión a la base de datos.");
+                return;
+            }
+
+            
+
+                string query = $"SELECT * FROM Productos order by precio desc;";
+
+
+                MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
+
+                DataTable dt = new DataTable(); //Tabla en memoria
+
+                MySqlDataReader resultado; //  se crea una variable llamada resultado tipo "MySqlDataReader" que es una manera de leer datos, que se usa para leer datos sql devueltos
+
+
+                try
+                {
+                    resultado = cmd.ExecuteReader(); // se ejecuta el comando cmd, y se guarda la informacion el resultado
+                    dt.Load(resultado); // carga en la tabla, el resultado guardado del comando
+                    dataGridView1.DataSource = dt; //asigna el datatable al dgv
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            
+        }
     }
 }

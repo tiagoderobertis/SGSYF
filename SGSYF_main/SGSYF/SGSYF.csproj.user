@@ -37,6 +37,9 @@
     <Compile Update="RegistrarVentas.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="SGSYF_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Stock\Stock.cs">
       <SubType>Form</SubType>
     </Compile>

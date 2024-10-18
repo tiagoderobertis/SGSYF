@@ -37,10 +37,10 @@
             // 
             button1.BackColor = Color.FromArgb(239, 239, 239);
             button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.FromArgb(0,0,0);
-            button1.Location = new Point(147, 165);
+            button1.ForeColor = Color.FromArgb(0, 0, 0);
+            button1.Location = new Point(421, 163);
             button1.Name = "button1";
-            button1.Size = new Size(84, 74);
+            button1.Size = new Size(147, 74);
             button1.TabIndex = 21;
             button1.Text = "Ajustes de Informacion";
             button1.UseVisualStyleBackColor = false;
@@ -51,7 +51,7 @@
             button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button2.BackColor = Color.FromArgb(239, 239, 239);
             button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = Color.FromArgb(0,0,0);
+            button2.ForeColor = Color.FromArgb(0, 0, 0);
             button2.Location = new Point(810, 30);
             button2.Name = "button2";
             button2.Size = new Size(45, 45);
@@ -64,10 +64,10 @@
             // 
             button3.BackColor = Color.FromArgb(239, 239, 239);
             button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.FromArgb(0,0,0);
-            button3.Location = new Point(274, 165);
+            button3.ForeColor = Color.FromArgb(0, 0, 0);
+            button3.Location = new Point(421, 294);
             button3.Name = "button3";
-            button3.Size = new Size(84, 74);
+            button3.Size = new Size(147, 74);
             button3.TabIndex = 23;
             button3.Text = "Ajustes de empresa";
             button3.UseVisualStyleBackColor = false;

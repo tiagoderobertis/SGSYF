@@ -317,9 +317,18 @@ namespace SGSYF
         }
 
         private void lbl_nom_Click(object sender, EventArgs e)
-        { 
+        {
             if (formActivo != null) formActivo.Close();
         }
 
+        private void label3_MouseHover(object sender, EventArgs e)
+        {
+            label3.ForeColor = Color.Red;
+        }
+
+        private void label3_MouseLeave(object sender, EventArgs e)
+        {
+            label3.ForeColor = Color.Black;
+        }
     }
 }

@@ -291,10 +291,7 @@
           "SGSYF_conexion": "1.0.0"
         },
         "runtime": {
-          "SGSYF_clases.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "SGSYF_clases.dll": {}
         }
       },
       "SGSYF_conexion/1.0.0": {
@@ -302,10 +299,7 @@
           "MySql.Data": "8.4.0"
         },
         "runtime": {
-          "SGSYF_conexion.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "SGSYF_conexion.dll": {}
         }
       }
     }

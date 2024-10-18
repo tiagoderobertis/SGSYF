@@ -93,7 +93,7 @@
             pnl_menuLateral.Dock = DockStyle.Left;
             pnl_menuLateral.Location = new Point(0, 118);
             pnl_menuLateral.Name = "pnl_menuLateral";
-            pnl_menuLateral.Size = new Size(257, 650);
+            pnl_menuLateral.Size = new Size(257, 631);
             pnl_menuLateral.TabIndex = 25;
             pnl_menuLateral.Visible = false;
             // 
@@ -121,7 +121,7 @@
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
             button6.ForeColor = Color.Black;
-            button6.Location = new Point(0, 560);
+            button6.Location = new Point(0, 541);
             button6.Margin = new Padding(0);
             button6.Name = "button6";
             button6.Size = new Size(257, 45);
@@ -137,7 +137,7 @@
             btn_pnl_help.FlatAppearance.BorderSize = 0;
             btn_pnl_help.FlatStyle = FlatStyle.Flat;
             btn_pnl_help.ForeColor = Color.Black;
-            btn_pnl_help.Location = new Point(0, 605);
+            btn_pnl_help.Location = new Point(0, 586);
             btn_pnl_help.Margin = new Padding(0);
             btn_pnl_help.Name = "btn_pnl_help";
             btn_pnl_help.Size = new Size(257, 45);
@@ -361,7 +361,7 @@
             pnl_contenedor.ForeColor = Color.White;
             pnl_contenedor.Location = new Point(0, 118);
             pnl_contenedor.Name = "pnl_contenedor";
-            pnl_contenedor.Size = new Size(1024, 650);
+            pnl_contenedor.Size = new Size(1024, 631);
             pnl_contenedor.TabIndex = 26;
             pnl_contenedor.Paint += pnl_contenedor_Paint;
             // 
@@ -371,7 +371,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Constantia", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.FromArgb(0, 0, 0);
-            label5.Location = new Point(604, 149);
+            label5.Location = new Point(604, 139);
             label5.Name = "label5";
             label5.Size = new Size(51, 19);
             label5.TabIndex = 41;
@@ -384,7 +384,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Constantia", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.FromArgb(0, 0, 0);
-            label6.Location = new Point(354, 149);
+            label6.Location = new Point(354, 139);
             label6.Name = "label6";
             label6.Size = new Size(87, 19);
             label6.TabIndex = 41;
@@ -397,7 +397,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Constantia", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.FromArgb(0, 0, 0);
-            label4.Location = new Point(359, 382);
+            label4.Location = new Point(359, 372);
             label4.Name = "label4";
             label4.Size = new Size(60, 19);
             label4.TabIndex = 41;
@@ -411,7 +411,7 @@
             btnVerListaDeProductos.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0);
             btnVerListaDeProductos.FlatStyle = FlatStyle.Flat;
             btnVerListaDeProductos.ForeColor = Color.FromArgb(0, 0, 0);
-            btnVerListaDeProductos.Location = new Point(604, 188);
+            btnVerListaDeProductos.Location = new Point(604, 178);
             btnVerListaDeProductos.Name = "btnVerListaDeProductos";
             btnVerListaDeProductos.Size = new Size(90, 70);
             btnVerListaDeProductos.TabIndex = 40;
@@ -426,7 +426,7 @@
             btnDatosDeVentas.FlatAppearance.BorderColor = Color.Silver;
             btnDatosDeVentas.FlatStyle = FlatStyle.Flat;
             btnDatosDeVentas.ForeColor = Color.Gray;
-            btnDatosDeVentas.Location = new Point(468, 423);
+            btnDatosDeVentas.Location = new Point(468, 413);
             btnDatosDeVentas.Name = "btnDatosDeVentas";
             btnDatosDeVentas.Size = new Size(82, 60);
             btnDatosDeVentas.TabIndex = 39;
@@ -441,7 +441,7 @@
             btncategorias.FlatStyle = FlatStyle.Flat;
             btncategorias.Font = new Font("Constantia", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btncategorias.ForeColor = Color.FromArgb(0, 0, 0);
-            btncategorias.Location = new Point(359, 189);
+            btncategorias.Location = new Point(359, 179);
             btncategorias.Name = "btncategorias";
             btncategorias.Size = new Size(90, 70);
             btncategorias.TabIndex = 38;
@@ -456,7 +456,7 @@
             btnEditarProductos.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0);
             btnEditarProductos.FlatStyle = FlatStyle.Flat;
             btnEditarProductos.ForeColor = Color.FromArgb(0, 0, 0);
-            btnEditarProductos.Location = new Point(468, 283);
+            btnEditarProductos.Location = new Point(468, 273);
             btnEditarProductos.Name = "btnEditarProductos";
             btnEditarProductos.Size = new Size(90, 70);
             btnEditarProductos.TabIndex = 37;
@@ -471,7 +471,7 @@
             btn_eliminarProductos.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0);
             btn_eliminarProductos.FlatStyle = FlatStyle.Flat;
             btn_eliminarProductos.ForeColor = Color.FromArgb(0, 0, 0);
-            btn_eliminarProductos.Location = new Point(359, 283);
+            btn_eliminarProductos.Location = new Point(359, 273);
             btn_eliminarProductos.Name = "btn_eliminarProductos";
             btn_eliminarProductos.Size = new Size(90, 70);
             btn_eliminarProductos.TabIndex = 34;
@@ -486,7 +486,7 @@
             btn_regVenta.FlatAppearance.BorderColor = Color.Silver;
             btn_regVenta.FlatStyle = FlatStyle.Flat;
             btn_regVenta.ForeColor = Color.Gray;
-            btn_regVenta.Location = new Point(359, 423);
+            btn_regVenta.Location = new Point(359, 413);
             btn_regVenta.Name = "btn_regVenta";
             btn_regVenta.Size = new Size(82, 60);
             btn_regVenta.TabIndex = 33;
@@ -501,7 +501,7 @@
             btn_agregarProductos.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0);
             btn_agregarProductos.FlatStyle = FlatStyle.Flat;
             btn_agregarProductos.ForeColor = Color.FromArgb(0, 0, 0);
-            btn_agregarProductos.Location = new Point(468, 188);
+            btn_agregarProductos.Location = new Point(468, 178);
             btn_agregarProductos.Name = "btn_agregarProductos";
             btn_agregarProductos.Size = new Size(90, 70);
             btn_agregarProductos.TabIndex = 33;
@@ -513,11 +513,11 @@
             // 
             lbl_horaActual.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lbl_horaActual.AutoSize = true;
-            lbl_horaActual.Font = new Font("Agrandir Wide Light", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_horaActual.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_horaActual.ForeColor = Color.FromArgb(0, 0, 0);
             lbl_horaActual.Location = new Point(906, 3);
             lbl_horaActual.Name = "lbl_horaActual";
-            lbl_horaActual.Size = new Size(77, 27);
+            lbl_horaActual.Size = new Size(73, 25);
             lbl_horaActual.TabIndex = 32;
             lbl_horaActual.Text = "HORA";
             // 
@@ -527,12 +527,14 @@
             label3.AutoSize = true;
             label3.Font = new Font("Constantia", 40F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(0, 0, 0);
-            label3.Location = new Point(359, 38);
+            label3.Location = new Point(359, 28);
             label3.Name = "label3";
             label3.Size = new Size(350, 66);
             label3.TabIndex = 31;
             label3.Text = "¡Bienvenido!";
             label3.Click += label3_Click;
+            label3.MouseLeave += label3_MouseLeave;
+            label3.MouseHover += label3_MouseHover;
             // 
             // btn_desplegarMenuLateral
             // 
@@ -543,7 +545,7 @@
             btn_desplegarMenuLateral.ForeColor = Color.Black;
             btn_desplegarMenuLateral.Location = new Point(257, 118);
             btn_desplegarMenuLateral.Name = "btn_desplegarMenuLateral";
-            btn_desplegarMenuLateral.Size = new Size(37, 650);
+            btn_desplegarMenuLateral.Size = new Size(37, 631);
             btn_desplegarMenuLateral.TabIndex = 26;
             btn_desplegarMenuLateral.Text = ">";
             btn_desplegarMenuLateral.UseVisualStyleBackColor = false;
@@ -652,7 +654,7 @@
             AutoScaleDimensions = new SizeF(8F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(1024, 768);
+            ClientSize = new Size(1024, 749);
             Controls.Add(btn_desplegarMenuLateral);
             Controls.Add(pnl_menuLateral);
             Controls.Add(pnl_contenedor);
@@ -661,7 +663,7 @@
             Font = new Font("Constantia", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ForeColor = SystemColors.ActiveCaption;
             FormBorderStyle = FormBorderStyle.None;
-            MinimumSize = new Size(1024, 768);
+            MinimumSize = new Size(800, 600);
             Name = "SGSYF_UI";
             Text = "SGSYF";
             WindowState = FormWindowState.Maximized;

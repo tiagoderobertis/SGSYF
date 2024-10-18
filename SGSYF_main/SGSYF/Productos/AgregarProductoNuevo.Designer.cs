@@ -48,6 +48,7 @@
             label13 = new Label();
             button1 = new Button();
             label1 = new Label();
+            btn_goToCategories = new Button();
             SuspendLayout();
             // 
             // label3
@@ -273,13 +274,25 @@
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
-            label1.Location = new Point(243, 45);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(127, 19);
             label1.Name = "label1";
             label1.Size = new Size(432, 15);
             label1.TabIndex = 46;
             label1.Text = "No olvide añadir una categoria y una subcategoria antes de agregar su producto.";
+            // 
+            // btn_goToCategories
+            // 
+            btn_goToCategories.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btn_goToCategories.BackColor = Color.Transparent;
+            btn_goToCategories.FlatStyle = FlatStyle.Flat;
+            btn_goToCategories.Location = new Point(583, 15);
+            btn_goToCategories.Name = "btn_goToCategories";
+            btn_goToCategories.Size = new Size(146, 28);
+            btn_goToCategories.TabIndex = 47;
+            btn_goToCategories.Text = "Ir a Categorias";
+            btn_goToCategories.UseVisualStyleBackColor = false;
             // 
             // AgregarProductoNuevo
             // 
@@ -287,6 +300,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(249, 249, 249);
             ClientSize = new Size(884, 561);
+            Controls.Add(btn_goToCategories);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(txt_codigobarra);
@@ -337,5 +351,6 @@
         private Label label13;
         private Button button1;
         private Label label1;
+        private Button btn_goToCategories;
     }
 }
