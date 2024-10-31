@@ -1,8 +1,0 @@
-# Ignorar archivos de configuración de Visual Studio
-.vs/
-*.vs/
-*.vscode/
-*.user
-*.userosscache
-*.suo
-*.sln.docstates
