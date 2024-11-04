@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/ESTADO-Pre-Release-ORANGE">
+  <img src="https://img.shields.io/badge/STATUS-Pre--Release-orange">
 </p>
 
 <h1>SGSYF</h1>
