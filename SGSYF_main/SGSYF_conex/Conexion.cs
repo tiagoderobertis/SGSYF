@@ -10,7 +10,7 @@ namespace SGSYF_conexion
     public class Conexion
     {
         static string servidor = "localhost";
-        static string bd = "sgsyf_base";
+        static string bd = "gestor_stock";
         static string usuario = "root";
         static string password = "";
         static string puerto= "3306";

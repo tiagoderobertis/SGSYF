@@ -38,9 +38,6 @@
             btn_orderByAsc = new Button();
             btn_orderByDesc = new Button();
             label1 = new Label();
-            label2 = new Label();
-            btn_orderByNombreAsc = new Button();
-            btn_orderByNombreDesc = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -58,20 +55,20 @@
             dataGridView1.BorderStyle = BorderStyle.Fixed3D;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.GridColor = SystemColors.WindowText;
-            dataGridView1.Location = new Point(65, 301);
+            dataGridView1.Location = new Point(12, 301);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(766, 233);
+            dataGridView1.Size = new Size(860, 233);
             dataGridView1.TabIndex = 0;
             // 
             // lbl_titleStock
             // 
             lbl_titleStock.Anchor = AnchorStyles.Top;
             lbl_titleStock.AutoSize = true;
-            lbl_titleStock.Font = new Font("Segoe UI", 30F);
+            lbl_titleStock.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
             lbl_titleStock.ForeColor = Color.FromArgb(0, 0, 0);
             lbl_titleStock.Location = new Point(401, 30);
             lbl_titleStock.Name = "lbl_titleStock";
-            lbl_titleStock.Size = new Size(118, 54);
+            lbl_titleStock.Size = new Size(125, 54);
             lbl_titleStock.TabIndex = 1;
             lbl_titleStock.Text = "Stock\r\n";
             // 
@@ -149,41 +146,12 @@
             label1.TabIndex = 30;
             label1.Text = "Ordenar todos los productos por precio:";
             // 
-            // label2
-            // 
-            label2.Location = new Point(534, 110);
-            label2.Name = "label2";
-            label2.Size = new Size(230, 33);
-            label2.TabIndex = 30;
-            label2.Text = "Ordenar todos los productos por nombre:\r\n";
-            // 
-            // btn_orderByNombreAsc
-            // 
-            btn_orderByNombreAsc.Location = new Point(537, 153);
-            btn_orderByNombreAsc.Name = "btn_orderByNombreAsc";
-            btn_orderByNombreAsc.Size = new Size(75, 23);
-            btn_orderByNombreAsc.TabIndex = 31;
-            btn_orderByNombreAsc.Text = "button1";
-            btn_orderByNombreAsc.UseVisualStyleBackColor = true;
-            // 
-            // btn_orderByNombreDesc
-            // 
-            btn_orderByNombreDesc.Location = new Point(539, 187);
-            btn_orderByNombreDesc.Name = "btn_orderByNombreDesc";
-            btn_orderByNombreDesc.Size = new Size(75, 23);
-            btn_orderByNombreDesc.TabIndex = 32;
-            btn_orderByNombreDesc.Text = "button3";
-            btn_orderByNombreDesc.UseVisualStyleBackColor = true;
-            // 
             // Stock
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(249, 249, 249);
             ClientSize = new Size(884, 561);
-            Controls.Add(btn_orderByNombreDesc);
-            Controls.Add(btn_orderByNombreAsc);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btn_orderByDesc);
             Controls.Add(btn_orderByAsc);
@@ -216,8 +184,5 @@
         private Button btn_orderByAsc;
         private Button btn_orderByDesc;
         private Label label1;
-        private Label label2;
-        private Button btn_orderByNombreAsc;
-        private Button btn_orderByNombreDesc;
     }
 }
